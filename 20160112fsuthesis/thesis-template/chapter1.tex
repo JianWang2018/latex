@@ -1,0 +1,52 @@
+\chapter{Latex examples}
+
+This is an introductory paragraph. summary all the situation and example in latex file, such as how to write algorithm, how to input programming code in latex file,etc.
+
+Each section contains one aspect of how to use latex, for example, we write the example of input code in latex file in the first section.
+
+\section{Example of input code}\label{sec:input_code}
+In section \ref{sec:input_code}, we show the example of input code:
+
+\begin{lstlisting}
+// Hello.java
+import javax.swing.JApplet;
+import java.awt.Graphics;
+
+public class Hello extends JApplet {
+    public void paintComponent(Graphics g) {
+        g.drawString("Hello, world!", 65, 95);
+    }    
+}
+\end{lstlisting}
+
+
+\section{Example of algorithm}
+Example of algorithm is as follows, using the package of algorithm2e:\\
+
+\begin{algorithm}[H]
+\caption{My algorithm}\label{euclid}
+		    \nl Initialize the observation weights $\omega_i$=$1/N$,$i$=1,2,...,$N$\;
+		    \nl \For{m=1 to M}{
+		    \nl Fit a classifer $G_m(x)$ to the training data using weights $\omega_i$\;
+		    \nl   Compute \;
+		      \begin{equation*}		      
+		       err_m=\frac{\sum_{i=1}^{N}\omega_i I(y_i \neq G_m(x_i))}{\sum_{i=1}^{N}\omega_i}		       
+		      \end{equation*} 
+		    \nl Compute $\alpha_m=log((1-err_m)/err_m)$\;
+		    \nl Set $\omega_i \gets \omega_i \cdot exp[\alpha_m \cdot I(y_i \neq G_m(x_i))]$, $i =1,2,...,N$ \;
+		    }
+		    \nl Output $G(x)=sign[\sum_{m=1}^{M}\alpha_m G_m(x)]$ \;
+\end{algorithm}
+
+\section{Example of array}
+\begin{equation*}
+\left\{
+\begin{aligned}
+a+b&=2\\
+a-b&=4\\
+\end{aligned}
+\right.
+\end{equation*}
+\section{cite reference}
+
+This is my abstract

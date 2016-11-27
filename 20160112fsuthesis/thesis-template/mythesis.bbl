@@ -1,0 +1,144 @@
+\begin{thebibliography}{23}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Agarwal(2012)]{hft_future}
+Anuj Agarwal.
+\newblock High frequency trading: Evolution and the future.
+\newblock 2012.
+
+\bibitem[Biais et~al.(1995)Biais, Hillion, and Spatt]{biais1995empirical}
+Bruno Biais, Pierre Hillion, and Chester Spatt.
+\newblock An empirical analysis of the limit order book and the order flow in
+  the paris bourse.
+\newblock \emph{the Journal of Finance}, 50\penalty0 (5):\penalty0 1655--1689,
+  1995.
+
+\bibitem[Bouchaud et~al.(2002)Bouchaud, M{\'e}zard, Potters,
+  et~al.]{bouchaud2002statistical}
+Jean-Philippe Bouchaud, Marc M{\'e}zard, Marc Potters, et~al.
+\newblock Statistical properties of stock order books: empirical results and
+  models.
+\newblock \emph{Quantitative finance}, 2\penalty0 (4):\penalty0 251--256, 2002.
+
+\bibitem[B{\"u}hlmann(2012)]{buhlmann2012bagging}
+Peter B{\"u}hlmann.
+\newblock Bagging, boosting and ensemble methods.
+\newblock In \emph{Handbook of Computational Statistics}, pages 985--1022.
+  Springer, 2012.
+
+\bibitem[Clark(1973)]{clark1973subordinated}
+Peter~K Clark.
+\newblock A subordinated stochastic process model with finite variance for
+  speculative prices.
+\newblock \emph{Econometrica: journal of the Econometric Society}, pages
+  135--155, 1973.
+
+\bibitem[Cont et~al.(2010)Cont, Stoikov, and Talreja]{cont2010stochastic}
+Rama Cont, Sasha Stoikov, and Rishi Talreja.
+\newblock A stochastic model for order book dynamics.
+\newblock \emph{Operations research}, 58\penalty0 (3):\penalty0 549--563, 2010.
+
+\bibitem[Engle(2000)]{engle2000econometrics}
+Robert~F Engle.
+\newblock The econometrics of ultra-high-frequency data.
+\newblock \emph{Econometrica}, 68\penalty0 (1):\penalty0 1--22, 2000.
+
+\bibitem[Engle and Russell(1997)]{engle1997forecasting}
+Robert~F Engle and Jeffrey~R Russell.
+\newblock Forecasting the frequency of changes in quoted foreign exchange
+  prices with the autoregressive conditional duration model.
+\newblock \emph{Journal of empirical finance}, 4\penalty0 (2):\penalty0
+  187--212, 1997.
+
+\bibitem[Engle et~al.(2006)Engle, Ferstenberg, and Russell]{engle2006measuring}
+Robert~F Engle, Robert Ferstenberg, and Jeffrey~R Russell.
+\newblock Measuring and modeling execution cost and risk.
+\newblock 2006.
+
+\bibitem[Gould et~al.(2013)Gould, Porter, Williams, McDonald, Fenn, and
+  Howison]{gould2013limit}
+Martin~D Gould, Mason~A Porter, Stacy Williams, Mark McDonald, Daniel~J Fenn,
+  and Sam~D Howison.
+\newblock Limit order books.
+\newblock \emph{Quantitative Finance}, 13\penalty0 (11):\penalty0 1709--1742,
+  2013.
+
+\bibitem[Hansen and Salamon(1990)]{hansen1990neural}
+Lars~Kai Hansen and Peter Salamon.
+\newblock Neural network ensembles.
+\newblock \emph{IEEE transactions on pattern analysis and machine
+  intelligence}, 12:\penalty0 993--1001, 1990.
+
+\bibitem[Harris(2003)]{harris2003trading}
+Larry Harris.
+\newblock \emph{Trading and exchanges: Market microstructure for
+  practitioners}.
+\newblock Oxford University Press, USA, 2003.
+
+\bibitem[Hashem(1997)]{hashem1997optimal}
+Sherif Hashem.
+\newblock Optimal linear combinations of neural networks.
+\newblock \emph{Neural networks}, 10\penalty0 (4):\penalty0 599--614, 1997.
+
+\bibitem[Huth and Abergel(2012)]{huth2012times}
+Nicolas Huth and Fr{\'e}d{\'e}ric Abergel.
+\newblock The times change: Multivariate subordination. empirical facts.
+\newblock \emph{Quantitative Finance}, 12\penalty0 (1):\penalty0 1--10, 2012.
+
+\bibitem[Ivanov et~al.(2004)Ivanov, Yuen, Podobnik, and Lee]{ivanov2004common}
+Plamen~Ch Ivanov, Ainslie Yuen, Boris Podobnik, and Youngki Lee.
+\newblock Common scaling patterns in intertrade times of us stocks.
+\newblock \emph{Physical Review E}, 69\penalty0 (5):\penalty0 056107, 2004.
+
+\bibitem[K{\'e}gl(2013)]{kegl2013return}
+Bal{\'a}zs K{\'e}gl.
+\newblock The return of adaboost. mh: multi-class hamming trees.
+\newblock \emph{arXiv preprint arXiv:1312.6086}, 2013.
+
+\bibitem[Kirilenko et~al.(2015)Kirilenko, Kyle, Samadi, and
+  Tuzun]{kirilenko2015flash}
+Andrei~A Kirilenko, Albert~S Kyle, Mehrdad Samadi, and Tugkan Tuzun.
+\newblock The flash crash: The impact of high frequency trading on an
+  electronic market.
+\newblock \emph{Available at SSRN 1686004}, 2015.
+
+\bibitem[Luckock(2001)]{luckock2001statistical}
+Hugh Luckock.
+\newblock A statistical model of a limit order market.
+\newblock \emph{Sidney University preprint (September 2001)}, 2001.
+
+\bibitem[Obizhaeva and Wang(2013)]{obizhaeva2013optimal}
+Anna~A Obizhaeva and Jiang Wang.
+\newblock Optimal trading strategy and supply/demand dynamics.
+\newblock \emph{Journal of Financial Markets}, 16\penalty0 (1):\penalty0 1--32,
+  2013.
+
+\bibitem[Potters and Bouchaud(2003)]{potters2003more}
+Marc Potters and Jean-Philippe Bouchaud.
+\newblock More statistical properties of order books and price impact.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  324\penalty0 (1):\penalty0 133--140, 2003.
+
+\bibitem[Rosu(2009)]{rosu2009dynamic}
+Ioanid Rosu.
+\newblock A dynamic model of the limit order book.
+\newblock \emph{Forthcoming in The Review of Financial Studies}, 2009.
+
+\bibitem[Silva and Yakovenko(2007)]{silva2007stochastic}
+A~Christian Silva and Victor~M Yakovenko.
+\newblock Stochastic volatility of financial markets as the fluctuating rate of
+  trading: An empirical study.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  382\penalty0 (1):\penalty0 278--285, 2007.
+
+\bibitem[Zovko et~al.(2002)Zovko, Farmer, et~al.]{zovko2002power}
+Ilija Zovko, J~Doyne Farmer, et~al.
+\newblock The power of patience: a behavioural regularity in limit-order
+  placement.
+\newblock \emph{Quantitative finance}, 2\penalty0 (5):\penalty0 387--392, 2002.
+
+\end{thebibliography}

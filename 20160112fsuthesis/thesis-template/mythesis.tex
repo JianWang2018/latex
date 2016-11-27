@@ -1,0 +1,278 @@
+% This is a "bare-bones" thesis template file.  For examples of how to
+% use a few more LaTeX features, look in the 'sample' folder.  Read
+% the User Guide for documentation of the 'fsuthesis' class features.
+
+\documentclass[11pt,expanded,copyright]{fsuthesis}
+
+% Additional packages may be loaded here.
+
+% Do NOT use 'geometry' or 'setspace' packages! They will
+% mess up the spacing provided by 'fsuthesis'.
+
+\title{This Is My Title:\protect\\And This Is Its Second Line}
+\author{Viktor Spoyles}
+\college{College of Arty Science}
+\department{Department of Furtive Studies} % Delete if no department
+\manuscripttype{Dissertation}              % [Thesis, Dissertation, Treatise]
+\degree{Doctor of Philosophy}                 
+\degreeyear{2015}
+\defensedate{October 31, 2015}
+
+%\subject{My Topic}
+%\keywords{keyterm1; keyterm2; keyterm3; ...}
+
+\committeeperson{Faux Causson Yorverk}{Professor Directing Thesis}
+\committeeperson{Verda Boizaar}{University Representative}
+\committeeperson{Beauxeau D'Claune}{Committee Member}
+\committeeperson{Arlip Zarseeld}{Committee Member}
+
+\clubpenalty=9999
+\widowpenalty=9999
+\usepackage[round]{natbib}
+\bibliographystyle{plainnat}
+
+
+\usepackage{amsmath}
+
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+
+
+
+\newtheorem{defn}{Definition}[section]
+\newtheorem{conj}{Conjecture}[section]
+\newtheorem{exmp}{Example}[section]
+
+%%% The mflogo package provides the METAFONT logo characters. Most
+%%% people won't need this (unless you're writing about METAFONT).
+
+\usepackage{mflogo}         % (not needed for general use)
+
+%%% The textcase package is useful if I have math formulas or symbols
+%%% in any chapter or section headings, preventing lower-case math
+%%% symbols from being upper-cased.
+
+\usepackage[overload]{textcase}
+
+%%% The default citation and bibliography styling provided by LaTeX
+%%% may not be the standard in your discipline.  The 'natbib' package
+%%% extends the formatting options for citations and bibliographic
+%%% references common in the sciences, and many disciplines define
+%%% their own style guides for bibliographies and citations through
+%%% 'natbib'.  If you choose to use 'natbib' here, you'll also need to
+%%% select the proper 'natbib' style file in the bibliography portion
+%%% of this file later on.  See the 'natbib' package documentation for
+%%% more information.
+
+%\usepackage[round]{natbib}       % an alternative bibliography package
+
+%%% Yet another bibliography alternative for people who need APA-style
+%%% citations and bibliography formatting is the 'apacite' package.
+%%% Most people will want to use the 'natbibapa' compatibility option.
+%%% (You must have the 2012 or later version of the 'apacite' package
+%%% to use this option. If you use the hyperref package, you *must*
+%%% use the 'natbibapa' option, or there will be citation errors.) See
+%%% the 'apacite' manual for more detailed information on using this
+%%% package and formatting your bibliography.
+
+%\usepackage[natbibapa]{apacite}  % an alternative bibliography package
+
+%%% The following few lines are a little different: if I want to
+%%% typeset my thesis using 'pdflatex', I need to use the 'pdftex'
+%%% driver to insert figures, and I'll also turn on hyperlinks in my
+%%% document.  If instead I'll be producing a DVI or PostScript
+%%% document (which I can convert to PDF later), I will want to use
+%%% the 'dvips' driver for the graphicx package, and I won't turn on
+%%% hyperlinks.  I can accomplish this by testing whether or not I'm
+%%% running in PDF mode using the '\ifpdf' test below.  If I'm in PDF
+%%% mode, then all my figures will need to be either PDF files, PNG
+%%% files, or JPEG files.  If I'm using the 'dvips' driver, then any
+%%% figures I include should be EPS (Encapsulated PostScript).  (This
+%%% sample document provides figure files in both formats for testing
+%%% purposes, so I can select either driver here.)  These days, most
+%%% people will probably want to use 'pdflatex' to create a PDF file
+%%% directly, so this extra logic is not essential; you may just enter
+%%% '\usepackage[pdftex]{graphicx}' in your document directly.
+
+\ifpdf   % We execute this part (up to \else) if we are in PDF mode.
+  \usepackage[pdftex]{graphicx}
+  % We can create color text in our document using the color package.
+  % We load it here so that we can tweak the default colors used in
+  % the links created by hyperref, as the defaults are a bit too
+  % bright and gaudy for an austere document such as this. ;-)
+  % Note that the Manuscript Clearance Advisors will not allow any
+  % colored text at all, so if you're using hyperref, you'll need to
+  % set all the colors to black (or set colorlinks=false below).
+  \usepackage{color}
+  \definecolor{mygreen}{rgb}{0,0.6,0}
+  \definecolor{myblue}{rgb}{0.3,0.2,0.8}
+  \definecolor{myred}{rgb}{0.8,0.1,0.1}
+  % The hyperref package has lots of features and options.  If you
+  % are interested in creating a state-of-the-art PDF document out
+  % of your thesis/dissertation, you should read more about this
+  % extremely useful package.
+  \usepackage[colorlinks=true,bookmarks=true,pdfborder={0 0 0},
+    linkcolor=myblue,urlcolor=myred,citecolor=mygreen,
+    breaklinks=true,bookmarksnumbered=true]{hyperref}
+\else    % Otherwise we'll run this part if we are not in PDF mode.
+  \usepackage[dvips]{graphicx}
+\fi
+
+%%% The following lines increase LaTeX's default penalties for club
+%%% lines and widow lines, which will discourage creating clubs and
+%%% widows in all but the most extreme cases.  (If the last line on a
+%%% page is the first line of a new paragraph, it's called club line.
+%%% If the first line of a page is the last line of a paragraph, it
+%%% is called a widow line.  Either of these conditions look a little
+%%% ugly, typographically speaking.)
+
+\widowpenalty=9999
+\clubpenalty=9999
+
+%%% Normally, the fsuthesis class will allow the bottom line of the
+%%% text column on each page to float up and down as necessary to keep
+%%% the vertical spacing on the page consistent.  You can disable this
+%%% behavior and force the baseline of every page to be stretched to
+%%% fill the allotted page boundaries by enabling \flushbottom.  (It's
+%%% commented out here, so the default behavior 'raggedbottom' is in
+%%% effect.)
+
+%\flushbottom
+%\raggedbottom  % This is the default.  However, if you have specified
+                % the 'twoside' document option, you'll need to turn on
+                % '\raggedbottom' to keep the same behavior, since
+                % '\flushbottom' becomes the the default with 'twoside'.
+
+%%% By default, section headings down to the \subsection level will be
+%%% entered into the Table of Contents.  If that is too much detail, I
+%%% can limit the entries to just the \section-level headings (for
+%%% example) by resetting the 'tocdepth' parameter to '1'. (The User
+%%% Guide explains this in more detail.)
+
+%\setcounter{tocdepth}{1}
+
+%%% Next, we set up some of the document description elements for use
+%%% on the title and committee pages.  If the college or school does
+%%% not sub-divide into departments for thesis/dissertation
+%%% publication purposes, then you should delete the '\department{}'
+%%% macro below.  Note that we use standard title capitalization
+%%% conventions here.
+\usepackage[ruled,vlined,resetcount,algochapter]{algorithm2e}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, text width=3cm, draw=black, fill=orange!30]
+
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+\makecommitteepage
+
+%\begin{dedication}
+%\end{dedication}
+
+\begin{acknowledgments}
+I am greatly indebted to many people during my life to pursue this degree.\\
+
+First and foremost, I want to express my gratitude to Dr. Jinfeng Zhang,my thesis major professor. Without his patience and insight, it is impossible to complete this thesis. His profound knowledge in statistics and programming, smart vision in research direction and passion for both work and life has benefited me a lot. Dr. Zhang has provided every help I would imagine from a research advisor and it was an enjoyable experience of working with him.\\
+
+I also deeply appreciate my co advisor Dr. Giray \"{O}kten, he put a lot of effort on this thesis and provided many insightful advice. Besides the solid knowledge of monte carlo methods he taught me, he also helped me so much from the very first day that I joined department, including selecting courses,career preparation and job search. I feel very fortunate to have Dr. \"{O}kten as my co advisor for accomplishing this thesis.\\
+
+I want to extend my thanks to Dr.Alec N. Kercheval and Dr. as my committee members and every course I had at our department in Florida state university is a wonderful experience and I would like to thank all my instructors for their patience and effort: Dr.Kopriva, Dr. Nichols,Dr. Ewald, Dr. Aldrovandi ,Dr.Fahim, Dr.Gallivan,Dr.Kim, Dr. Sussman and Dr. Zhu. Those courses help me to cultivate solid background of financial math, numerical analysis and programming.\\
+  
+Furthermore, I owe my special thanks to  Dr. Penelope Kirby, Dr. Penny LeNoir, Ms.Blackwelder, Mr. Dodaro, Mr. Grigorian and Mr. Wooland, who gave me a lot of instructions and suggestions when I worked as a teaching assistant in our department and mathematics lab. They are all very nice and point out my weak points during work, which gave me a good opportunity to enhance my presentation skills and teaching abilities.\\
+
+I also want to thank my colleagues and friends at department: Yang Liu, He Huang, Jinghua Yan, Bo Zhao, Jian Geng, Ming Zhu, Wanwan Huang, Yuan Zhang, Wen Huang, Yaning Liu,Qiuping Xu, Guifang Zhou, Pierre Garreau, Ahmed Islim, Dawna Jones, Linlin Xu, Yuying Tzeng,	Szu-Yu Pai, Nguyet Nguyen, Dong Sun, Daozhi Han, Yuanda Chen, Chun-Yuan Chiu, Chenchen Zhou,	Yao Dai, Chaoxu Pei, Fangxi Gu, Zailei Cheng, Jian Li,	Xinru Yuan, Haixu Wang,	Wei Meng and Qi Si for their help, cooperation and meaningful suggestions to my research.\\
+
+Finally, I want to thank my father, Xinshan Wang, my mother, Hua Yang and my other family members for their supports during my PhD study period. They are the origin of all my motivation, confidence and strength.
+
+\end{acknowledgments}
+
+\tableofcontents
+\listoftables
+\listoffigures
+%\listofmusex
+
+%\begin{listofsymbols}
+%\end{listofsymbols}
+
+%\begin{listofabbrevs}
+%\end{listofabbrevs}
+
+\begin{abstract}
+According to rapid development in information technology, limit order books(LOB) mechanism has emerged to prevail in today's financial market. In this paper, we proposes ensemble machine learning architectures for capturing the dynamics of high frequency limit order books such as predicting price spread crossing opportunities in future time interval. The paper is more data-driven oriented, so experiments with 5 real time stock data from NASDAQ, measured by nanosecond, are established. The models are trained and validated by training and validation data sets. Compared with other models,such as logistic regression, support vector machine(SVM),our out-of-sample testing results has shown that ensemble methods had better performance on both statistical measurement and computational efficiency. A simple trading strategy that we devised by our models has shown good profit and loss(P\&L) results. Although this paper focuses on limit order books, the similar frameworks and processes can be extended to other classification research area.\\ 
+\\  
+\textbf{Keywords:} limit order books, high frequency trading, data analysis, ensemble methods, F1 score.
+
+
+\end{abstract}
+
+\mainmatter
+
+\input chapter1
+\input chapter2
+\input chapter3
+\input chapter4
+%\input chapter5
+%\input chapter6
+
+%\appendix
+%\input appendix1
+
+% You have your choice of bibliography sections, either
+% hand-crafted or BibTeX.
+
+% This is the "hand-crafted" bibliography/references section:
+%\begin{references}
+%Mybib, Sample. \textit{An Example of a Bibliographic Entry
+% Created Manually}. Tallahassee, Florida: Fornish and Frak, 2010.
+%
+%Smith, Marigold. \textit{Lots and Lots of Bibliographic Entries
+% and How to Display Them}. Tallahassee, Florida: Gibson and Goulash, 2010.
+%\end{references}
+
+% Or use the BibTeX bibliography/references section below.  View the
+% file 'myrefs.bib' to get a feel for what these entries may look
+% like.  See the document in the 'sample' folder for more citation and
+% BibTeX examples.
+
+
+\bibliographystyle{plainnat}
+\bibliography{myrefs}
+
+\begin{biosketch}
+This is my biography.
+\end{biosketch}
+
+\end{document}
