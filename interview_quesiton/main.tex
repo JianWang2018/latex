@@ -1,0 +1,283 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The Legrand Orange Book
+% LaTeX Template
+% Version 2.1 (14/11/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Mathias Legrand (legrand.mathias@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Compiling this template:
+% This template uses biber for its bibliography and makeindex for its index.
+% When you first open the template, compile it from the command line with the 
+% commands below to make sure your LaTeX distribution is configured correctly:
+%
+% 1) pdflatex main
+% 2) makeindex main.idx -s StyleInd.ist
+% 3) biber main
+% 4) pdflatex main x 2
+%
+% After this, when you wish to update the bibliography/index use the appropriate
+% command above and make sure to compile with pdflatex several times 
+% afterwards to propagate your changes to the document.
+%
+% This template also uses a number of packages which may need to be
+% updated to the newest versions for the template to compile. It is strongly
+% recommended you update your LaTeX distribution if you have any
+% compilation errors.
+%
+% Important note:
+% Chapter heading images should have a 2:1 width:height ratio,
+% e.g. 920px width and 460px height.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+%----------------------------------------------------------------------------------------
+
+\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
+\usepackage{color}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+\coordinate [below=12cm] (midpoint) at (current page.north);
+\node at (current page.north west)
+{\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics[width=\paperwidth]{background}}; % Background image
+\draw[anchor=north] (midpoint) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Job interview quesions\\[15pt] % Book title
+{\Large practice}\\[20pt] % Subtitle
+{\huge Dr. Jian Wang}}}; % Author name
+\end{tikzpicture}};
+\end{tikzpicture}
+\vfill
+\endgroup
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\newpage
+~\vfill
+\thispagestyle{empty}
+
+\noindent Copyright \copyright\ 2016 Jian Wang\\ % Copyright notice
+%
+%\noindent \textsc{Published by Publisher}\\ % Publisher
+%
+%\noindent \textsc{book-website.com}\\ % URL
+%
+%\noindent Licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License (the ``License''). You may not use this file except in compliance with the License. You may obtain a copy of the License at \url{http://creativecommons.org/licenses/by-nc/3.0}. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \textsc{``as is'' basis, without warranties or conditions of any kind}, either express or implied. See the License for the specific language governing permissions and limitations under the License.\\ % License information
+%
+\noindent \textit{First printing, Jan 2016} % Printing/edition date
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\chapterimage{chapter_head_1.pdf} % Table of contents heading image
+
+\pagestyle{empty} % No headers
+
+\tableofcontents % Print the table of contents itself
+
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+
+\pagestyle{fancy} % Print headers again
+
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+
+\part{Part One}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 1
+%----------------------------------------------------------------------------------------
+
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+
+\chapter{Wells fargo}
+
+\section{Programming}\index{Programming}
+
+1) Given two integers n and k, return all possible combinations of k numbers out of 1, ... ,n.\\
+\\
+For example,\\
+If n = 4 and k = 2, a solution is:\\
+\\
+{[}\\
+{[2,4]},\\
+\qquad {[3,4]},\\
+\qquad {[2,3]},\\
+\qquad {[1,2]},\\
+\qquad {[1,3]},\\
+\qquad {[1,4]},\\
+{]}\\
+\\
+\textbf{source:} leet code 77
+\\
+\textbf{answer:}\\
+Can use recursive method, after join i, next time start from i+1 to n, till selected number equal to k, add to result.\\
+source code can be found in leet code page 147.\\\\
+2) Compute and return the square root of x.\\
+\\
+\textbf{source:} note that only need to find the nearest integer,leet code 69,page 193\\
+\\
+\textbf{answer:} hint: can use bisection and newton method to find the iterative solution, for the newton method, use $f(t)=t^2-x$\\
+\\
+3) find all the arbitrage based on the following currency rate list\\\\
+For example:\\\\
+{[[dollar:yuan,6], [dollar:yen,30],[yuan:yen,5],[yen:dollar,1/50] [yen:won,1/2]]}
+the arbitrage can be dollar to yuan , yuan to yen and yen to dollar:\\\\
+\textbf{source:} \\\\
+\textbf{answer:} hint:Use graph and if a product of a loop is not equal to 1, exits arbitrage\\\\
+\
+
+\section{Stochastic differential equation}\index{Stochastic differential equation}
+1) calculate : $P(w_{t+1}<0|w_t>0)$ \\\\
+\textbf{source:} \\\\
+\textbf{answer:} \\\\
+See green book page 131.
+2)what is ito formula: \\\\
+\textbf{source:} \\\\
+\textbf{answer:} \\\\
+{\color{red}3) how to change the $\frac{X_t}{Y_t}$ to a martingale measure, assume that $X_t$ and $Y_t$ follows different ito process} \\\\
+\textbf{source:} \\\\
+\textbf{answer:} hint: can use second order differential equation and let the dt term equal to 0\\\\
+{\color{red}4)option pricing: calculate the second derivative according to K(strike price) in the equation $E(e^{-rt}(payoff))$} \\\\
+\textbf{source:} \\\\
+\textbf{answer:} \\\\
+5) A stochastic process, \{$W_t:0<=t<=\infty$\}, is a standard Brownian motion if:\\
+1. $W_0=0$\\
+2. It has continuous sample paths\\
+3. It has independent,normally -distributed increments.\\\\
+6) A stochastic process, \{$X_t:0<=t<=\infty$\}, is a martingale with respect to the filtration, $f_t$, and probability measure, P, if:\\
+1) $E^P[|X_t|]<\infty$ for all $t\geq 0$\\
+2) $E^p[X_{t+s}|F_t]=X_t$ for all $t,s >=0$\\\\
+7)Quadratic Variation
+Consider a partition of the time interval,[0,T] given by:\\
+$$0=t_0<t_1<t_2<...<t_n=T$$
+Let $X_t$ be a Brownian motion and consider the sum of squared changes:\\
+$$Q_n(T):=\sum_{i=1}^n[\Delta X_{t_i}]^2$$
+where $\Delta X_{t_i}=X_{t_i}-X_{t_{i-1}}$ \\
+The quadratic variation of a stochastic process $X_t$, is equal to the limit of $Q_n(T)$ as $\Delta_t:= max(t_i-t_{i-1})\rightarrow 0$
+
+\section{Numerical PDE}\index{Numerical PDE}
+
+1)Use fourier transformation to find if a numerical differential equation scheme is converge \\\\
+\textbf{source:} \\\\
+\textbf{answer:} \\\\
+2)How to find a numerical scheme to a stochastic differential equation: \\\\
+\textbf{source:} \\\\
+\textbf{answer:} for the stochastic term $dW_t$, can use the monte carlo method to to find $dW_t=(W_{t_{i+1}}-W_{t_i})/(t_{i+1}-t_i)$?\\\\
+3)Given an integer, write a function to determine if it is a power of two.\\\\
+\textbf{source:}leet code 231 \\\\
+\textbf{answer:}hint: can use the bit operation for n and (n-1), in python: n\&(n-1) \\\\
+4)Bisection convergence rate, newton method convergence rate? how to get it? \\\\
+\textbf{source:} \\\\
+\textbf{answer:} \\\\
+newton method is quadratic and bisection is linear since $\epsilon_n/\epsilon_{n-1}=1/2$
+\section{Partial differential equation}\index{Partial differential equation}
+1)Separate variables method: Solve $u_{tt}=u_t-u_x$\\\\
+\textbf{source:} \\\\
+\textbf{answer:}hint:use separate variables.\\\\
+2)For the composite function $f(g(x))$, $g(x)$ is one PDE equation solution, and also g(x) is the optimal solution for f(g(x)), find $g(x)$\\\\
+\textbf{source:} \\\\
+\textbf{answer:}not very clear question, need further discussion.\\\\
+3)Some first order partial differential equation:\\\\
+$u_t+u_x=0$ \\\\
+\textbf{source:}\\\\
+\textbf{answer:}hint:prepare all kinds of first order differential equation, homegeneous and non homegeneous\\\\
+4)Wave equation: \\\\
+$ u_{tt}=au_{xx}, x\in [0,1], u(x,0)=1$\\\\
+what is solution for a>0 and a<0?\\
+\textbf{source:}\\\\
+\textbf{answer:} \\\\
+%\lipsum[1-7] % Dummy text
+\section{Linear algebra}\index{Linear algebra}
+
+1) Calculate minimum polynomials of matrices \\\\
+\textbf{source:}\\\\
+\textbf{answer:}\\\\
+2) Given a matrix A, find the $A^{100}$\\\\
+\textbf{source:}\\\\
+\textbf{answer:}hint:can use Jordan canonical form to find $A=UBU^{-1}$ where B is a diagonal matrix.\\\\
+3) How the verify if a matrix is positive definite or not?\\\\
+\textbf{source:}\\\\
+\textbf{answer:} \\\\
+a)A matrix is positive definite if it’s symmetric and all its eigenvalues are positive\\
+b)A matrix is positive definite if it’s symmetric and all its pivots are positive.\\
+c)A matrix is positive definite if $x^TAx > O$ for all vectors x 0.\\
+d)Hermitian matrix,leading principal submatrix is positive definite\\
+e)Hermitian matrix,$A=A^*A$ and A is convertible.
+\\\\
+4)Calculate eigen values and eigen vectors of a matrix, how to make a matrix become upper triangular or lower triangular.\\\\
+\textbf{source:}\\\\
+\textbf{answer:} Prepare basic materials of linear algebra.\\\\
+\section{Monte Carlo method}\index{Monte carlo method}
+1) How to generate random numbers of a distribution, given that we can generate a uniform random numbers.\\\\
+\textbf{source:}\\\\
+\textbf{answer:}Prepare monte carlo course materials. Inverse function method and accept rejection method, see green book page 184.\\\\
+2)What is the convergent rate of monte carlo method:\\\\
+\textbf{source:}\\\\
+\textbf{answer:}for monte carlo method, o($\frac{1}{\sqrt{n}}$), hint: central limit theorem \\\\
+3)Variance reduction method:\\\\
+\textbf{source:}\\\\
+\textbf{answer:}hint:control variate, importance sampling,...,prepare materials\\\\
+
+\section{Statistics}\index{Statistics}
+1)Linear regression, how to define if a regression model is linear and why choose linear regression model.\\\\
+\textbf{source:}\\\\
+\textbf{answer:}\\\\
+2) x is independent variable and y is dependent variable, $\hat{y}$ is the linear regression model of x, find the correlation of y and $\hat{y}$\\\\
+\textbf{source:}\\\\
+\textbf{answer:}\\\\
+the correlation of y and $\hat{y}$ is same to the correlation of x and y, proof can be derived using definition.\\\\
+3)X and Y are two iid exponential distribution, find the density of X+Y\\\\
+\textbf{source:}\\\\
+\textbf{answer:}\\\\
+using the convolution method , $f(x+y)=\int_{-\infty}^{+infty}f_{X,Y}(x,z-x)dx$,
+the answer for the problem is $\frac{\lambda_1\lambda_2}{\lambda_1-\lambda_2}\exp^{-\lambda_2 Z}$\\\\
+4)n bulbs, each is a iid exponential distribution,light up all the bulbs, $x_1$ is the time when the first bulb become dark, $x_2$ is the time when the second bulb become dark,...,$x_m$ is the time when the mth bulb become dark. find the maximum log likelihood of $\lambda$ based on the above observation. \\\\
+\textbf{source:}\\\\
+\textbf{answer:}\\\\
+Note, should use the pdf not the cdf to deal with this problem, since $x_i$ is the exact time the bulb dark. The answer is the mean of $x_i$.
+5)X, Y are two different normal distribution, find the variance of $X\dot Y$\\\\
+\textbf{source:}\\\\
+\textbf{answer:}hint: calculate from the definition.\\\\
+6)1,2,3x,$x^2$,5x, the mean of the above numbers is 6, find the mode of them\\\\
+\textbf{source:}\\\\
+\textbf{answer:}hint: solve the one variable equation.\\\\
+%------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	INDEX
+%----------------------------------------------------------------------------------------
+
+\cleardoublepage
+\phantomsection
+\setlength{\columnsep}{0.75cm}
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}}
+\printindex
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
