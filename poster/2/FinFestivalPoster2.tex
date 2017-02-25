@@ -1,0 +1,327 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% a0poster Landscape Poster
+% LaTeX Template
+% Version 1.0 (22/06/13)
+%
+% The a0poster class was created by:
+% Gerlinde Kettl and Matthias Weiser (tex@kettl.de)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a0,landscape]{a0poster}
+
+\usepackage{multicol} % This is so we can have multiple columns of text side-by-side
+\columnsep=100pt % This is the amount of white space between the columns in the poster
+\columnseprule=3pt % This is the thickness of the black line between the columns in the poster
+
+\usepackage[svgnames]{xcolor} % Specify colors by their 'svgnames', for a full list of all colors available see here: http://www.latextemplates.com/svgnames-colors
+
+\usepackage{times} % Use the times font
+%\usepackage{palatino} % Uncomment to use the Palatino font
+
+\usepackage{graphicx} % Required for including images
+\graphicspath{{figures/}} % Location of the graphics files
+\usepackage{booktabs} % Top and bottom rules for table
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+\usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
+\usepackage{wrapfig} % Allows wrapping text around tables and figures
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	POSTER HEADER
+%----------------------------------------------------------------------------------------
+
+% The header is divided into three boxes:
+% The first is 55% wide and houses the title, subtitle, names and university/organization
+% The second is 25% wide and houses contact information
+% The third is 19% wide and houses a logo for your university/organization or a photo of you
+% The widths of these boxes can be easily edited to accommodate your content as you see fit
+
+\begin{minipage}[b]{0.55\linewidth}
+\veryHuge \color{Red} \textbf{Analysis on Global Economic Data} \color{Black}\\ % Title
+%\Huge\textit{An Exploration of Complexity}\\[1cm] % Subtitle
+\huge \textbf{K. David Yao }\\ % Author(s)
+\huge Florida State University, Department of Mathematics\\ % University/organization
+\end{minipage}
+%
+\begin{minipage}[b]{0.25\linewidth}
+ \textbf{Contact Information:}\\
+Email: \texttt{kdy10@my.fsu.edu} % Email address
+\end{minipage}
+%
+\begin{minipage}[b]{0.19\linewidth}
+\includegraphics[width=8cm]{sealfsu5.pdf} % Logo or a photo of you, adjust its dimensions here
+\end{minipage}
+
+\vspace{1cm} % A bit of extra whitespace between the header and poster content
+
+%----------------------------------------------------------------------------------------
+
+\begin{multicols}{4} % This is how many columns your poster will be broken into, a poster with many figures may benefit from less columns whereas a text-heavy poster benefits from more
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+%\color{Navy} % Navy color for the abstract
+\section*{\color{red}Motivation}
+{
+\textbullet More attention is being given to  the spatial distribution of financial systems. Some researchers such as Martin et. al. (2005){\cite{R.Martin}} have been working on showing that the spatial structure of the financial system is far from neutral in its effects, but rather influences the allocation of funds, capital and credit across regions and localities.\\
+\textbullet  We will direct our focus on global financial data. We will start with financial data on World's currencies and especially the US dollar exchange rates. To investigate these data on the Earth, we will approximate the Earth surface with a unit Sphere.
+
+{
+    \begin{tabular}{c  c}
+    %  {      FINANCIAL DATA ``LIVES" ON EARTH} &  \resizebox{ 2.3 in} {!}  {\includegraphics[]{WorldPics1.png}}
+    \end{tabular}
+ }
+ }
+
+%----------------------------------------------------------------------------------------
+%	
+%----------------------------------------------------------------------------------------
+
+%\color{SaddleBrown} % SaddleBrown color for the introduction
+
+\section*{\color{red}Some Background on Spherical Data}
+
+%----------------------------------------------------------------------------------------
+%	
+%----------------------------------------------------------------------------------------
+
+%\color{DarkSlateGray} % DarkSlateGray color for the rest of the content
+
+\section*{ Spherical means and spherical sample means}
+
+ Let $X$  be a $\mathbb S^2$-measurable random variable defined on the probability space $(\Omega, \mathcal{A},~P{r})$ with  $Q = P_{X}$ on $\mathcal{B}_{\mathbb S^2}$
+
+The {\em spherical mean set} is the set of minimizers of the {\em Fr$\acute{e}$chet  function} defined by
+
+\begin{center}
+${\mathcal{F}(p)= {E}\left[ \|X - p\|^2 \right] = \int_{\mathbb S^2} \|x - p\|^2~ Q(dx) }$
+\end{center}
+
+It turns out that if the mean vector $\mu =  {E}[X]$ is not the zero vector then
+the spherical mean set has one point only, the spherical mean $\mu_E = \frac{\mu}{\|\mu\|},$ and if
+$X_1,X_2,\dots, X_n$ are independent random vectors with a common distribution $Q$ on $\mathbb{S}^2$, then their spherical sample mean is $\overline{X}_{E}$ given by
+\begin{center}
+ $\overline{X}_{E} = \frac{\bar X}{\|\bar X\|}$
+\end{center}
+ \begin{center}
+% {\includegraphics[width=12cm]{EBDD1.png}}
+\end{center}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	
+%----------------------------------------------------------------------------------------
+
+\section*{\color{red}Assigning Meaning to Location using}
+
+{\small We now turn our focus back to currency exhange rates. We will first work on establishing what we would refer to as \textbf{mean locations}. It will be done using the {\em \bf Global Financial Centres Index 14} abrieviated GFCI14. It is a list of rankings of financial centers using online surveys and over 102 indices.}
+\begin{center}
+%\includegraphics[width=12cm]{GFCI_MAP.png}
+\end{center}
+
+\subsection*{\color{blue} Mean Locations}
+{\small Since our focus in on US exchange rates, we will create weighted means using the scores and locations for cities sharing the same currencies. We will use the Euro currency to illustrate these means.\\
+ And for cities located in countries that share the Euro as a currency we have the following pairs $\{  (X_1, g_1), (X_2, g_2)..., (X_{17}, g_{17})\}$ used to give the weighted means. The mean location are computed as follow;}
+\begin{center}
+ $U = g_1 X_1 + ...+ g_n X_n. $  and $\overline{U}= \frac{1}{\|U\|}U$
+\end{center}
+
+
+\subsection*{\color{blue} Mean Location for the EURO currency}
+
+Weighted mean location= $U=(0.667028094,	0.108890018	,0.717598711)^{T}$
+with $\|U\|=0.985764386$
+
+Mean Location=$\overline{U}=(0.676660776,	0.11046252,0.727961692
+)^{T}$
+The mean location was found around Pitasch, Switzerland . Since Switzerland is not in the Eurozone, we select as mean location, the closest city in the Eurozone to Pitasch, Switzerland. \\
+\begin{center}
+ %{\includegraphics[width=10cm]{EUROC.png}}
+\end{center}
+
+
+
+%------------------------------------------------
+\section*{\color{red}Function Estimation on a Sphere}
+
+\noindent \textbullet \textbf{Laplace-Beltrami Operator}\\
+Let $C^{\infty}(\mathcal{M})$ be the space of real valued infinitely differentiable continuous functions on $\mathcal{M}$. We denote the Laplace-Beltrami operator on $\mathcal{M}$ by $\Delta$ and it is locally given by:
+\begin{center}
+$\Delta  = - \frac{1}{\sqrt{g}} \sum_{j,k} \partial_j \left( g^{p,j,k} \sqrt{g} ~\partial_k \right)$
+\end{center}
+Here $g^{p,i,j}$ is the inverse of $g_{p,ij}$ the Riemannian metric tensor, and $g$ is the determinant of the matrix $(g_{p,ij})$.\\
+
+ \bigskip
+
+\noindent \textbullet \textbf{Real Basis }\\
+Let $\phi_{k}$ be an eigenfunction of $\Delta$. For $f \in L^2 (\mathcal{M})$, the eigenfunction expansion will be defined by
+\begin{center}
+$f = \sum_{k=0}^{\infty}\sum_{\mathcal{E}_{k}} \hat{f}_{k} \phi_{k},~~\text{where}~\hat{f}_{k}= \int_{\mathcal{M}} f~ {\phi}_k , ~~\text{for}~k \in \mathbb{N}$
+\end{center}
+The summation over $\mathcal{E}_k$ means over all eigenfunctions $\phi_k$ in the eigenspace $\mathcal{E}_k$.
+
+
+\section*{\color{red} Statistical Inverse Estimation}
+
+\subsection*{\color{blue} Function Estimation in Finance}
+Let's consider  a regression function $f$, of the response variable $Y$, on the measurement variable$X \in \mathcal{M}$, so that $\mathbb{E}( Y| X)= f(X)$, where $X$ is uniformly distributed on $\mathcal{M}$ and $\mathbb{E}$ denotes the expectation. We will consider the signal plus noise model,
+\begin{center}
+$Y= f(X) + \varepsilon $\\
+$\text{with} ~\mathbb{E}(\varepsilon) = 0 ~~\text{and}~\mathbb{E}(\varepsilon^2)= \sigma^2 >0 $
+\end{center}
+
+
+\begin{itemize}
+\item We will attempt to estimate the function $f(X)$ defined on the Sphere $\mathbb{S}^2$ at the various values of the mean locations.
+\item At multiple values of mean locations $f(X)$ may represent the percentage of increase or decrease of Yearly Average Exchange Rates which represent the value of one US dollar in the countries currency. The graph below illustrate such values of $f$ for over 30 currencies.
+\end{itemize}
+\begin{center}
+%\includegraphics[width=12cm]{ECUR1.png}
+\end{center}
+
+\subsection*{\color{blue}Statistical Estimator}
+
+\noindent \textbullet {\bf Statistical Inverse Problem}\\
+ Let $T$ be an operator on $L^2 (\mathbb{S}^2)$ ($T$ could be unbounded). A statistical inverse problem on $\mathbb{S}^2$, is an attempt to statistically estimate $T(f)$. Since $T(f)$ is unknown, we first  estimate $f$  by observing a random sample of size $n$, $\{(X_1, Y_1),...(X_n, Y_n)\}$ and it is done as follow;\\
+
+\begin{center}
+$f_{\Lambda}^{n}(X)= \sum_{\lambda_k \leq \Lambda} \hat{f}^{n}_{k} \phi_{k}(X) \sim f(X) = \sum_{k=0}^{\infty}\sum_{\mathcal{E}_{k}} \hat{f}_{k}(X) \phi_{k}(X)~~ X \in \mathbb{S}^2$
+and\\
+$\hat{f}^{n}_{k}= \frac{1}{n} \sum_{j=1}^{n} Y_j {\phi}_k ( X_j) \sim \hat{f}_{k}= \int_{\mathcal{M}} f~ {\phi}_k , ~~\text{for}~k \in \mathbb{N} $
+\end{center}
+
+ \bigskip
+
+\noindent \textbullet {\bf Statistical Estimator:}\\
+We get the statistical estimator $T(f_{\Lambda}^{n})$ of $T(f)$ with;
+
+\begin{center}
+$T(f^{n}_{\Lambda})= \sum_{\lambda_{k} \leq \Lambda} t_{k} \hat{f}^{n}_{k} \phi_{k} ~~\sim  T(f)= \sum_{k=0}^{\infty} \sum_{\varepsilon_k} t_k  \hat{f}_{k} \phi_{k}$
+\end{center}
+
+
+
+\noindent \textbullet In general if If we have a bounded operator, then, as long as $f_{\Lambda}^{n}$ is a consistent estimator of $f$, we have that $T(f_{\Lambda}^{n})$ will consistently estimate $T(f)$.
+However, the unbounded case, also known as ill-posed problem, is of more practical relevance. It is with respect to ill-posed estimation that we will proceed.
+
+
+
+%----------------------------------------------------------------------------------------
+%	
+%----------------------------------------------------------------------------------------
+
+\section*{\color{red}Functional PCA}
+
+\noindent \textbullet For this part we think of a random vector $X\in L^{2}(\mathbb{S}^2)$ an infinite dimensional space of square integrable functions on the sphere. And $X= (X_1, X_2,.., X_p, ...)$ with respect to the basis of eigenfunctions of the Laplace-Beltrami operator.\\
+
+\noindent \textbullet {\bf The principal components} are those {orthogonal affine} combinations in the space square integrable functions $Y_1,Y_2,..., Y_p,...$ whose variances are as large as possible and;\\
+\begin{center}
+ $X=[X_1~X_2~\vdots~X_p~\vdots]^{T}
+= [X]_{e} ~~ \rightarrow [X]_{a}=Y=[Y_1~Y_2~\vdots~Y_p~\vdots]^{T}$
+\end{center}
+
+And this rotation is done when we have $a_i= \bf f_i$, for the eigenvalue-eigenvector pairs $(\lambda_1, \bf f_1),(\lambda_2, \bf f_2),...,(\lambda_p, \bf f_p), ...$
+And for $Y_i= {\bf f_{i}^{T}} (X-\mu)$ then the {\em total population variance} is;
+\begin{center}
+$ \sum_{i=1}^{\infty} \text{Var}(X_i)= \sum_{i=1}^{\infty} \text{Var}(X_i)= \sum_{i=1}^{\infty} \lambda_i< \infty$
+\end{center}
+And one can now, express the proportion of total variance explained by the $k$th principal component by
+\begin{center}
+$ \frac{\lambda_{k}}{\lambda_1 + \lambda_2+ ...+ \lambda_p+ ...}$
+\end{center}
+\section*{\color{red}Future Work}
+\begin{itemize}
+\item For functional PCA we consider  each random function as a random element $X \in L^2(\mathcal{M}), X = (X_1, X_2, \dots),$ whose random covariance operator can be diagonalized, with the nonzero diagonal entries, being the variances of the P,C.A.'s. To avoid a singular sample covariance matrix, here , one might consider to regularize the sample covariance matrix, by adding to it a small error $\sigma Id.$ Next, for dimensionality reduction, one may follow, the multivariate case.
+\item Certainly the functional PCA is applicable to a small data set, that included a number of covariates, that might be all represented in terms of spherical harmonics. To this end an important goal  is data collection of multiple financial indices for as many countries as possible, that are available in the public domain.
+\item The next step consists in a FPCA data dimensionality reduction, that may lead to new interpretations of variability of  a changing global financial market.
+\item Instead of using the Laplace-Beltrami in our function estimation process, we may use spherical wavelets as well.
+\end{itemize}
+
+
+%\begin{center}\vspace{1cm}
+%\includegraphics[width=0.8\linewidth]{placeholder}
+%\captionof{figure}{\color{Green} Figure caption}
+%\end{center}\vspace{1cm}
+
+%----------------------------------------------------------------------------------------
+%	CONCLUSIONS
+%----------------------------------------------------------------------------------------
+%\section*{\color{red}REFERENCES}
+{\small
+\begin{thebibliography}{1}
+\bibitem[BhPa:2003]{BhPa:2003} Bhattacharya, Rabi; Patrangenaru, Vic (2003), Large sample theory
+of intrinsic and extrinsic sample means on manifolds-Part I,  {\it
+Ann. Statist.} {\bf 31}, no. 1, 1-29.
+%
+\bibitem[BhPa:2005]{BhPa:2005} R.N. Bhattacharya, V. Patrangenaru (2005), Large sample theory  of
+    intrinsic and extrinsic sample means  on manifolds- Part II,
+    {\em Ann. Statist.}, Vol. {\bf 33}, No. 3, 1211- 1245.
+ %
+ \bibitem[Fergusson:96]{Fergusson:96}
+Fergusson,T. (1996).  {\it Large Sample Theory}.  Chapman Hall.
+  \bibitem[Fr:1948]{Fr:1948} Fr\'echet, Maurice (1948) {\it Les \'elements
+ al\'eatoires de nature
+quelconque dans un espace distanci\'e}, Ann. Inst. H. Poincar\'e�
+10, 215--310.
+%
+\bibitem[HHeK:1998]{HHeK:1998} Healy, Dennis M., Jr.; Hendriks, Harrie; Kim, Peter
+T. {\it Spherical deconvolution.}  J. Multivariate Anal. 67 (1998),
+no. 1, 1--22.
+%
+\bibitem[Helg:1978]{Helg:1978} Helgason, S. (1978 ) { \it Differential Geometry, Lie groups,
+and Symmetric Spaces}. Academic Press, Inc.
+%
+\bibitem[HeLa:2007]{HeLa:2007}
+Hendriks, Harrie; Landsman, Zinoviy. (2007). Asymptotic data
+analysis on manifolds. {\em Ann. Statist.} {\bf 35} , 109�131.
+%
+\bibitem[HiSt:2012]{HiSt:2012}  Hitczenko, M.; Stein, M. L. (2012). Some theory for anisotropic processes on the sphere.
+\bibitem[JoWi:2008]{JoWi:2008} Richard A. Johnson, Dean W. Wichern (2008), {\em Applied Multivariate Statistical Analysis}, Fifth Edition, Prentice Hall.
+%
+    \bibitem[KoKi:2005]{KoKi:2005} Kim, Peter T.; Koo, Ja-Yong (2005). Statistical inverse problems on manifolds. {\em J. Fourier Anal. Appl.} {\bf  11}, no. 6, 639--653.
+{\em Stat. Methodol.} {\bf 9}, 211--227.
+\bibitem[Kr:1989]{Kr:1989}  Kreyszig, Erwin(1989). {\em Introductory functional analysis with applications}. Wiley Classics Library. John Wiley \& Sons, Inc., New York.
+    \bibitem[Lee:2013]{Lee:2013}  Lee, John M. (2013). {\em Introduction to smooth manifolds.} Second edition. Graduate Texts in Mathematics, {\bf 218}. Springer, New York.
+%
+\bibitem[Pel:2005]{Pel:2005} Pelletier, B. (2005). Kernel density estimation
+on Riemannian manifolds. {\it Statistics and Probability Letters},
+{\bf 73}, pp. 297-304.
+%
+ \bibitem[SchWo:1999]{SchWo:1999} H.H. Schaefer, M.P. Wolf (1999). {\em Topological Vector Spaces,} Second Edition, Springer.
+%
+ \bibitem[R.Martin]{R.Martin}, R. Martin, P. Sunley, C. Berndt and B. Klagge (2005). {\em Venture Capital Programmes in the UK and Germany: In what Sense Regional Policies?,} 39, pp.255-273, Regional Studies.
+%
+
+\end{thebibliography}
+
+}
+
+
+ %----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+%\nocite{*} % Print all references regardless of whether they were cited in the poster or not
+%\bibliographystyle{plain} % Plain referencing style
+%\bibliography{sample} % Use the example bibliography file sample.bib
+
+
+
+\end{multicols}
+\end{document} 
