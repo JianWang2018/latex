@@ -1,0 +1,4 @@
+The \href{http://www.siam.org}{SIAM homepage} has general information.
+Note that the colored text will \emph{not} appear in the print version
+nor will the hyperlink be active, so the writer may want to specify
+the location explicitly instead by using \url{http://www.siam.org}.

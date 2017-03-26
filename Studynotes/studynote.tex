@@ -1,0 +1,215 @@
+\documentclass[12pt]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{algorithm2e}
+\usepackage{graphicx}
+\usepackage{boxedminipage}
+\usepackage{fancybox}
+\usepackage{eucal}
+\usepackage{theorem}
+\usepackage{natbib}
+
+
+
+\setlength{\textheight}{1.01\textheight}
+\newtheorem{thm}{Theorem}[section]
+\theoremstyle{plain}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{pro}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+
+\def\Zp{{\mathbf{Z}^+}}
+\def\Zk{{\mathbf{Z}_{\kappa}}}
+%\def\tk{{T^{(\kappa)}}}
+
+\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}
+\huge\bf{Study Notes}
+\end{center}
+1) choose the co-prime subset from the set \{ 1,2,3,4,5,...,30\}
+\vfill
+Answer:\\
+
+Here the definition of co-prime is that the common factor of each pair numbers is only the number 1.
+so we can choose the prime numbers in the set to construct this kind of subset.The answer is that:
+\{1,2,3,5,7,11,...,29\}\\
+\vfill
+2)find the eigenvalues of the following matrix:\\
+$\begin{vmatrix}
+ 1 &k&k&k&,...,&k \\
+ k &1&k&k&,...,&k\\
+ k &k&1&k&,...,&k\\
+ ......\\
+ k &k&k&k&,...,&1\\
+\end{vmatrix}$
+\\
+\vfill
+Answer: the eigenvalue matrix is as follows:\\
+$\begin{vmatrix}
+ \lambda-1 &k&k&k&,...,&k \\
+ k &\lambda-1&k&k&,...,&k\\
+ k &k&\lambda-1&k&,...,&k\\
+ ......\\
+ k &k&k&k&,...,&\lambda-1\\
+\end{vmatrix}$
+\\
+\vfill
+Add the second to the final column to the first column. \\
+$\begin{vmatrix}
+ \lambda+(n-1)k-1 &k&k&k&,...,&k \\
+ \lambda+(n-1)k-1 &\lambda-1&k&k&,...,&k\\
+ \lambda+(n-1)k-1 &k&\lambda-1&k&,...,&k\\
+ ......\\
+ \lambda+(n-1)k-1 &k&k&k&,...,&\lambda-1\\
+\end{vmatrix}$
+\\
+take the $\lambda+(n-1)k-1$ out:\\
+$\lambda+(n-1)k-1$
+$\begin{vmatrix}
+ 1 &k&k&k&,...,&k \\
+ 1 &\lambda-1&k&k&,...,&k\\
+ 1 &k&\lambda-1&k&,...,&k\\
+ ......\\
+ 1 &k&k&k&,...,&\lambda-1\\
+\end{vmatrix}$
+\\
+the second to the final row minus the first row
+
+$\lambda+(n-1)k-1$
+$\begin{vmatrix}
+ 1 &k&k&k&,...,&k \\
+ 0 &\lambda-k-1&0&0&,...,&0\\
+ 0 &k-\lambda+1&\lambda-k-1&0&,...,&k\\
+ ......\\
+ 0 &0&0&0&,...,&\lambda-k-1\\
+\end{vmatrix}$ \\
+
+it equals to:\\
+$\lambda+(n-1)k-1$
+$\begin{vmatrix}
+ \lambda-k-1&0&0&,...,&0\\
+ k-\lambda+1&\lambda-k-1&0&,...,&k\\
+ ......\\
+ 0&0&0&,...,&\lambda-k-1\\
+\end{vmatrix}$ \\
+so the final answer is that the 1-(n-1)k is the one order eigenvalue and the (k+1) is the (n-1) order eigenvalues.\\
+\vfill
+3) what is the virtual function?\\
+Answer:\\
+In object-oriented programming, a virtual function or virtual method is a function or method whose behavior can be overridden within an inheriting class by a function with the same signature. This concept is a very important part of the polymorphism portion of object-oriented programming (OOP).
+
+example:
+
+class A\\
+ \{\\
+ public:\\
+     virtual void foo() \{ cout $<<$ "A::foo() is called" $<<$ endl;\}\\
+ \};\\
+
+class B: public A\\
+ \{\\
+ public:\\
+     virtual void foo() \{ cout $<<$ "B::foo() is called" $<<$ endl;\}\\
+ \};\\
+
+A * a = new B();\\
+a$->$foo();   \\
+The result should be:\\
+"B::foo() is called" not "A::foo() is called"\\
+4)how to generate a series numbers that follows the poisson distribution:\\
+Answer: we can use inverse function method:\\
+since we know that the distribution function of poisson distribution is \\
+$e^{-\lambda}\frac{\lambda^k}{k!}$,
+so we can generate a uniformly random number u,\\
+if u is less than $e^{-\lambda}$ , let x equal to 0\\
+if u is bigger than $e^{-\lambda}$ and less than $e^{-\lambda}+\lambda e^{-\lambda}$, let x equal to 1.
+.....\\
+then x will follow a poisson distribution.
+\vskip 10pt
+5) calculate x if $x^{x^{x^{x...}}}=2$\\
+Answer:\\
+This problem can be found in the green book.
+the answer is x equal to $\sqrt{2}$. We can use the property of limit to solve it.
+\vskip 10 pt
+6) calculate the first derivative of $y=ln(x)^{ln(x)}$\\
+Answer:\\
+first take ln on both side and then calculate the derivative on both side: the final answer will be $ln(x)^{ln(x)}\frac{1}{x}(1+ln(ln(x))$, the problem can also be found in the green book
+\vskip 10pt
+7) one gun has six bullets hole, put two successive bullets in the gun and shoot first time, there are no bullet. Question: the second player should choose reshuffle the gun or just start the second run. \\
+Answer: should just continue to the second run, since the probability of death in this situation will be 1/4, if reshuffle the gun then the probability will increase to 1/3.
+\vskip 10pt
+8)The minute hand and the hour hand now is overlapping at 12:00PM on the clock, when they will meet again in the next time.\\
+Answer: they will meet after $1\frac{1}{11}$ hours;\\
+one question remain: when the second, minute and hour hand all meet?\\
+\vskip 10pt
+9) $8*8$ square, take out two small squares on the right upper corner and left below corner, if the remaining part can be cover by the $1*2$ rectangular.
+Answer: not. we can drew the $8*8$ squares as one black and one white,..., then every small $1*2$ rectangular should need one black and one white place to put. since we take two black, so the number of black will not be sufficient, so the answer is not. more detail can be found in the green book.
+\vskip 10pt
+10) do we have non-measureable set and measure 0 set?\\
+Answer: need answer:P
+\vskip 10pt
+11) uniformly distribution for all the integer, then what is the probability of select 7?
+
+Answer: zero, need explanation.
+\vskip 10pt
+12) use ito formula to $Yt=2^{Wt}$\\
+Answer: $ln2Y_tdwt+ 1/2 (ln2)^2Y_tdt$
+\vskip 10pt
+13) $W_t$ brownian motion, if $W_t^3$ is martingale?
+Answer: No \\
+
+Take the derivative: $d(W_t^3)=3W_t^2dwt+3W_tdt$ has drift term so it is not a martingale.\\
+\vskip 10pt
+14) stock price 100, interest rate 0.05, at the money
+what is the price of the call option, and how to hedge:\\
+Answer: call option price 5/1.05, hedging, sell a call at 5/1.05 and buy a stock at 100
+
+15)If $W_t^4$ is martingale?\\
+Answer: use the partial derivative for the $W_t^4$ we can get the answer.
+$d(W_t^4)=4W_t^3d(W_t)+6W_t^2dt$It has the drift term, so it is not a martingale.\\
+To make it become Martingale, we can add extra term A(t), from our SDE assignment 5, we know that $W_t^4-6tW_t^2+3t^2$ is a martingale. we can also use the partial derivative and the method that we discussed in the meeting to prove it.\\\\
+
+16)calculate the anti derivative of $log(x)$\\
+Answer: $xlogx-x+c$\\\\
+
+17)two stocks A and B, know the $\sigma_B$, $\sigma_A$ and $\rho_{AB}$, now how one share of stock A, if we could find a hedging method by use of $sigma_B$.
+Answer: here we try to solve the Var(A+B) to see if Var(A+B) could be zero. then.
+
+$Var(A+B)=\sigma_A^2+W_B^2*\sigma_B^2+2*W_B*\rho_{AB}*\sigma_A\sigma_B$
+
+use the quadratic rule. \\
+
+$b^2- 4ac$ should be bigger than zero. \\
+
+the $\rho$ should be bigger or equal to 1, it is only exist when $\rho =1$\\\\
+
+18)1000 cup of wines, 10 subjects, 30 days later the person who drink the poison wine will be dead.\\ the king only wants to wait for 35 days. develop a strategy to find the poison wine.\\
+Answer: use the Binary Translation, we can develop a strategy. for example, if only two people, then let 00 01 10 11, then can solve 4 wines. \\
+here, we have 10 people, then we can solve $2^{10}=1024$ different wines.\\
+now we have 35 days, so we can divide the 1000 into 6 groups, each group has 167 wines. the smallest subject that we need is 8 which can define $2^8$ different subjects.\\\\
+19) fair coin, toss until the two same value, for example, stop at two HH or at two TT. calculate the expectation of the toss number.\\
+Answer:  let X become the extra number except the first time:
+E(x)=1/2*1+1/2*(E(x)+1)\\
+P
+so E(x)=2 and the answer is E(x)+1=3, since we need add the number of first time.
+\\\\
+20) $\int{\exp^{-x^2}}$\\
+Answer: $\sqrt{\pi}$
+\\\\
+21)sde assignment 5 \\
+$Var(X)=Var(E(X|N))+E(Var(X|N))$
+\\
+\\
+22)we need to buy part of share of a stock and sell a call to make the portfolio arbitrage. $\Longrightarrow$ john hull and option pricing notes.\\\\
+23) 10 boxes and a lot of balls, we need to put how many balls into the boxes randomly that the probability of every box contains at least one ball will be bigger than 95\%.\\
+$\Longrightarrow$ citi interview questions.\\
+23) NP- Hard problem \\
+A decision problem H is NP-hard when for any problem L in NP, there is a polynomial-time reduction from L to H[1]:80 An equivalent definition is to require that any problem L in NP can be solved in polynomial time by an oracle machine with an oracle for H.[3] Informally, we can think of an algorithm that can call such an oracle machine as a subroutine for solving H, and solves L in polynomial time, if the subroutine call takes only one step to compute.
+Another definition is to require that there is a polynomial-time reduction from an NP-complete problem G to H.[1]:91 As any problem L in NP reduces in polynomial time to G, L reduces in turn to H in polynomial time so this new definition implies the previous one. It does not restrict the class NP-hard to decision problems, for instance it also includes search problems, or optimization problems.
+Consequences[edit]
+An example of an NP-hard problem is the decision subset sum problem, which is this: given a set of integers, does any non-empty subset of them add up to zero? That is a decision problem, and happens to be NP-complete. Another example of an NP-hard problem is the optimization problem of finding the least-cost cyclic route through all nodes of a weighted graph. This is commonly known as the traveling salesman problem\\
+$\longrightarrow$ wiki\\
+24) logistic regression, the independent variables can be continuous
+\end{document}

@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {british}
+\beamer@sectionintoc {1}{What are \TeX , \LaTeX \ and Friends?}{3}{0}{1}
+\beamer@sectionintoc {2}{Document Types}{36}{0}{2}
+\beamer@sectionintoc {3}{Special Material}{65}{0}{3}
+\beamer@sectionintoc {4}{Wrapping Up}{84}{0}{4}

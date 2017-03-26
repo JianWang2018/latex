@@ -1,0 +1,20 @@
+\ifx \manfnt \undefined \font\manfnt=logo10 \fi\ifx \METAFONT \undefined \def
+  \METAFONT {{\manfnt META}\-{\manfnt FONT}\spacefactor1000 } \fi\ifx \MF
+  \undefined \let \MF=\METAFONT \fi\ifx \POSTSCRIPT \undefined \def \POSTSCRIPT
+  {{\scshape Post}\-{\scshape Script}\spacefactor1000 } \fi\ifx \MP \undefined
+  \def \MP {{\manfnt META}\-{\manfnt POST}\spacefactor1000 } \fi\ifx \noopsort
+  \undefined \def \noopsort#1{} \fi\ifx \emdash \undefined \def \emdash{---}
+  \fi
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Greenwade(1993)]{greenwade93}
+G.~D. Greenwade.
+\newblock The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN}).
+\newblock \emph{TUGBoat}, 14\penalty0 (3):\penalty0 342--351, 1993.
+
+\end{thebibliography}

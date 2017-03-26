@@ -1,0 +1,170 @@
+% LaTeX: More Than Just Academic Papers and Journals
+%
+% Copyright Lim Lian Tze 2011 (liantze@gmail.com) 
+% Beamer presentation slides for a talk at the Malaysian Open Source Conference 
+% 2011 (MOSC 2011 http://www.mosc.my/)
+%
+% http://liantze.penguinattack.org/latextypesetting.html
+%
+% This work is licensed under a Creative Commons Attribution-NonCommercial-
+% ShareAlike 3.0 Unported License (http://creativecommons.org/licenses/by-nc-sa/3.0/).
+%
+
+\pdfminorversion=5
+\pdfobjcompresslevel=3 
+\pdfcompresslevel=9
+
+% Full presentation (with overlays, animated bullet items etc)
+\documentclass[xcolor={x11names,svgnames,dvipsnames}]{beamer}
+
+% Transparency mode (no overlays)
+%\documentclass[xcolor={x11names,svgnames,dvipsnames},trans]{beamer}
+
+% 4-up handout mode
+%\documentclass[xcolor={x11names,svgnames,dvipsnames},handout]{beamer}
+
+\usepackage{pgfpages}
+\usepackage[british]{babel}
+\usepackage{etex}
+
+%% Glossy pretty look for the presentation and transparency (w/o overlays and animations) versions!
+\mode<beamer|trans>{
+\useoutertheme[glossy]{wuerzburg}
+\useinnertheme[shadow,outline]{chamfered}
+\usecolortheme{shark}
+}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{frametitle continuation}[from second][(cont'd)]
+\usefonttheme[stillsansseriftext,stillsansserifsmall]{serif}
+
+%% Save up on ink for the 4-up handouts
+\mode<handout>{
+\useoutertheme{wuerzburg}
+\useinnertheme[outline]{chamfered}
+\pgfpagesuselayout{4 on 1}[a4paper, landscape, border shrink=10mm]
+\pgfpageslogicalpageoptions{1}{border code=\pgfstroke}
+\pgfpageslogicalpageoptions{2}{border code=\pgfstroke}
+\pgfpageslogicalpageoptions{3}{border code=\pgfstroke}
+\pgfpageslogicalpageoptions{4}{border code=\pgfstroke}
+}
+
+\mode<presentation>{\AtBeginSection{%
+\begin{frame}
+\frametitle{Contents}
+\tableofcontents[currentsection]
+\end{frame}}}
+
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[osfss]{libertine}
+\usepackage[scaled=.77]{beramono}
+\usepackage{cmap}
+
+\usepackage{relsize,tabularx}
+\usepackage[T1,safe]{tipa}
+\usepackage{dtklogos,hologo,textcomp}
+\usepackage{multicol,booktabs}
+\usepackage{listings}
+\lstset{upquote,keepspaces=true,columns=spaceflexible,
+basicstyle=\ttfamily\scriptsize,%
+breaklines=true,breakindent=0pt,xleftmargin=0pt, xrightmargin=6pt,%
+language=[LaTeX]TeX, texcsstyle=*\bfseries\color{Maroon}, commentstyle=\sffamily\itshape\smaller\color{SeaGreen4},
+emphstyle=\bfseries\color{RoyalBlue3},escapechar={:},
+emphstyle={[2]{\bfseries\color{Sienna2}}},
+postbreak=\mbox{{\smaller\color{gray}$\hookrightarrow$}}
+}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning,matrix,chains,backgrounds,fit}
+
+\usepackage{multicol}
+\usepackage[version=3]{mhchem}
+\usepackage{chemfig}
+\usepackage{linguex,qtree}
+\let\fg\lingfg
+\usepackage{texshade}
+\usepackage[detect-all]{siunitx}
+\usepackage[siunitx]{circuitikz}
+\usepackage{bytefield}
+\usepackage{auto-pst-pdf}
+\usepackage{pstricks,pst-barcode}
+\usepackage{pgfplots}
+\usepackage{pgfgantt}
+\usepackage[skaknew]{chessboard,skak}
+\usepackage{cwpuzzle}
+\usepackage{gchords,guitar}
+\usepackage{spreadtab}
+\usepackage{ccicons}
+
+%\includeonly{intro}
+%\includeonly{document}
+%\includeonly{intro,domain}
+
+
+\setlength\fboxsep{0pt}
+\SetTracking{encoding=*}{-39}
+
+\author[\textsc{Lim} Lian Tze]{\textsc{Lim} Lian Tze\\[1ex]%
+{\small\url{liantze@gmail.com}\\[-.5ex]\url{http://liantze.penguinattack.org/}}\\[.5ex]\ccbyncsa}
+\title{\LaTeX: More Than Just Academic Papers and Theses}
+%\titlegraphic{\ccbyncsa}
+\date[\textsc{mosc} 2011]{Malaysian Open Source Conference 2011}%
+
+% Include QR code of slides URL for presentation-mode only -- so that audience
+%  can snap it and download it on the spot
+\mode<beamer>{\titlegraphic{\begin{pspicture}\psbarcode[scalex=.75,scaley=.75]{http://liantze.penguinattack.org/latextypesetting.html\#mosc11-slides}{eclevel=L}{qrcode}\end{pspicture}}}
+
+\hypersetup{%
+pdfauthor={Lim Lian Tze}, %% the "author" field from above includes garbage code...
+pdfkeywords={latex,MOSC2011,general}
+}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}
+\frametitle{Contents}
+\tableofcontents
+\end{frame}
+
+\include{intro}
+\include{document}
+\include{domain}
+
+\section{Wrapping Up}
+
+\begin{frame}
+\frametitle{Summary}
+\begin{itemize}
+\item<+-> \LaTeX
+	\begin {itemize}
+	\item a document preparation system
+	\item professional quality typesetting output
+	\end{itemize}
+\item<+-> Output artefacts
+	\begin{itemize}
+	\item Academic: papers, theses, books
+	\item Dedicated document types
+	\item Domain-specific material
+	\end{itemize}
+\item<+-> Usage scenario
+	\begin{itemize}
+	\item Direct authoring
+	\item Automatic generation (via scripts etc)
+	\item As back-end of other applications
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+\againframe<3>{help}
+
+\begin{frame}
+\frametitle{Thank You}
+\centering
+{\Huge Questions?\par}\vskip1em
+{\large\url{liantze@gmail.com}\\\url{http://latex-my.blogspot.com}\par}
+\end{frame}
+\end{document}

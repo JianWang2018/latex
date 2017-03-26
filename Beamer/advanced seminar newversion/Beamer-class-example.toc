@@ -1,0 +1,17 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {british}
+\beamer@sectionintoc {1}{High frequency trading}{3}{0}{1}
+\beamer@sectionintoc {2}{DataSet}{6}{0}{2}
+\beamer@sectionintoc {3}{Methodology}{8}{0}{3}
+\beamer@sectionintoc {4}{Numerical results}{21}{0}{4}
+\beamer@sectionintoc {5}{Future work}{30}{0}{5}
+\beamer@sectionintoc {6}{Questions}{32}{0}{6}
+\beamer@sectionintoc {7}{Section no.1}{34}{0}{7}
+\beamer@subsectionintoc {7}{1}{Subsection no.1.1 }{36}{0}{7}
+\beamer@sectionintoc {8}{Section no. 2}{39}{0}{8}
+\beamer@subsectionintoc {8}{1}{Lists I}{40}{0}{8}
+\beamer@subsectionintoc {8}{2}{Lists II}{45}{0}{8}
+\beamer@sectionintoc {9}{Section no.3}{50}{0}{9}
+\beamer@subsectionintoc {9}{1}{Tables}{51}{0}{9}
+\beamer@sectionintoc {10}{Section no. 4}{55}{0}{10}
+\beamer@subsectionintoc {10}{1}{blocs}{56}{0}{10}

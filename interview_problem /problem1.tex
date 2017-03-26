@@ -1,0 +1,76 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amsbsy}
+\usepackage[top=1in, bottom=1in, left=0.8in, right=0.8in]{geometry}
+\usepackage{mflogo}         % (not needed for general use)
+\usepackage[overload]{textcase}
+%\usepackage[round]{natbib}  % an alternative bibliography package
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corol}[theorem]{Corollary}
+\newtheorem{prop}[theorem]{Proposition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conj}{Conjecture}
+\newtheorem{definition}{Definition}
+\newtheorem{algorithm}{Algorithm}
+
+
+\newcommand{\Abb}{{\mathbb{A}}}
+\newcommand{\Cbb}{{\mathbb{C}}}
+\newcommand{\Fbb}{{\mathbb{F}}}
+\newcommand{\Lbb}{{\mathbb{L}}}
+\newcommand{\Pbb}{{\mathbb{P}}}
+\newcommand{\Qbb}{{\mathbb{Q}}}
+\newcommand{\Zbb}{{\mathbb{Z}}}
+
+
+
+
+\widowpenalty=9999
+\clubpenalty=9999
+
+\begin{document}
+Problem: \\
+
+x follows $\int_0^T{u d W_u}$  and y follows $\int_0^T{W_u du}$\\
+
+what is the value of $cov(x,y)$\\
+
+Answer: $cov (x,y)=E(xy)-E(x)E(y)$\\
+
+$E(x)=E(\int_0^T{u d{W_u}})$\\
+
+according to the martingality, $\int_0^T{u d{W_u}}$ is a martingale, so E($\int_0^T{u d{W_u}}$) equals to zero.\\
+
+Then cov(x,y)= E(xy)\\
+
+$x+y=\int_0^{T}{(u dW_u+ W_udu)}=\int_0^{T}{d(W_u u)}=TW_T$\\
+
+so $(x+y)^2=(T W_T)^2= T^2 W_T^2$\\
+
+$E(x^2 + 2xy + y^2)=E(T^2 W_T^2)=T^2E(W_T^2)=T^3$\\
+
+$E(x^2)=E((\int_0^T{u d W_u})^2)=E(\int_0^T{u d W_u}*\int_0^T{u d W_u})=\int_0^T E(u^2)du=\frac{T^3}{3}$(According to the ito isometric)\\
+
+$ E(y^2)=E(\int_0^T{W_u du})^2=E(\int_0^T{W_u du})*(\int_0^T{W_s ds}))=\int_0^T\int_0^T{E(W_s W_u)dsdu}$\\
+
+we know that $E(W_s W_u)=min(s,u)$, then\\
+
+$\int_0^T\int_0^T{E(W_s W_u)}dsdu=\int_0^T\int_0^T min(s,u)dsdu=\int_0^T(\int_0^u s+\int_u^T u)ds du$\\
+
+$=\int_0^T {(\frac{u^2}{2}+u(T-u))du}=-\frac{T^3}{6}+\frac{T^3}{2}=\frac{T^3}{3}$\\
+
+Then $2E(xy)=T^3-T^3/3-T^3/3=T^3/3$\\
+
+so $E(xy)=T^3/6$\\
+
+So $cov (x,y)=T^3/6$
+
+$ x \sim N(0,1)$
+
+$\underbrace{u'-P(x)u^2-Q(x)u-R(x)}=0$, since $u$ is a particular solution
+
+
+%so $cov(x,y)=E(xy)$
+\end{document}

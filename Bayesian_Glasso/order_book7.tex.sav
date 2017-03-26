@@ -1,0 +1,446 @@
+\documentclass[12pt]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{algorithm2e}
+\usepackage{graphicx}
+\usepackage{boxedminipage}
+\usepackage{fancybox}
+\usepackage{eucal}
+\usepackage{theorem}
+\usepackage{natbib}
+
+
+
+\setlength{\textheight}{1.01\textheight}
+\newtheorem{thm}{Theorem}[section]
+\theoremstyle{plain}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{pro}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+
+\def\Zp{{\mathbf{Z}^+}}
+\def\Zk{{\mathbf{Z}_{\kappa}}}
+%\def\tk{{T^{(\kappa)}}}
+
+\setlength{\parskip}{6pt}
+\begin{document}
+
+\title{Baysian-Glasso model for stock return series analysis}
+
+\author{Jian wang  and Jinfeng Zhang}
+\date{\today}
+
+\maketitle
+
+\begin{abstract}
+Structure learning process always stands an important problem in the Bayesian network research area.In this paper, we applied the Grphic Lasso(Glasso) model into the Bayesian network structure learning area. Most Bayesian network structure learning algorithms,such as hill climbing algorithm, started from a random graph and adjusted the direction of edges to obtain the optimal graphic structure. We tried to use the result of the GLasso model as the start graphic and learnt the optimal structure based on this initial network. The program language that we used for this research was R and the two major packages in our research were "Bnlearn" and "Huge". Besides, we also applied this Bayesian-Glasso model into stock return series analysis and compared the BIC score for different models. We found that in the stock return study area, the performance is better for the Bayesian-Glasso model than the bayesian network model itself. To our knowledge, it is the first time to apply the Glasso model into the Bayesian network structure learning area.
+
+\end{abstract}
+
+\section{Introduction}
+
+The Bayesian network is a probabilistic graphic model that represents a set of random variables and their conditional dependencies via the directed acyclic graph(DAG). Each node in the graph represents a random variable. Each random variable has a set of mutually exclusive and collectively exhaustive possible values. That is, exactly one of the possible values is or will be the actual value, and we are uncertain about which one it is. Bayesian networks are widely used in many areas to create consistent probabilistic representations of uncertain knowledge. For example, in the medicla diagnosis( Spiegelhalter et al., 1989), image recognition (Booker, Hota, 1986), language understanding (Charniak, Goldman, 1989a, 1989b), search algorithms (Hansson, Mayer, 1989). The Bayesian networks provide an elegant mathematical structure for modeling complicated relationships among random variables while keeping a relatively simple visualization of these relationships. There are more literatuer on this topic such as Pearl (1988), Neapolitan (1990, 2003), Oliver \& Smith (1990), Charniak (1991), Jensen (1996, 2001) and  Korb \& Nicholson (2003).\\
+
+There are two main problems in Bayesian network research area. One is the structure learning problem. This problem is trying to find the optimal structure of the network for the random variables that we need to observe. Generally, people used greedy algorithm such as Hill-climbing algorithm to handle this problem. Another important problem is parameter learning. Once the structure of the network has been defined, the next task is to estimate and update the parameters of the global distribution.  Parameter estimation remained problematic in many situations. For example, it is increasingly common to have sample sizes much smaller than the number of variables included in the model. In our paper, we focused on the problem of structure learning for the Bayesian network. Our method was to use the result of the Graphical Lasso model as the initial network and then used the greedy algorithm to learn the structure. \\
+
+The Graphical Lasso was first introduced by Jerome Friedman, Trevor Hastie and Robert Tibshirani(2007), It was introduced by solving the problem of estimating sparse graphs by a lasso penalty applied to the inverse covariance matrix. The most widely used R package for the Glasso problem was called the glasso. In 2012, Tuo zhao and Han Liu describe a new R package named High-dimensional Undirected Graph Estimation(huge) package which provided easy to use functions to estimating the high dimensional undirected graphs from data.  Compared with glasso package, the huge package contains the following features: 1) It was written in C, which was easier to modify. 2) it provided functions for fitting high dimensional semiparametric Gaussian copula models. 3) The package provided both lossless and lossy screening rules to scale up large-scale problems. We used the huge package to build the relationship among the stock returns. Since the Glasso model only gave us the relationship among the random variables, the network was undirected. Hence,we random generated the directions of the existing edges and use this network as initial start for the structure learning process. \\
+
+During the first decade of the 21 century, the economic market shrunk very much. For example the subprime crisis, it resulted in the collapse of many large financial institutions, such as the bankruptcy of the Lehman brothers holding Inc. Hence, it is very important for the investment sectors to build some more efficient and accurate models to manage risk and reduce the future loss to the least level.
+Our work is to use bayesian network and Glasso model to find the causal relationship amongs stock return series. The stock data that we used is from the website Yahoo finance. The data from the website yahoo finance contain some variables such as open price, highest price, lowest price,etc. Here we only use the open and close price to calculate the  return series of the daily stock price change.The Glasso model was used to learn the structure of the relationship between the stocks and Bayesian network was used to find the causal network of  the daily stock price. The calculation process is realized by the "Bnlearn" and "Huge" packages of software R.\\
+
+The remaining structure of this paper was as follows: Chapter 2 was the introduction of the Bayesian network and the structure learning algorithm. The basic knowledge of GlASSO model was described in chpter 3. Chapter 4 discussed how we applied the Bayesian network and GLASSO model to analyze the stock return price series. Chapter 5 were some conclusions about our work.
+
+
+\section{Baeysian network and structure learning process}
+Before we introduced the Bayesian network, we first need to know some basic know of graph.\\
+A graph $G=(\bf{V},\bf{A})$ consists of a nonempty set $\mathbf{V}$ of $\emph{nodes}$ or $\emph{vertices}$ and a finite (but possibly empty) set $\mathbf{A}$ of pairs of vertices called $\emph{arcs, links, or edges}$.\\
+Each arc $\emph{a=(u,v)}$ can be defined either as an ordered or an unordered pair of nodes, which are said to be $\emph{connected}$ by and $\emph{incident}$ on the arc and to be $\emph{adjacent}$ to each other. Since they a re adjacent, $\emph{u}$ and $\emph{v}$ are also said to be $\emph{neighbours}$. If $\emph{(u,v)}$ is an ordered pair,$\emph{u}$ is said to be the $\emph{tail}$ of the arc and $\emph{v}$ is the $\emph{head}$; then the arc is said to be $emph{directed}$ from $\emph{u}$ to $\emph{v}$ and is usually represented with an arrowhead in $\emph{v}(u \rightarrow v)$. It is also said that the arc $\emph{leaves}$ or is $\emph{outgoing}$ for $\emph{u}$ and that it $\emph{enters}$ or is $\emph{incoming}$ for $\emph{v}$. If $\emph{(u,v)}$ is unordered, $\emph{u}$ and $\emph{v}$ are simply said to be incident on the arc without any further distinction. In this case, they are commonly referred to as $\emph{undirected arcs or edges}$, denoted with $\emph{e} \in \mathbf{E}$ and represented with a simple line $\emph(u-v)$.\\
+The characterization of arcs as directed or undirected induces an equivalent characterization of the graphs themselves, which are said to be $\emph{directed graphs}$ (denoted with $\emph{G}$=$(\mathbf{V},\mathbf{A})$) if all arcs are directed, $\emph{undirected graphs}$( denoted with $\emph{G}$=$\emph{(V,E)}$ if all arcs are $\emph{undirected}$, and $\emph{partially directed}$ or $\emph{mixed graphs}$ (denoted with $\emph{G}$= $\mathbf{(V,A,E)}$ if they contain both directed and undirected arcs.\\
+
+Figure 1 shows the examples of $\emph{directed, undirected, and mixed partially directed}$ graphs. \\
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.50]{1.png}
+\caption{\label{graph:pdf1} An undirected graph($\emph{left}$), a directed graph ($\emph{center}$) and a partially directed graph ($\emph{right}$)}
+\end{figure}
+
+In the following we gave the definition of Bayesian network.\\
+\begin{definition}
+Bayesian networks are a class of graphical models that allow a concise representation of the probabilistic dependencies between a given set of random variables $\mathbf{X}$=$\{X_1,X_2,...,X_p\}$ as a directed acyclic graph (DAG) $\emph(G)=(\mathbf{V},\mathbf{A})$.Each node $\mathit{v}_i\in \mathbf{V}$
+\end{definition}
+
+The most commonly used structure learning method for Bayesian network was $\emph{Greedy search}$ algorithms. These algorithms explore the search space starting from a network strucutre (usually the empty graph) and adding, deleting, or reversing one arc at a time until the score can no longer be improved.\\
+Hill-Climbing algorithm was one of the famous greedy search algorithms. we use this algorithm to do research and list the algorithm as follows:\\\\
+$\mathbf{Algorithm 2.1}$ Hill- Climbing Algorithm.\\\\
+1. Choose a network structure $\mathbf{G}$ over $\mathbf{V}$, usually (but not necessarily) empty.\\
+2. Compute the score of $\mathbf{G}$, denoted as $Score_G$=Score(G).\\
+3. Set $\emph{maxscore}$=$score_G$\\
+4. repeat the following steps as long as $maxscore$ increases:\\
+a. for every possible arc addition, deletion or reversal not resulting in a cyclic network:\\
+i. compute the score of the modified network $G^*$ and $Score_G$=$Score_{G^*}$\\
+ii.if $Score_{G^*}$ $>$ $Score_G$, set $G=G^*$ and $Score_G$=$Score_{G^*}$\\
+b. update $maxscore$ with the new value of $Score_{G}$\\
+5. return the directed acyclic graph $G$.\\
+
+
+\section{Graphical Lasso model}
+
+Before introduced the Graphical Lasso model, we first reviewed some knowledge of the Lasso model.
+
+\begin{definition}
+Suppose that we have data $(x^i,y_i),i=1,2,...,N$, where $x^i=(x_{i1},x_{i2},...,x_{ip})$ are the predictor variables and $y_i$ are the responses. As in the usual regression set-up, we assume either that the observations are independent or that the
+$y_is$ are conditionally independent given the $x_{ij}s$. We assume that the $x_{ij}$ are standardized so that $\sum_ix_{ij}/N=0, \sum_ix_{ij}^2=1$.\\
+Letting $\hat{\beta}=(\hat{\beta_1},...,\hat{\beta_p})^T$, the lasso estimate $(\hat{\alpha},\hat{\beta})$ is defined by \\
+
+\begin{equation}
+\label{}
+(\hat{\alpha},\hat{\beta})=argmin{\sum_{i=1}^N(y_i-\alpha-\sum_j\beta_jx_{ij})^2}\ subject\ to \sum_j|\beta_j| \leq t\\
+\end{equation}
+
+Here $t\geq 0$ is a tuning parameter.
+\end{definition}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.50]{2.png}
+\caption{\label{graph:pdf1} The path of the Lasso model}
+\end{figure}
+
+Figure 2 showed the Lasso shrinkage of coefficients. \\
+
+The Graphical Lasso model was introduced by Jerome Friedman, Trevor Hastie and Robert Tibshirani(20070. It proposed the estimation of sparse undirected graphical models through the use of $L_1$(lasso) regularization.\\
+Suppose we have N multivariate normal observations of dimension $p$, with mean $\mu$ and covariance $\Sigma$. Let $\Theta=\Sigma^{-1}$, and let $S$ be the empirical covariance matrix, the problem is to maximize the log-likelihood:\\
+\begin{equation}
+log det\Theta-tr(S\Theta)-\rho|||\Theta||_1
+\end{equation}
+
+Here tr denotes the trance and $||\Theta||_1$ is the $L_1$ norm- the sum of the absolute values of the elements of $\Sigma^{-1}$. Jerome Friedman, Trevor Hastie and Robert Tibshirani used the blockwise coordinate descent approach as a launching point and proposed the Graphical lasso algoithm for the exact problem. \\
+Tuo zhao and Han liu(2012) et al exploited an R package named high dimensional undirected graphs. This package used language C instead of fortran and provide functions for fitting high dimensional semiparametric Gaussian copula models.\\
+Gaussian copula models extends the Gaussian graphical models by marginally transforming the variables using smooth monotone functions. \\To reduce the variance of $\hat{f}_j$, they introduced the following truncated estimator.\\
+suppose we have $n$ observations for j-th variable, $x_{1j},...,x_{nj}$ and we sort all $n$ observations and get the corresponding rank $u_{1j},...,u_{nj}$. Let $\Phi$ denote the Gaussian CDF function, then we can estimate the transformed data using: \\
+\begin{equation}
+\hat{f}_j=\Phi^{-1}(\hat{u}_{ij})\ \ 
+or\ \ 
+\hat{f}_j(x_{ij})=
+\begin{cases}
+\Phi^{-1}(\delta)\ \ \ \ \ \ \ \ \  if \ \hat{u}_{ij}\leq\delta\\
+\Phi^{-1}(\hat{u}_{ij})\ \ \ \ \ \ \  if \ \delta$<$\hat{u}_{ij}\leq{1-\delta}\\
+\Phi^{-1}(1-\delta)\ \ \ \   if \ \hat{u}_{ij}$>${1-\delta}
+\end{cases}
+\end{equation}
+
+where \\
+
+\begin{equation}
+\hat{u}_{ij}=\frac{u_{ij}}{n+1}
+\ \ and \ \ 
+\delta =\frac{1}{4n^{1/4}\sqrt{\pi logn}}
+\end{equation}
+
+\section{Stock return series analysis} 
+
+
+
+\section{Conclusion}
+In order to deal with different sizes of limit orders in an order book, we have enhanced a recent model of birth-death processes by adding multiple births. We show the convergence of the Laplace transforms of the first passage times for a sequence of truncated processes as the truncation state tends to
+infinity, which permits us to apply a recursive method to finding a close approximation of the Laplace transform of the first passage time to zero in our model. Numerical results are obtained to illustrate the use of the model by answering two typical questions: conditional on the current state, what
+is the probability that the next move of the mid-price is upward, and what is the probability, as a function of size, that a limit order placed at best
+ask is executed before the mid-price moves downward?
+
+The recursive approach used here does not handle the more general case of when limit orders, market orders, and cancellations all may have
+multiple sizes; this corresponds to analyzing a generalized birth-death process where both births and deaths are allowed to have multiple sizes.
+We do not know how to handle this situation.
+
+A further open question is how to analyze the model when the arrival rates of limit orders, market orders, and cancellations are not all mutually
+independent.  This case would seem to be important in improving the quality of the model's fit to the real world.
+
+
+\bibliographystyle{rQUF}
+\bibliography{order_book}
+
+
+\begin{table}[h!]
+  \caption{\label{table:quote}A sample of quotes taken from the raw data. The time-stamp is measured in seconds from midnight, the type B refers to bids, and the level is the number of ticks from best bid (counting from 1 = best bid). Rows appear when an event occurs.}
+  \begin{center}
+    \begin{tabular}{| c | c | c | c | c |}
+    \hline
+    time-stamp & type & level & price& quantity\\
+    \hline
+39301.481&	B&	4&	134.9&	203651\\
+39301.722&	B&	1&	135.05&	10000\\
+39302.891&	B&	4&	134.9&	193651\\
+39302.891&	B&	2&	135&	192869\\
+39305.192&	B&	1&	135.05&	9680\\
+39308.359&	B&	4&	134.9&	186151\\
+\hline
+\end{tabular}
+  \end{center}
+\end{table}
+
+\begin{table}[h!]
+  \caption{\label{table:trade}A sample transaction taken from raw data. A transaction represents an actual trade taking place where a market order arrives to fill an opposite limit order.}
+  \begin{center}
+    \begin{tabular}{| c | c | c | c |}
+    \hline
+    time-stamp & price& quantity\\
+    \hline
+39305.192&	135.05&	320	\\
+\hline
+\end{tabular}
+  \end{center}
+\end{table}	
+
+
+
+\begin{table}[h!]
+  \caption{\label{table:parameter}Estimated parameter values, using $M=2$ sizes of limit orders. Here $\hat{\mu}$ is the
+  arrival rate of market orders in units of $S_m$ shares, $\hat{\theta}(0)$ is the limit order cancellation rate per orders present,
+  $\hat{\lambda}_0^{(1)}$ and $\hat{\lambda}_0^{(2)}$ are the arrival rates of limit orders of size 1 and 2 (in multiples
+  of $S_m$) at best bid and ask, and $L(1)$ is the average number of shares at the best quote (both bid and ask).
+  }
+  \begin{center}
+    \begin{tabular}{| c | c | c | c | c | c |}
+    \hline
+    $\hat{\mu}$ & $\hat{\theta}(0)$ & $\hat{\lambda}_0^{(1)}$ & $\hat{\lambda}_0^{(2)}$ & $S_m$ & $L(1)$\\
+    \hline
+    3.16& 0.71 & 7.46 & 0.80 & 8127 & 59986\\
+    \hline
+\end{tabular}
+  \end{center}
+\end{table}					
+
+
+
+\begin{table}[h!]
+  \caption{\label{table:LT}Laplace Transform, evaluated at $s=10+5$i,  of the pdf of the first passage time
+  $\tau_{i, i-1}$ for $i=8,9,10$ in a truncated birth-death process with birth rates $\lambda^{(1)}, \lambda^{(2)}$ of size $1, 2$, respectively, and death rates $\mu_i=\mu+i\theta$ of size $1$ at state $i\geq 1$: $\lambda^{(1)}=7.46$, $\lambda^{(2)}=0.80$, $\theta=0.71$, $\mu=3.16$. The first column displays different choices for the truncated state $\kappa = 10, \dots, 20$. }
+  \begin{center}
+    \begin{tabular}{| c | c | c | c |}
+    \hline
+    \mbox{$\kappa$  } &$i=8$&$i=9$&$i=10$\\
+    \hline
+    10&0.346738-0.0832812i &0.383182-0.0960662i &0.477343-0.117804i \\
+    11&0.345423-0.0812206i &0.366959-0.0865165i &0.402881-0.0986009i \\
+    12&0.345356-0.0808634i &0.36551-0.0844016i &0.386282-0.0893613i \\
+    13&0.345367-0.08081i &0.365423-0.0840193i &0.384709-0.0872165i \\
+    14&0.345372-0.080803i &0.365432-0.0839597i &0.384601-0.0868137i \\
+    15&0.345373-0.0808022i &0.365437-0.0839515i &0.384608-0.0867486i \\
+    16&0.345373-0.0808022i &0.365438-0.0839506i &0.384613-0.0867392i \\
+    17&0.345373-0.0808022i &0.365439-0.0839505i &0.384614-0.0867381i \\
+    18&0.345373-0.0808022i &0.365439-0.0839505i &0.384614-0.086738i \\
+    19&0.345373-0.0808022i &0.365439-0.0839505i &0.384614-0.086738i \\
+    20&0.345373-0.0808022i &0.365439-0.0839505i &0.384614-0.086738i \\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\begin{table}[h!]
+  \caption{\label{table:Cdf1}The cdf $F_{b,0}^{(\kappa)}(t)$ of the first passage time from $b$ to zero,
+  for $b=10$ and $t=1$. Listed are the values for various choices of the truncation state $\kappa = 10, \dots, 40$.
+  Parameters are
+  $\lambda^{(1)}=7.46$, $\lambda^{(2)}=0.80$, $\theta=0.71$, $\mu=3.16$.}
+  \begin{center}
+    \begin{tabular}{| c | c |}
+    \hline
+    \mbox{$\kappa$} & $F_{b,0}^{(\kappa)}(1)$\\
+    \hline
+    10&0.00489228\\
+11&0.00384194\\
+12&0.00350267\\
+13&0.00341969\\
+14&0.00340075\\
+15&0.00339684\\
+16&0.00339609\\
+17&0.00339596\\
+18&0.00339594\\
+19&0.00339594\\
+20&0.00339594\\
+21&0.00339594\\
+22&0.00339594\\
+23&0.00339594\\
+24&0.00339594\\
+25&0.00339594\\
+26&0.00339594\\
+27&0.00339594\\
+28&0.00339594\\
+29&0.00339594\\
+30&0.00339594\\
+31&0.00339594\\
+32&0.00339594\\
+33&0.00339594\\
+34&0.00339594\\
+35&0.00339594\\
+36&0.00339594\\
+37&0.00339594\\
+38&0.00339594\\
+39&0.00339594\\
+40&0.00339594\\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+\begin{table}[h!]
+  \caption{\label{table1:Cdf2}As above, but evaulated at $t=5$.}
+  \begin{center}
+    \begin{tabular}{| c | c |}
+     \hline
+    \mbox{$\kappa$} & $F_{b,0}^{(\kappa)}(5)$\\
+
+    \hline
+    10&0.140684\\
+11&0.123179\\
+12&0.112249\\
+13&0.105679\\
+14&0.101809\\
+15&0.0995937\\
+16&0.0983638\\
+17&0.0977031\\
+18&0.09736\\
+19&0.0971878\\
+20&0.0971042\\
+21&0.0970649\\
+22&0.0970471\\
+23&0.0970392\\
+24&0.0970358\\
+25&0.0970344\\
+26&0.0970339\\
+27&0.0970337\\
+28&0.0970336\\
+29&0.0970336\\
+30&0.0970335\\
+31&0.0970335\\
+32&0.0970335\\
+33&0.0970335\\
+34&0.0970335\\
+35&0.0970335\\
+36&0.0970335\\
+37&0.0970335\\
+38&0.0970335\\
+39&0.0970335\\
+40&0.0970335\\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+\begin{table}[h!]
+  \caption{\label{table:Cdf3}As above, but evaluated at $t=10$}
+  \begin{center}
+    \begin{tabular}{| c | c |}
+     \hline
+    \mbox{$\kappa$} & $F_{b,0}^{(\kappa)}(10)$\\
+
+    \hline
+    10&0.29788\\
+11&0.267879\\
+12&0.248017\\
+13&0.235182\\
+14&0.227029\\
+15&0.221965\\
+16&0.218899\\
+17&0.217095\\
+18&0.216065\\
+19&0.215495\\
+20&0.215189\\
+21&0.21503\\
+22&0.214949\\
+23&0.21491\\
+24&0.214891\\
+25&0.214883\\
+26&0.214879\\
+27&0.214877\\
+28&0.214877\\
+29&0.214876\\
+30&0.214876\\
+31&0.214876\\
+32&0.214876\\
+33&0.214876\\
+34&0.214876\\
+35&0.214876\\
+36&0.214876\\
+37&0.214876\\
+38&0.214876\\
+39&0.214876\\
+40&0.214876\\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\begin{table}[h!]
+  \caption{\label{table:MidPriceMoveProb}Probability that the mid-price increases at its next move, with parameters
+  as estimated above.  The column labels indicate the number of initial shares (in multiples of $S_m$) at best bid, and the row labels indicate the number of initial shares at
+  best ask.}
+  \begin{center}
+    \begin{tabular}{| c | c | c |c | c |}
+    \hline
+    &1&2&3&4\\
+    \hline
+   1&0.50&0.639607&0.693461&0.71779\\
+   \hline
+   2&0.349262&0.50&0.551479&0.590195\\
+   \hline
+   3&0.305924&0.435753&0.50&0.533218\\
+   \hline
+   4&0.281541&0.403993&0.465104&0.50\\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+\begin{table}[h!]
+  \caption{\label{table:AskOrdeExecProb1}Probability of executing an ask order before the mid-price moves downward when the order size is $1S_m$. The column labels indicate the number of initial shares (in multiples of $S_m$) at best bid, and the row labels indicate the number of initial shares at
+  best ask.}
+  \begin{center}
+    \begin{tabular}{| c | c | c |c | c |}
+    \hline
+    &1&2&3&4\\
+    \hline
+   1&0.591788&0.825442&0.91758&0.958566\\
+   \hline
+   2&0.55933&0.789673&0.892219&0.941529\\
+   \hline
+   3&0.5383&0.766822&0.873602&0.92768\\
+   \hline
+   4&0.524982&0.751181&0.8597&0.9165\\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+\begin{table}[h!]
+  \caption{\label{table:AskOrdeExecProb2}Probability of executing an ask order before the price moves downward when the order size is $2S_m$.  Rows and columns are as in Table \ref{table:AskOrdeExecProb1}.}
+  \begin{center}
+    \begin{tabular}{| c | c | c |c | c |}
+    \hline
+    &1&2&3&4\\
+    \hline
+   1&0.550144&0.779358&0.883466&0.934737\\
+   \hline
+   2&0.529704&0.756403&0.863987&0.919624\\
+   \hline
+   3&0.51695&0.740946&0.849723&0.907672\\
+   \hline
+   4&0.508713&0.730555&0.839777&0.899094\\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.50]{PdfFirstPassageTimeModifiedBDProcess.pdf}
+\caption{\label{graph:pdf1} Probability density function of the first passage time from state 10 to state 0, with parameters
+$\lambda^{(1)}=7.46$, $\lambda^{(2)}=0.80$, $\theta=0.71$, $\mu=3.16$, truncation state
+$\kappa =60$. (Larger values of $\kappa$ are indistinguishable.)}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.50]{CdfFirstPassageTimeModifiedBDProcess.pdf}
+\caption{\label{graph:cdf1}Cumulative distribution function of the first passage time from state 10 to state 0 corresponding
+to the pdf of Table \ref{graph:pdf1}. }
+\end{figure}
+
+
+\end{document}

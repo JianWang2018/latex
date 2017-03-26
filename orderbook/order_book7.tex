@@ -1,0 +1,132 @@
+\documentclass[12pt]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{algorithm2e}
+\usepackage{graphicx}
+\usepackage{boxedminipage}
+\usepackage{fancybox}
+\usepackage{eucal}
+\usepackage{theorem}
+\usepackage{natbib}
+
+\setlength{\textheight}{1.01\textheight}
+\newtheorem{thm}{Theorem}[section]
+\theoremstyle{plain}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{pro}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+
+\def\Zp{{\mathbf{Z}^+}}
+\def\Zk{{\mathbf{Z}_{\kappa}}}
+%\def\tk{{T^{(\kappa)}}}
+
+\setlength{\parskip}{6pt}
+\begin{document}
+
+\title{Spectral method final project}
+
+\author{Jian Wang, financial math Ph.D candidate }
+
+\date{\today}
+
+\maketitle
+
+
+\section{Introduction}
+Spectral methods have been used extensively during the last decades for the numerical solution of partial diﬀerential equations (PDE) due to their bigger accuracy when compared to Finite Diﬀerences (FD) and Finite Elements (FE) methods. The rate
+of convergence of spectral approximations depends only on the smoothness of the
+solution, yielding the ability to achieve high precision with a small number of data.
+This fact is known in literature as ”spectral accuracy”. In this project, we try to use the nodal Galerkin method to solve the 2d and mapping problem.Finally,we also discuss the feasibility to use the spectral method into our financial engineering research area. The structure of this project is as follows:1) 2d problem 2) mapping problem and 3) financial engineering problem.\\
+
+\section{2d problem}
+Before introduce 2d problem,we first introduce the collocation method briefly\\
+
+The collocation method:\\
+\begin{equation}
+\Phi(x,y)=\sum_{i,j=0}^N \Phi_{i,j}l_i(x)l_j(y)
+\end{equation}
+\begin{equation}
+S(x,y)=\sum_{i,j=0}^N S_{i,j}l_i(x)l_j(y)
+\end{equation}
+
+we require the $\Phi$ satisfies the PDE at the interior points:
+\begin{equation}
+(\frac{\partial^2 \Phi}{\partial x^2}+\frac{\partial^2 \Phi}{\partial x^2}-S)|_{x_i,y_j}=0
+\end{equation}
+The second derivative of the polynomial interpolant is:\\
+\begin{equation}
+\frac{\partial^2 \Phi}{\partial x^2}=\frac{\partial^2}{\partial x^2}\sum_{k,l=0}^{N}\Phi_{k,l}{l_k}(x)l_l(y)=\Phi_{k,l}{l_k}(x)^{''}l_l(y);
+\end{equation}
+so we can express the spectral collocation approximation of the poisson equation as:\\
+ \begin{equation}
+{\nabla^2_N}\Phi_{i,j}=S_{i,j}
+  \end{equation}
+
+Nodal Galerkin approximation:\\
+start from the  weak form problem:\\
+\begin{equation}
+\int_{-1}^{1}\int_{-1}^{1}(s-\nabla^2\phi )\Phi(x,y)\omega(x,y)dxdy=0
+\end{equation}
+we can then get:\\
+\begin{equation}
+\begin{split}
+-\sum_{n,m=0}^N\Phi_{n,m}[\int_{-1}^{1}\int_{-1}^{1}l'_{n}(x)l'_{i}(x)l_m(y)l_j(y)dxdy]
+\\
+-\sum_{n,m}^{N}\Phi_{n,m}[\int_{-1}^{1}\int_{-1}^{1}l_i(x)l_n(x)l'_j(x)l'_m(y)dxdy]
+\\
+=\int_{-1}^{1}\int_{-1}^{1}l_i(x)l_j(y)Sdxdy, i,j =1,2,...,N-1
+\end{split}
+\end{equation}
+
+let \\
+\begin{equation}
+\begin{split}
+G_{in}^{(x)}=G_{ni}^{(x)}=\sum_{k=0}^{N}D_{nk}^{(x)}D_{ik}^{(x)}w_{k}
+\end{split}
+\end{equation}
+we can finally get\\
+\begin{equation}
+-\{\sum_{k=0}^{N}\omega_j^{(y)}G_{ik}^{(x)}\Phi_{k,j}+\omega_i^{(x)}G_{jk}^{(y)}\Phi_{i,k}\}=\omega_i^{(x)}\omega_j^{(y)}S_{i,j}, i,j= 1,2,...,N-1
+\end{equation}
+Note that in the collocation approximation the coefficient matrix is not symmetric, whereas the Galerkin coefficient matrix is. We us Conjugate Gradient method to solve the system.
+\\
+The algorithm of the conjugate gradient method is as follows:\\
+
+\begin{equation}
+\begin{split}
+x_0=0;\\
+d_0=r_0=b;\\
+for\ i =1\ to\ n\\
+\alpha_{i}=\frac{r^{T}_{i-1}r_{i-1}}{d^T_{i-1}Ad_{i-1}}\\
+x_{i}=x_{i-1}+\alpha_{i}d_{i-1}\\
+\beta_{i}=\frac{r^T_ir_i}{r^{T}_{i-1}r_{i-1}}\\
+d_{i}=r_{i}+\beta_{i}d_{i-1}
+\end{split}
+\end {equation}
+
+we use the benchmark problem to test the program.\\
+\begin{equation}
+\begin{split}
+\nabla^2\Phi=-8\pi^2cos(2\pi x)sin(2\pi y),\ (x,y)\in (-1,1)x(-1,1)\\
+\Phi(x,-1)=0, -1\leq x\leq 1;\\
+\Phi(1,y)=sin(2\pi y),-1 \leq y \leq 1\\
+\Phi(x,1)=0, -1 \leq x \leq 1\\
+\phi(-1,y)=sin(2\pi y), -1 \leq y \leq 1\\
+\end{split}
+\end{equation}
+analytical solution is: \\
+\begin{equation}
+\Phi=cos(2\pi x)sin(2 \pi y)
+\end{equation}
+
+we use algorithm 63,64,57,67,68,25,71,76,77,80 to solve the problem;\\
+
+The following is the chart of the Max error according to the increasing of the N.\\
+
+\begin{figure}
+  \centering
+  \includegraphics[height=1.7in,width=4in]{nodalgalerkinerror.png}
+\end{figure}
+}
+\end{document}

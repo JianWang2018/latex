@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {french}
+\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Le probl\`eme \'etudi\'e}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Travail pr\'ealable}{11}{0}{1}
+\beamer@sectionintoc {2}{Nos r\'esultats/contribution}{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Principaux r\'esultats}{14}{0}{2}
+\beamer@subsectionintoc {2}{2}{Id\'ees de bases pour les preuves}{18}{0}{2}

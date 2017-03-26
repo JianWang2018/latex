@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{algorithm2e}
+\usepackage{graphicx}
+\usepackage{boxedminipage}
+\usepackage{fancybox}
+\usepackage{eucal}
+\usepackage{theorem}
+\usepackage{natbib}
+
+\setlength{\textheight}{1.01\textheight}
+\newtheorem{thm}{Theorem}[section]
+\theoremstyle{plain}
+\newtheorem{definition}[thm]{Definition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{pro}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+
+\def\Zp{{\mathbf{Z}^+}}
+\def\Zk{{\mathbf{Z}_{\kappa}}}
+%\def\tk{{T^{(\kappa)}}}
+
+\setlength{\parskip}{6pt}
+\begin{document}
+
+\title{A generalized birth-death stochastic model for high-frequency order book dynamics}
+
+\author{He Huang$\dag$ and Alec N. Kercheval$\dag$\thanks{Corresponding author. Email:
+kercheva@math.fsu.edu}  \\\vspace{12pt}\small{$\dag$Dept. of Mathematics,
+Florida State University, Tallahassee, FL 32306-4510}
+}
+\date{\today}
+
+\maketitle
+
+
+\section{Introduction}
+Spectral methods are a class of techniques used in applied mathematics and scientific computing to numerically solve certain differential equations, often involving the use of the Fast Fourier Transform
+
+
+
+\end{document}

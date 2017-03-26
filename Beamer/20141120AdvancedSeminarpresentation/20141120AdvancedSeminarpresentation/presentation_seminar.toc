@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Bayesian network}{4}{0}{2}
+\beamer@sectionintoc {3}{Lasso and Glasso}{7}{0}{3}
+\beamer@sectionintoc {4}{Bayesian-Glasso model}{16}{0}{4}
+\beamer@sectionintoc {5}{Stock data analysis}{25}{0}{5}
+\beamer@sectionintoc {6}{Future work}{30}{0}{6}
