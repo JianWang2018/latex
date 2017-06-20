@@ -1,0 +1,533 @@
+\begin{thebibliography}{86}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Agarwal(2012)]{hft_future}
+Anuj Agarwal.
+\newblock High frequency trading: Evolution and the future.
+\newblock 2012.
+
+\bibitem[Biais et~al.(1995)Biais, Hillion, and Spatt]{biais1995empirical}
+Bruno Biais, Pierre Hillion, and Chester Spatt.
+\newblock An empirical analysis of the limit order book and the order flow in
+  the paris bourse.
+\newblock \emph{the Journal of Finance}, 50\penalty0 (5):\penalty0 1655--1689,
+  1995.
+
+\bibitem[Bliss(1934)]{bliss1934method}
+Chester~I Bliss.
+\newblock The method of probits.
+\newblock \emph{Science}, 79\penalty0 (2037):\penalty0 38--39, 1934.
+
+\bibitem[Boehmer et~al.(2007)Boehmer, Jennings, and Wei]{boehmer2007public}
+Ekkehart Boehmer, Robert Jennings, and Li~Wei.
+\newblock Public disclosure and private decisions: Equity market execution
+  quality and order routing.
+\newblock \emph{Review of Financial Studies}, 20\penalty0 (2):\penalty0
+  315--358, 2007.
+
+\bibitem[Bolland and Connor(1997)]{bolland1997constrained}
+Peter~J Bolland and Jerome~T Connor.
+\newblock A constrained neural network kalman filter for price estimation in
+  high frequency financial data.
+\newblock \emph{International Journal of Neural Systems}, 8\penalty0
+  (04):\penalty0 399--415, 1997.
+
+\bibitem[Bolland and Connor(1996)]{bolland1996robust}
+PJ~Bolland and JT~Connor.
+\newblock A robust non-linear multivariate kalman filter for arbitrage
+  identification in high frequency data.
+\newblock \emph{Neural Networks in Financial Engineering (Proceedings of the
+  NNCM-95), eds. AP. N. Refenes, Y. Abu-Mostafa, J. Moody and AS Weigend (World
+  Scientific)}, pages 122--135, 1996.
+
+\bibitem[Bollerslev and Domowitz(1993)]{bollerslev1993trading}
+Tim Bollerslev and Ian Domowitz.
+\newblock Trading patterns and prices in the interbank foreign exchange market.
+\newblock \emph{The Journal of Finance}, 48\penalty0 (4):\penalty0 1421--1443,
+  1993.
+
+\bibitem[Boser et~al.(1992)Boser, Guyon, and Vapnik]{boser1992training}
+Bernhard~E Boser, Isabelle~M Guyon, and Vladimir~N Vapnik.
+\newblock A training algorithm for optimal margin classifiers.
+\newblock In \emph{Proceedings of the fifth annual workshop on Computational
+  learning theory}, pages 144--152. ACM, 1992.
+
+\bibitem[Bouchaud et~al.(2002)Bouchaud, M{\'e}zard, Potters,
+  et~al.]{bouchaud2002statistical}
+Jean-Philippe Bouchaud, Marc M{\'e}zard, Marc Potters, et~al.
+\newblock Statistical properties of stock order books: empirical results and
+  models.
+\newblock \emph{Quantitative finance}, 2\penalty0 (4):\penalty0 251--256, 2002.
+
+\bibitem[Breiman(1996)]{breiman1996bagging}
+Leo Breiman.
+\newblock Bagging predictors.
+\newblock \emph{Machine learning}, 24\penalty0 (2):\penalty0 123--140, 1996.
+
+\bibitem[Breiman(2001)]{breiman2001random}
+Leo Breiman.
+\newblock Random forests.
+\newblock \emph{Machine learning}, 45\penalty0 (1):\penalty0 5--32, 2001.
+
+\bibitem[B{\"u}hlmann(2012)]{buhlmann2012bagging}
+Peter B{\"u}hlmann.
+\newblock Bagging, boosting and ensemble methods.
+\newblock In \emph{Handbook of Computational Statistics}, pages 985--1022.
+  Springer, 2012.
+
+\bibitem[Bulla(2006)]{bulla2006application}
+Jan Bulla.
+\newblock Application of hidden markov models and hidden semi-markov models to
+  financial time series.
+\newblock 2006.
+
+\bibitem[Cao(2003)]{cao2003support}
+Lijuan Cao.
+\newblock Support vector machines experts for time series forecasting.
+\newblock \emph{Neurocomputing}, 51:\penalty0 321--339, 2003.
+
+\bibitem[Challet and Stinchcombe(2001)]{challet2001analyzing}
+Damien Challet and Robin Stinchcombe.
+\newblock Analyzing and modeling 1+ 1d markets.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  300\penalty0 (1):\penalty0 285--299, 2001.
+
+\bibitem[Chalup and Mitschele(2008)]{chalup2008kernel}
+Stephan~K Chalup and Andreas Mitschele.
+\newblock Kernel methods in finance.
+\newblock In \emph{Handbook on information technology in finance}, pages
+  655--687. Springer, 2008.
+
+\bibitem[Chen et~al.(2001)Chen, Donoho, and Saunders]{chen2001atomic}
+Scott~Shaobing Chen, David~L Donoho, and Michael~A Saunders.
+\newblock Atomic decomposition by basis pursuit.
+\newblock \emph{SIAM review}, 43\penalty0 (1):\penalty0 129--159, 2001.
+
+\bibitem[Clark(1973)]{clark1973subordinated}
+Peter~K Clark.
+\newblock A subordinated stochastic process model with finite variance for
+  speculative prices.
+\newblock \emph{Econometrica: journal of the Econometric Society}, pages
+  135--155, 1973.
+
+\bibitem[Cont and Kukanov(2013)]{cont2013optimal}
+Rama Cont and Arseniy Kukanov.
+\newblock Optimal order placement in limit order markets.
+\newblock 2013.
+
+\bibitem[Cont et~al.(2010)Cont, Stoikov, and Talreja]{cont2010stochastic}
+Rama Cont, Sasha Stoikov, and Rishi Talreja.
+\newblock A stochastic model for order book dynamics.
+\newblock \emph{Operations research}, 58\penalty0 (3):\penalty0 549--563, 2010.
+
+\bibitem[Cortes and Vapnik(1995)]{cortes1995support}
+Corinna Cortes and Vladimir Vapnik.
+\newblock Support-vector networks.
+\newblock \emph{Machine learning}, 20\penalty0 (3):\penalty0 273--297, 1995.
+
+\bibitem[Engle(2000)]{engle2000econometrics}
+Robert~F Engle.
+\newblock The econometrics of ultra-high-frequency data.
+\newblock \emph{Econometrica}, 68\penalty0 (1):\penalty0 1--22, 2000.
+
+\bibitem[Engle and Russell(1997)]{engle1997forecasting}
+Robert~F Engle and Jeffrey~R Russell.
+\newblock Forecasting the frequency of changes in quoted foreign exchange
+  prices with the autoregressive conditional duration model.
+\newblock \emph{Journal of empirical finance}, 4\penalty0 (2):\penalty0
+  187--212, 1997.
+
+\bibitem[Engle et~al.(2006)Engle, Ferstenberg, and Russell]{engle2006measuring}
+Robert~F Engle, Robert Ferstenberg, and Jeffrey~R Russell.
+\newblock Measuring and modeling execution cost and risk.
+\newblock 2006.
+
+\bibitem[Evensen(2003)]{evensen2003ensemble}
+Geir Evensen.
+\newblock The ensemble kalman filter: Theoretical formulation and practical
+  implementation.
+\newblock \emph{Ocean dynamics}, 53\penalty0 (4):\penalty0 343--367, 2003.
+
+\bibitem[Fletcher(2007)]{fletcher2007hybrid}
+Tristan Fletcher.
+\newblock Hybrid evolutionary techniques for fx arbitrage prediction.
+\newblock 2007.
+
+\bibitem[Fletcher et~al.(2009)Fletcher, Redpath, and
+  D’Alessandro]{fletcher2009machine}
+Tristan Fletcher, Fabian Redpath, and Joe D’Alessandro.
+\newblock Machine learning in fx carry basket prediction.
+\newblock In \emph{Proceedings of the World Congress on Engineering}, volume~2,
+  2009.
+
+\bibitem[Freund and Schapire(1995)]{freund1995desicion}
+Yoav Freund and Robert~E Schapire.
+\newblock A desicion-theoretic generalization of on-line learning and an
+  application to boosting.
+\newblock In \emph{European conference on computational learning theory}, pages
+  23--37. Springer, 1995.
+
+\bibitem[Friedman et~al.(2000)Friedman, Hastie, Tibshirani,
+  et~al.]{friedman2000additive}
+Jerome Friedman, Trevor Hastie, Robert Tibshirani, et~al.
+\newblock Additive logistic regression: a statistical view of boosting (with
+  discussion and a rejoinder by the authors).
+\newblock \emph{The annals of statistics}, 28\penalty0 (2):\penalty0 337--407,
+  2000.
+
+\bibitem[Friedman et~al.(2001)Friedman, Hastie, and
+  Tibshirani]{friedman2001elements}
+Jerome Friedman, Trevor Hastie, and Robert Tibshirani.
+\newblock \emph{The elements of statistical learning}, volume~1.
+\newblock Springer series in statistics Springer, Berlin, 2001.
+
+\bibitem[Ganchev et~al.(2010)Ganchev, Nevmyvaka, Kearns, and
+  Vaughan]{ganchev2010censored}
+Kuzman Ganchev, Yuriy Nevmyvaka, Michael Kearns, and Jennifer~Wortman Vaughan.
+\newblock Censored exploration and the dark pool problem.
+\newblock \emph{Communications of the ACM}, 53\penalty0 (5):\penalty0 99--107,
+  2010.
+
+\bibitem[Gopikrishnan et~al.(2000)Gopikrishnan, Plerou, Gabaix, and
+  Stanley]{gopikrishnan2000statistical}
+Parameswaran Gopikrishnan, Vasiliki Plerou, Xavier Gabaix, and H~Eugene
+  Stanley.
+\newblock Statistical properties of share volume traded in financial markets.
+\newblock \emph{Physical Review E}, 62\penalty0 (4):\penalty0 R4493, 2000.
+
+\bibitem[Gould et~al.(2013)Gould, Porter, Williams, McDonald, Fenn, and
+  Howison]{gould2013limit}
+Martin~D Gould, Mason~A Porter, Stacy Williams, Mark McDonald, Daniel~J Fenn,
+  and Sam~D Howison.
+\newblock Limit order books.
+\newblock \emph{Quantitative Finance}, 13\penalty0 (11):\penalty0 1709--1742,
+  2013.
+
+\bibitem[Guo(2013)]{guo2013optimal}
+Xin Guo.
+\newblock Optimal placement in a limit order book.
+\newblock In \emph{Theory Driven by Influential Applications}, pages 191--200.
+  INFORMS, 2013.
+
+\bibitem[Hall et~al.(2004)Hall, Hautsch, et~al.]{hall2004continuous}
+Anthony~D Hall, Nikolaus Hautsch, et~al.
+\newblock \emph{A continuous-time measurement of the buy-sell pressure in a
+  limit order book market}.
+\newblock Institute of Economics, University of Copenhagen, 2004.
+
+\bibitem[Hamao and Hasbrouck(1995)]{hamao1995securities}
+Yasushi Hamao and Joel Hasbrouck.
+\newblock Securities trading in the absence of dealers: Trades and quotes on
+  the tokyo stock exchange.
+\newblock \emph{Review of Financial Studies}, 8\penalty0 (3):\penalty0
+  849--878, 1995.
+
+\bibitem[Hansen and Salamon(1990)]{hansen1990neural}
+Lars~Kai Hansen and Peter Salamon.
+\newblock Neural network ensembles.
+\newblock \emph{IEEE transactions on pattern analysis and machine
+  intelligence}, 12:\penalty0 993--1001, 1990.
+
+\bibitem[Harris(2003)]{harris2003trading}
+Larry Harris.
+\newblock \emph{Trading and exchanges: Market microstructure for
+  practitioners}.
+\newblock Oxford University Press, USA, 2003.
+
+\bibitem[Hashem(1997)]{hashem1997optimal}
+Sherif Hashem.
+\newblock Optimal linear combinations of neural networks.
+\newblock \emph{Neural networks}, 10\penalty0 (4):\penalty0 599--614, 1997.
+
+\bibitem[Hassan and Nath(2005)]{hassan2005stock}
+Md~Rafiul Hassan and Baikunth Nath.
+\newblock Stock market forecasting using hidden markov model: a new approach.
+\newblock In \emph{Intelligent Systems Design and Applications, 2005. ISDA'05.
+  Proceedings. 5th International Conference on}, pages 192--196. IEEE, 2005.
+
+\bibitem[Hassan et~al.(2007)Hassan, Nath, and Kirley]{hassan2007fusion}
+Md~Rafiul Hassan, Baikunth Nath, and Michael Kirley.
+\newblock A fusion model of hmm, ann and ga for stock market forecasting.
+\newblock \emph{Expert Systems with Applications}, 33\penalty0 (1):\penalty0
+  171--180, 2007.
+
+\bibitem[Hazarika and Taylor(2002)]{hazarika2002predicting}
+Neep Hazarika and John~G Taylor.
+\newblock Predicting bonds using the linear relevance vector machine.
+\newblock \emph{Neural networks and the financial markets}, pages 145--155,
+  2002.
+
+\bibitem[Hoerl and Kennard(1970)]{hoerl1970ridge}
+Arthur~E Hoerl and Robert~W Kennard.
+\newblock Ridge regression: Biased estimation for nonorthogonal problems.
+\newblock \emph{Technometrics}, 12\penalty0 (1):\penalty0 55--67, 1970.
+
+\bibitem[Huang and Wu(2006)]{huang2006wavelet}
+Shian-Chang Huang and Tung-Kuang Wu.
+\newblock Wavelet-based relevance vector machines for stock index forecasting.
+\newblock In \emph{Neural Networks, 2006. IJCNN'06. International Joint
+  Conference on}, pages 603--609. IEEE, 2006.
+
+\bibitem[Huang and Wu(2008)]{huang2008combining}
+Shian-Chang Huang and Tung-Kuang Wu.
+\newblock Combining wavelet-based feature extractions with relevance vector
+  machines for stock index forecasting.
+\newblock \emph{Expert Systems}, 25\penalty0 (2):\penalty0 133--149, 2008.
+
+\bibitem[Huang et~al.(2005)Huang, Nakamori, and Wang]{huang2005forecasting}
+Wei Huang, Yoshiteru Nakamori, and Shou-Yang Wang.
+\newblock Forecasting stock market movement direction with support vector
+  machine.
+\newblock \emph{Computers \& Operations Research}, 32\penalty0 (10):\penalty0
+  2513--2522, 2005.
+
+\bibitem[Huang et~al.(2015)Huang, Lehalle, and Rosenbaum]{huang2015simulating}
+Weibing Huang, Charles-Albert Lehalle, and Mathieu Rosenbaum.
+\newblock Simulating and analyzing order book data: The queue-reactive model.
+\newblock \emph{Journal of the American Statistical Association}, 110\penalty0
+  (509):\penalty0 107--122, 2015.
+
+\bibitem[Hutchinson et~al.(1994)Hutchinson, Lo, and
+  Poggio]{hutchinson1994nonparametric}
+James~M Hutchinson, Andrew~W Lo, and Tomaso Poggio.
+\newblock A nonparametric approach to pricing and hedging derivative securities
+  via learning networks.
+\newblock \emph{The Journal of Finance}, 49\penalty0 (3):\penalty0 851--889,
+  1994.
+
+\bibitem[Huth and Abergel(2012)]{huth2012times}
+Nicolas Huth and Fr{\'e}d{\'e}ric Abergel.
+\newblock The times change: Multivariate subordination. empirical facts.
+\newblock \emph{Quantitative Finance}, 12\penalty0 (1):\penalty0 1--10, 2012.
+
+\bibitem[Idvall and Jonsson(2008)]{idvall2008algorithmic}
+Patrik Idvall and Conny Jonsson.
+\newblock Algorithmic trading: Hidden markov models on foreign exchange data,
+  2008.
+
+\bibitem[Ivanov et~al.(2004)Ivanov, Yuen, Podobnik, and Lee]{ivanov2004common}
+Plamen~Ch Ivanov, Ainslie Yuen, Boris Podobnik, and Youngki Lee.
+\newblock Common scaling patterns in intertrade times of us stocks.
+\newblock \emph{Physical Review E}, 69\penalty0 (5):\penalty0 056107, 2004.
+
+\bibitem[Julier and Uhlmann(1997)]{julier1997new}
+Simon~J Julier and Jeffrey~K Uhlmann.
+\newblock New extension of the kalman filter to nonlinear systems.
+\newblock In \emph{AeroSense'97}, pages 182--193. International Society for
+  Optics and Photonics, 1997.
+
+\bibitem[K{\'e}gl(2013)]{kegl2013return}
+Bal{\'a}zs K{\'e}gl.
+\newblock The return of adaboost. mh: multi-class hamming trees.
+\newblock \emph{arXiv preprint arXiv:1312.6086}, 2013.
+
+\bibitem[Kercheval and Zhang(2015)]{kercheval2015modelling}
+Alec~N Kercheval and Yuan Zhang.
+\newblock Modelling high-frequency limit order book dynamics with support
+  vector machines.
+\newblock \emph{Quantitative Finance}, 15\penalty0 (8):\penalty0 1315--1329,
+  2015.
+
+\bibitem[Kim(2003)]{kim2003financial}
+Kyoung-jae Kim.
+\newblock Financial time series forecasting using support vector machines.
+\newblock \emph{Neurocomputing}, 55\penalty0 (1):\penalty0 307--319, 2003.
+
+\bibitem[Kirilenko et~al.(2015)Kirilenko, Kyle, Samadi, and
+  Tuzun]{kirilenko2015flash}
+Andrei~A Kirilenko, Albert~S Kyle, Mehrdad Samadi, and Tugkan Tuzun.
+\newblock The flash crash: The impact of high frequency trading on an
+  electronic market.
+\newblock \emph{Available at SSRN 1686004}, 2015.
+
+\bibitem[Kuan and Liu(1995)]{kuan1995forecasting}
+Chung-Ming Kuan and Tung Liu.
+\newblock Forecasting exchange rates using feedforward and recurrent neural
+  networks.
+\newblock \emph{Journal of applied econometrics}, 10\penalty0 (4):\penalty0
+  347--364, 1995.
+
+\bibitem[Landen(2000)]{landen2000bond}
+Camilla Landen.
+\newblock Bond pricing in a hidden markov model of the short rate.
+\newblock \emph{Finance and Stochastics}, 4\penalty0 (4):\penalty0 371--389,
+  2000.
+
+\bibitem[Laruelle et~al.(2011)Laruelle, Lehalle, and
+  Pages]{laruelle2011optimal}
+Sophie Laruelle, Charles-Albert Lehalle, and Gilles Pages.
+\newblock Optimal split of orders across liquidity pools: a stochastic
+  algorithm approach.
+\newblock \emph{SIAM Journal on Financial Mathematics}, 2\penalty0
+  (1):\penalty0 1042--1076, 2011.
+
+\bibitem[Luckock(2001)]{luckock2001statistical}
+Hugh Luckock.
+\newblock A statistical model of a limit order market.
+\newblock \emph{Sidney University preprint (September 2001)}, 2001.
+
+\bibitem[Mamon and Elliott(2007)]{mamon2007hidden}
+Rogemar~S Mamon and Robert~J Elliott.
+\newblock \emph{Hidden markov models in finance}, volume~4.
+\newblock Springer, 2007.
+
+\bibitem[Maslov and Mills(2001)]{maslov2001price}
+Sergei Maslov and Mark Mills.
+\newblock Price fluctuations from the order book perspective—empirical facts
+  and a simple model.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  299\penalty0 (1):\penalty0 234--246, 2001.
+
+\bibitem[Mike and Farmer(2008)]{mike2008empirical}
+Szabolcs Mike and J~Doyne Farmer.
+\newblock An empirical behavioral model of liquidity and volatility.
+\newblock \emph{Journal of Economic Dynamics and Control}, 32\penalty0
+  (1):\penalty0 200--234, 2008.
+
+\bibitem[Nevmyvaka et~al.(2006)Nevmyvaka, Feng, and
+  Kearns]{nevmyvaka2006reinforcement}
+Yuriy Nevmyvaka, Yi~Feng, and Michael Kearns.
+\newblock Reinforcement learning for optimized trade execution.
+\newblock In \emph{Proceedings of the 23rd international conference on Machine
+  learning}, pages 673--680. ACM, 2006.
+
+\bibitem[Obizhaeva and Wang(2013)]{obizhaeva2013optimal}
+Anna~A Obizhaeva and Jiang Wang.
+\newblock Optimal trading strategy and supply/demand dynamics.
+\newblock \emph{Journal of Financial Markets}, 16\penalty0 (1):\penalty0 1--32,
+  2013.
+
+\bibitem[Park and Van~Roy(2015)]{park2015adaptive}
+Beomsoo Park and Benjamin Van~Roy.
+\newblock Adaptive execution: Exploration and learning of price impact.
+\newblock \emph{Operations Research}, 63\penalty0 (5):\penalty0 1058--1076,
+  2015.
+
+\bibitem[P{\'e}rez-Cruz et~al.(2003)P{\'e}rez-Cruz, Afonso-Rodriguez, Giner,
+  et~al.]{perez2003estimating}
+Fernando P{\'e}rez-Cruz, Julio~A Afonso-Rodriguez, Javier Giner, et~al.
+\newblock Estimating garch models using support vector machines*.
+\newblock \emph{Quantitative Finance}, 3\penalty0 (3):\penalty0 163--172, 2003.
+
+\bibitem[Potters and Bouchaud(2003)]{potters2003more}
+Marc Potters and Jean-Philippe Bouchaud.
+\newblock More statistical properties of order books and price impact.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  324\penalty0 (1):\penalty0 133--140, 2003.
+
+\bibitem[Rossi and Gallo(2006)]{rossi2006volatility}
+Alessandro Rossi and Giampiero~M Gallo.
+\newblock Volatility estimation via hidden markov models.
+\newblock \emph{Journal of Empirical Finance}, 13\penalty0 (2):\penalty0
+  203--230, 2006.
+
+\bibitem[Ro{\c{s}}u(2009)]{rocsu2009dynamic}
+Ioanid Ro{\c{s}}u.
+\newblock A dynamic model of the limit order book.
+\newblock \emph{Review of Financial Studies}, 22\penalty0 (11):\penalty0
+  4601--4641, 2009.
+
+\bibitem[Rosu(2009)]{rosu2009dynamic}
+Ioanid Rosu.
+\newblock A dynamic model of the limit order book.
+\newblock \emph{Forthcoming in The Review of Financial Studies}, 2009.
+
+\bibitem[Ryd{\'e}n et~al.(1998)Ryd{\'e}n, Ter{\"a}svirta, and
+  {\AA}sbrink]{ryden1998stylized}
+Tobias Ryd{\'e}n, Timo Ter{\"a}svirta, and Stefan {\AA}sbrink.
+\newblock Stylized facts of daily return series and the hidden markov model.
+\newblock \emph{Journal of applied econometrics}, pages 217--244, 1998.
+
+\bibitem[Shadbolt(2002)]{shadbolt2002neural}
+Jimmy Shadbolt.
+\newblock \emph{Neural Networks and the Financial Markets: Bpredicting,
+  Combining, and Portfolio Optimisation}.
+\newblock Springer Science \& Business Media, 2002.
+
+\bibitem[Silva and Yakovenko(2007)]{silva2007stochastic}
+A~Christian Silva and Victor~M Yakovenko.
+\newblock Stochastic volatility of financial markets as the fluctuating rate of
+  trading: An empirical study.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  382\penalty0 (1):\penalty0 278--285, 2007.
+
+\bibitem[Sirignano(2016)]{sirignano2016deep}
+Justin Sirignano.
+\newblock Deep learning for limit order books.
+\newblock 2016.
+
+\bibitem[Tay and Cao(2001)]{tay2001application}
+Francis~EH Tay and Lijuan Cao.
+\newblock Application of support vector machines in financial time series
+  forecasting.
+\newblock \emph{Omega}, 29\penalty0 (4):\penalty0 309--317, 2001.
+
+\bibitem[Tay and Cao(2002)]{tay2002modified}
+Francis~EH Tay and LJ~Cao.
+\newblock Modified support vector machines in financial time series
+  forecasting.
+\newblock \emph{Neurocomputing}, 48\penalty0 (1):\penalty0 847--861, 2002.
+
+\bibitem[Tibshirani(1996)]{tibshirani1996regression}
+Robert Tibshirani.
+\newblock Regression shrinkage and selection via the lasso.
+\newblock \emph{Journal of the Royal Statistical Society. Series B
+  (Methodological)}, pages 267--288, 1996.
+
+\bibitem[Tino et~al.(2005)Tino, Nikolaev, and Yao]{tino2005volatility}
+Peter Tino, Nikolay Nikolaev, and Xin Yao.
+\newblock Volatility forecasting with sparse bayesian kernel models.
+\newblock In \emph{Proc. 4th International Conference on Computational
+  Intelligence in Economics and Finance, Salt Lake City, UT}, pages 1150--1153,
+  2005.
+
+\bibitem[Trippi and Turban(1992)]{trippi1992neural}
+Robert~R Trippi and Efraim Turban.
+\newblock \emph{Neural networks in finance and investing: Using artificial
+  intelligence to improve real world performance}.
+\newblock McGraw-Hill, Inc., 1992.
+
+\bibitem[Van~Gestel et~al.(2001)Van~Gestel, Suykens, Baestaens, Lambrechts,
+  Lanckriet, Vandaele, De~Moor, and Vandewalle]{van2001financial}
+Tony Van~Gestel, Johan~AK Suykens, D-E Baestaens, Annemie Lambrechts, Gert
+  Lanckriet, Bruno Vandaele, Bart De~Moor, and Joos Vandewalle.
+\newblock Financial time series prediction using least squares support vector
+  machines within the evidence framework.
+\newblock \emph{IEEE Transactions on neural networks}, 12\penalty0
+  (4):\penalty0 809--821, 2001.
+
+\bibitem[Walczak(2001)]{walczak2001empirical}
+Steven Walczak.
+\newblock An empirical analysis of data requirements for financial forecasting
+  with neural networks.
+\newblock \emph{Journal of management information systems}, 17\penalty0
+  (4):\penalty0 203--222, 2001.
+
+\bibitem[Weber and Rosenow*(2005)]{weber2005order}
+Philipp Weber and Bernd Rosenow*.
+\newblock Order book approach to price impact.
+\newblock \emph{Quantitative Finance}, 5\penalty0 (4):\penalty0 357--364, 2005.
+
+\bibitem[Zhang(2004)]{zhang2004prediction}
+Yingjian Zhang.
+\newblock \emph{Prediction of financial time series with Hidden Markov Models}.
+\newblock PhD thesis, Simon Fraser University, 2004.
+
+\bibitem[Zhou et~al.(2015)Zhou, Cheng, Qin, and Yin]{zhou2015evolution}
+Nan Zhou, Wen Cheng, Yichen Qin, and Zongcheng Yin.
+\newblock Evolution of high-frequency systematic trading: a performance-driven
+  gradient boosting model.
+\newblock \emph{Quantitative Finance}, 15\penalty0 (8):\penalty0 1387--1403,
+  2015.
+
+\bibitem[Zovko et~al.(2002)Zovko, Farmer, et~al.]{zovko2002power}
+Ilija Zovko, J~Doyne Farmer, et~al.
+\newblock The power of patience: a behavioural regularity in limit-order
+  placement.
+\newblock \emph{Quantitative finance}, 2\penalty0 (5):\penalty0 387--392, 2002.
+
+\end{thebibliography}

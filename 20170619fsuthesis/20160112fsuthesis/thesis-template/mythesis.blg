@@ -1,0 +1,97 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: mythesis.aux
+The style file: plainnat.bst
+Illegal, another \bibstyle command---line 305 of file mythesis.aux
+ : \bibstyle
+ :          {plainnat}
+I'm skipping whatever remains of this command
+Database file #1: myrefs.bib
+Repeated entry---line 499 of file myrefs.bib
+ : @article{challet2001analyzing
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 543 of file myrefs.bib
+ : @article{challet2001analyzing
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 565 of file myrefs.bib
+ : @article{bouchaud2002statistical
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 587 of file myrefs.bib
+ : @article{potters2003more
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 677 of file myrefs.bib
+ : @article{maslov2001price
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 699 of file myrefs.bib
+ : @article{bouchaud2002statistical
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 721 of file myrefs.bib
+ : @article{zovko2002power
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 879 of file myrefs.bib
+ : @article{cont2010stochastic
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1715 of file myrefs.bib
+ : @article{cortes1995support
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1737 of file myrefs.bib
+ : @incollection{buhlmann2012bagging
+ :                                  ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in hft_future
+Warning--empty journal in bulla2006application
+Warning--empty journal in cont2013optimal
+Warning--empty journal in engle2006measuring
+Warning--empty journal in fletcher2007hybrid
+Warning--empty journal in sirignano2016deep
+You've used 86 entries,
+            2773 wiz_defined-function locations,
+            1057 strings with 18219 characters,
+and the built_in function-call counts, 39700 in all, are:
+= -- 3693
+> -- 1922
+< -- 76
++ -- 659
+- -- 573
+* -- 3087
+:= -- 5942
+add.period$ -- 266
+call.type$ -- 86
+change.case$ -- 437
+chr.to.int$ -- 86
+cite$ -- 178
+duplicate$ -- 1900
+empty$ -- 3448
+format.name$ -- 725
+if$ -- 8434
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 90
+newline$ -- 437
+num.names$ -- 344
+pop$ -- 871
+preamble$ -- 1
+purify$ -- 358
+quote$ -- 0
+skip$ -- 1459
+stack$ -- 0
+substring$ -- 1944
+swap$ -- 226
+text.length$ -- 18
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 916
+warning$ -- 6
+while$ -- 405
+width$ -- 0
+write$ -- 1111
+(There were 11 error messages)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -30,6 +30,12 @@ Peter B{\"u}hlmann.
 \newblock In \emph{Handbook of Computational Statistics}, pages 985--1022.
   Springer, 2012.
 
+\bibitem[Challet and Stinchcombe(2001)]{challet2001analyzing}
+Damien Challet and Robin Stinchcombe.
+\newblock Analyzing and modeling 1+ 1d markets.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  300\penalty0 (1):\penalty0 285--299, 2001.
+
 \bibitem[Clark(1973)]{clark1973subordinated}
 Peter~K Clark.
 \newblock A subordinated stochastic process model with finite variance for
@@ -58,6 +64,13 @@ Robert~F Engle and Jeffrey~R Russell.
 Robert~F Engle, Robert Ferstenberg, and Jeffrey~R Russell.
 \newblock Measuring and modeling execution cost and risk.
 \newblock 2006.
+
+\bibitem[Gopikrishnan et~al.(2000)Gopikrishnan, Plerou, Gabaix, and
+  Stanley]{gopikrishnan2000statistical}
+Parameswaran Gopikrishnan, Vasiliki Plerou, Xavier Gabaix, and H~Eugene
+  Stanley.
+\newblock Statistical properties of share volume traded in financial markets.
+\newblock \emph{Physical Review E}, 62\penalty0 (4):\penalty0 R4493, 2000.
 
 \bibitem[Gould et~al.(2013)Gould, Porter, Williams, McDonald, Fenn, and
   Howison]{gould2013limit}
@@ -110,6 +123,13 @@ Andrei~A Kirilenko, Albert~S Kyle, Mehrdad Samadi, and Tugkan Tuzun.
 Hugh Luckock.
 \newblock A statistical model of a limit order market.
 \newblock \emph{Sidney University preprint (September 2001)}, 2001.
+
+\bibitem[Maslov and Mills(2001)]{maslov2001price}
+Sergei Maslov and Mark Mills.
+\newblock Price fluctuations from the order book perspective—empirical facts
+  and a simple model.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  299\penalty0 (1):\penalty0 234--246, 2001.
 
 \bibitem[Obizhaeva and Wang(2013)]{obizhaeva2013optimal}
 Anna~A Obizhaeva and Jiang Wang.

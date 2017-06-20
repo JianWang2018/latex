@@ -1,0 +1,83 @@
+\chapter{Two classes arbitrage prediction results}
+In chapter 6.4, we list the result of  ask-low arbitrage opportunity for stock AMZN based on Logistic regression(Lasso penalty), Logistic regression(Ridge penalty),support vector machine,decision tree, Adaboost, and Random forest.  In this appendix, we show the results of the other four stocks, which are Apple(AAPL),Google(GOOG),Intel(INTC), and Microsoft(MSFT). \\
+
+\begin{table}[htp!]
+	\caption{AAPL ask-low arbitrage opportunity prediction(5 seconds)}
+	\label{ask_low_prediction}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			 Model& Training & Training  & Test  & Test & Test & Test \\[5pt]
+			 & time(s) & F1 score & time(s) & Precision & Recall & F1 score \\[5pt]
+			 \hline
+			 Logistic regression(Lasso penalty)& 422.9 & 8.7 \% & 0.002 & 5.3\% & 55.3\%& 9.7\%\\[5pt]
+			 Logistic regression(Ridge penalty)& 6.5 & 8.8 \% & 0.01 &  5.3\% & 55.3\%& 9.7\%\\[5pt]
+			 SVM(Poly 2 kernal,5000 estimator)& 110.3 & 67.1 \% & 9.0 &  40.0\% & 97.5\%& 56.7\%\\[5pt]
+			 Decision Tree(no pruning)& 4.3 & 50.0 \% & 0.003 &  30.8\% & 94.5\%& 46.4\%\\[5pt]
+			 Adaboost(number of estimate=100)& 390.5 & 99.8 \% & 0.21 & 72.7 \% & 90.4 &  80.6\% \\[5pt]
+			 Random forest(number of estimate=100)& 40.5 & 89.8 \% & 0.12 & 67.2 \% & 99.2\% &  80.12\% \\[5pt]		 	
+	 		\hline 
+		\end{tabular}
+	\end{center}
+\end{table}
+
+
+\begin{table}[htp!]
+	\caption{GOOG ask-low arbitrage opportunity prediction(5 seconds)}
+	\label{ask_low_prediction}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			 Model& Training & Training  & Test  & Test & Test & Test \\[5pt]
+			 & time(s) & F1 score & time(s) & Precision & Recall & F1 score \\[5pt]
+			 \hline
+			 Logistic regression(Lasso penalty)& 345.3 & 4.6 \% & 0.002 & 0.9\% & 100.0\%& 1.7\%\\[5pt]
+			 Logistic regression(Ridge penalty)& 5.2 & 4.6 \% & 0.01 &  0.009\% & 100\%& 1.7\%\\[5pt]
+			 SVM(Poly 2 kernal,5000 estimator)& 57.8 & 35.3 \% & 3.0 &  6.1\% & 100.0\%& 11.6\%\\[5pt]
+			 Decision Tree(no pruning)& 4.2 & 53.1 \% & 0.003 &  9.6\% & 84.6\%& 17.3\%\\[5pt]
+			 Adaboost(number of estimate=100)& 355.1 & 99.9 \% & 0.20 & 74.6 \% & 100.0 &  85.4\% \\[5pt]
+			 Random forest(number of estimate=100)& 28.6 & 97.3 \% & 0.1 & 84.2 \% & 99.0\% &  91.0\% \\[5pt]		 	
+	 		\hline 
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[htp!]
+	\caption{INTC ask-low arbitrage opportunity prediction(5 seconds)}
+	\label{ask_low_prediction}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			 Model& Training & Training  & Test  & Test & Test & Test \\[5pt]
+			 & time(s) & F1 score & time(s) & Precision & Recall & F1 score \\[5pt]
+			 \hline
+			 Logistic regression(Lasso penalty)& 137.7 & 6.3 \% & 0.002 & 3.2\% & 1.4\%& 2.0\%\\[5pt]
+			 Logistic regression(Ridge penalty)& 12.1 & 62.8 \% & 0.01 &  3.2\% & 15.8\%& 2.1\%\\[5pt]
+			 SVM(Poly 2 kernal,5000 estimator)& 42.9 & 74.3 \% & 3.0 &  3.2\% & 10.0\%& 4.8\%\\[5pt]
+			 Decision Tree(no pruning)& 2.3 & 91.3 \% & 0.003 &  56.8\% & 69.6\%& 62.5\%\\[5pt]
+			 Adaboost(number of estimate=100)& 198.0 & 99.9 \% & 0.20 & 85.2 \% & 83.9 &  84.6\% \\[5pt]
+			 Random forest(number of estimate=100)& 12.5 & 99.9 \% & 0.1 & 65.6 \% & 80.4\% &  72.2\% \\[5pt]		 	
+	 		\hline 
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[htp!]
+	\caption{MSFT ask-low arbitrage opportunity prediction(5 seconds)}
+	\label{ask_low_prediction}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			 Model& Training & Training  & Test  & Test & Test & Test \\[5pt]
+			 & time(s) & F1 score & time(s) & Precision & Recall & F1 score \\[5pt]
+			 \hline
+			 Logistic regression(Lasso penalty)& 58.6 & 39.5 \% & 0.03 & 15.9\% & 50.0\%& 24.1\%\\[5pt]
+			 Logistic regression(Ridge penalty)& 10.2 & 39.5 \% & 0.002 &  15.9\% & 50\%& 24.1\%\\[5pt]
+			 SVM(Poly 2 kernal,5000 estimator)& 88.3 & 77.8 \% & 6.3 &  36.4\% & 94.1\%& 52.5\%\\[5pt]
+			 Decision Tree(no pruning)& 1.9 & 88.1 \% & 0.004 &  52.2\% & 15.9\%& 24.3\%\\[5pt]
+			 Adaboost(number of estimate=100)& 132.3 & 99.9 \% & 0.18 & 59.1 \% & 100.0 &  74.28\% \\[5pt]
+			 Random forest(number of estimate=100)& 16.4 & 99.9 \% & 0.1 & 59.1 \% & 100.0\% &  74.28\% \\[5pt]		 	
+	 		\hline 
+		\end{tabular}
+	\end{center}
+\end{table}

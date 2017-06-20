@@ -1,0 +1,19 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Limit order book statistics}}{47}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Message book example, a sample on 2012-06-12}}{48}{table.6.2}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Message book event type, a sample on 2012-06-21}}{48}{table.6.3}
+\contentsline {table}{\numberline {6.4}{\ignorespaces message book direction, a sample on 2012-06-21}}{49}{table.6.4}
+\contentsline {table}{\numberline {6.5}{\ignorespaces limit book direction, a sample on 2012-06-12}}{49}{table.6.5}
+\contentsline {table}{\numberline {6.6}{\ignorespaces AMZN ask-low arbitrage opportunity prediction(5 seconds)}}{63}{table.6.6}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Feature importance based on random forest model}}{64}{table.6.7}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces AAPL ask-low arbitrage opportunity prediction(5 seconds)}}{71}{table.A.1}
+\contentsline {table}{\numberline {A.2}{\ignorespaces GOOG ask-low arbitrage opportunity prediction(5 seconds)}}{72}{table.A.2}
+\contentsline {table}{\numberline {A.3}{\ignorespaces INTC ask-low arbitrage opportunity prediction(5 seconds)}}{72}{table.A.3}
+\contentsline {table}{\numberline {A.4}{\ignorespaces MSFT ask-low arbitrage opportunity prediction(5 seconds)}}{73}{table.A.4}
+\addvspace {10\p@ }

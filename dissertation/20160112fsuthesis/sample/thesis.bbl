@@ -5,12 +5,18 @@
   \def \MP {{\manfnt META}\-{\manfnt POST}\spacefactor1000 } \fi\ifx \noopsort
   \undefined \def \noopsort#1{} \fi\ifx \emdash \undefined \def \emdash{---}
   \fi
-\begin{thebibliography}{1}
+\begin{thebibliography}{2}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Gopikrishnan et~al.(2000)Gopikrishnan, Plerou, Gabaix, and
+  Stanley]{gopikrishnan2000statistical}
+P.~Gopikrishnan, V.~Plerou, X.~Gabaix, and H.~E. Stanley.
+\newblock Statistical properties of share volume traded in financial markets.
+\newblock \emph{Physical Review E}, 62\penalty0 (4):\penalty0 R4493, 2000.
 
 \bibitem[Greenwade(1993)]{greenwade93}
 G.~D. Greenwade.

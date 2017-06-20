@@ -2,55 +2,52 @@ This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: mythesis.aux
 The style file: plainnat.bst
-Illegal, another \bibstyle command---line 87 of file mythesis.aux
+Illegal, another \bibstyle command---line 89 of file mythesis.aux
  : \bibstyle
  :          {plainnat}
 I'm skipping whatever remains of this command
 Database file #1: myrefs.bib
-Warning--I didn't find a database entry for "gopikrishnan2000statistical"
-Warning--I didn't find a database entry for "challet2001analyzing"
-Warning--I didn't find a database entry for "maslov2001price"
 Warning--empty journal in hft_future
 Warning--empty journal in engle2006measuring
-You've used 23 entries,
+You've used 26 entries,
             2773 wiz_defined-function locations,
-            734 strings with 8396 characters,
-and the built_in function-call counts, 10125 in all, are:
-= -- 921
-> -- 508
-< -- 17
-+ -- 176
-- -- 153
-* -- 791
-:= -- 1557
-add.period$ -- 70
-call.type$ -- 23
-change.case$ -- 117
-chr.to.int$ -- 23
-cite$ -- 48
-duplicate$ -- 484
-empty$ -- 874
-format.name$ -- 188
-if$ -- 2114
+            746 strings with 8770 characters,
+and the built_in function-call counts, 11562 in all, are:
+= -- 1052
+> -- 589
+< -- 19
++ -- 203
+- -- 177
+* -- 916
+:= -- 1776
+add.period$ -- 79
+call.type$ -- 26
+change.case$ -- 134
+chr.to.int$ -- 26
+cite$ -- 54
+duplicate$ -- 545
+empty$ -- 993
+format.name$ -- 219
+if$ -- 2413
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 24
-newline$ -- 123
-num.names$ -- 92
-pop$ -- 227
+missing$ -- 27
+newline$ -- 138
+num.names$ -- 104
+pop$ -- 255
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 109
 quote$ -- 0
-skip$ -- 362
+skip$ -- 410
 stack$ -- 0
-substring$ -- 444
-swap$ -- 39
+substring$ -- 515
+swap$ -- 42
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 248
+type$ -- 281
 warning$ -- 2
-while$ -- 102
+while$ -- 116
 width$ -- 0
-write$ -- 298
+write$ -- 337
 (There was 1 error message)

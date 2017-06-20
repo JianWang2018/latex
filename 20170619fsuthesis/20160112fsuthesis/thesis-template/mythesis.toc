@@ -1,0 +1,46 @@
+\contentsline {frontmatter}{List of Tables}{vii}{chapter*.3}
+\contentsline {frontmatter}{List of Figures}{viii}{chapter*.4}
+\contentsline {frontmatter}{Abstract}{xi}{chapter*.5}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}High frequency trading system}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Evolution of high-frequency trading}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}High frequency trading strategies}{3}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Limit order book dynamics}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Ensemble method for classifiers}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}Purpose of the dissertation}{6}{section.1.4}
+\contentsline {chapter}{\numberline {2}Literature Review}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Limit order book dynamics and modeling}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}Machine learning methods on capturing limit order book dynamics}{11}{section.2.2}
+\contentsline {chapter}{\numberline {3}Mathematical description and statistical properties of limit order books }{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Mathematical descriptions of LOBs}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Properties of LOBs}{16}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Time of arrivals of orders}{17}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Volume of orders}{17}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Placement of orders}{20}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Intraday seasonality}{20}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Average shape of the order book}{20}{subsection.3.2.5}
+\contentsline {chapter}{\numberline {4}Basic machine learning schemes}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Logistic regression}{25}{section.4.1}
+\contentsline {section}{\numberline {4.2}Lasso regression and ridge regression}{27}{section.4.2}
+\contentsline {section}{\numberline {4.3}Support vector machine}{32}{section.4.3}
+\contentsline {section}{\numberline {4.4}Decision tree}{35}{section.4.4}
+\contentsline {chapter}{\numberline {5}Ensemble methods for prediction}{39}{chapter.5}
+\contentsline {section}{\numberline {5.1}An introduction of ensemble methods}{39}{section.5.1}
+\contentsline {section}{\numberline {5.2}Bagging}{40}{section.5.2}
+\contentsline {section}{\numberline {5.3}Adaboost learning scheme}{40}{section.5.3}
+\contentsline {section}{\numberline {5.4}Random Forest}{43}{section.5.4}
+\contentsline {chapter}{\numberline {6}Model framework and results}{45}{chapter.6}
+\contentsline {section}{\numberline {6.1}Review of limit order books}{45}{section.6.1}
+\contentsline {section}{\numberline {6.2}Data description}{45}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Limit order and Message order}{48}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Features}{49}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Order price,order book volume, and order book type}{50}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Model framework}{54}{section.6.3}
+\contentsline {section}{\numberline {6.4}Model measurement and numerical results}{62}{section.6.4}
+\contentsline {section}{\numberline {6.5}Feature importance}{63}{section.6.5}
+\contentsline {section}{\numberline {6.6}Trading strategy}{66}{section.6.6}
+\contentsline {appendix}{Appendix}{66}{appendix.A}
+\contentsline {chapter}{\numberline {A}Two classes arbitrage prediction results}{71}{appendix.A}
+\contentsline {chapter}{\numberline {B}Main part of code}{74}{appendix.B}
+\contentsline {backmatter}{Bibliography}{95}{appendix*.6}
+\contentsline {backmatter}{Biographical Sketch}{102}{appendix*.7}
