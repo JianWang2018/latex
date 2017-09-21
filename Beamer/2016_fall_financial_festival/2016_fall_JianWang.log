@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.5)  28 OCT 2016 13:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.5)  9 FEB 2017 15:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3469,19 +3469,19 @@ Non-PDF special ignored!] (./2016_fall_JianWang.toc) [2
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 178.
+(Font)              scaled to size 12.0pt on input line 179.
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 178--178
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 179--179
 [][]  
  []
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 178--178
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 179--179
 [][]  
  []
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 178--178
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 179--179
 [][]  
  []
 
@@ -3491,44 +3491,44 @@ Overfull \hbox (2.49939pt too wide) in paragraph at lines 178--178
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/bx/n' in size <10.95> no
 t available
 (Font)              Font shape `T1/LinuxBiolinumT-TOsF/b/n' tried instead on in
-put line 208.
+put line 209.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 208.
+(Font)              scaled to size 10.95pt on input line 209.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/bx/n' in size <12> not a
 vailable
 (Font)              Font shape `T1/LinuxBiolinumT-TOsF/b/n' tried instead on in
-put line 208.
+put line 209.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 208.
+(Font)              scaled to size 12.0pt on input line 209.
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 208--208
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 209--209
 [][]  
  []
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 208--208
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 209--209
 [][]  
  []
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 208--208
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 209--209
 [][]  
  []
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 208--208
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 209--209
 [][]  
  []
 
 [7
 
 ]
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 239--239
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 240--240
 [][]  
  []
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 239--239
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 240--240
 [][]  
  []
 
@@ -3537,409 +3537,365 @@ Overfull \hbox (2.49939pt too wide) in paragraph at lines 239--239
 ] (./2016_fall_JianWang.toc) [9
 
 ]
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 258--258
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 259--259
 [][]  
  []
 
 [10
 
-] <message_book_new.png, id=196, 547.04375pt x 309.155pt>
+] <message_book_new.png, id=187, 547.04375pt x 309.155pt>
 File: message_book_new.png Graphic file (type png)
 
 <use message_book_new.png>
-Package pdftex.def Info: message_book_new.png used on input line 268.
+Package pdftex.def Info: message_book_new.png used on input line 269.
 (pdftex.def)             Requested size: 334.2972pt x 149.63336pt.
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 268--268
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 269--269
 [][]  
  []
 
 [11
 
  <./message_book_new.png>]
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 303--303
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 304--304
 [][]  
  []
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 303--303
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 304--304
 [][]  
  []
 
 [12
 
-] <order_book_new.png, id=214, 819.06pt x 183.68625pt>
+] <order_book_new.png, id=205, 819.06pt x 183.68625pt>
 File: order_book_new.png Graphic file (type png)
 
 <use order_book_new.png>
-Package pdftex.def Info: order_book_new.png used on input line 311.
+Package pdftex.def Info: order_book_new.png used on input line 312.
 (pdftex.def)             Requested size: 342.30315pt x 124.69196pt.
  [13
 
  <./order_book_new.png>] (./2016_fall_JianWang.toc) [14
 
-] <arrival_time.png, id=240, 783.92876pt x 800.9925pt>
-File: arrival_time.png Graphic file (type png)
-
-<use arrival_time.png>
-Package pdftex.def Info: arrival_time.png used on input line 322.
-(pdftex.def)             Requested size: 273.8409pt x 199.50208pt.
- [15
-
- <./arrival_time.png>]
-<limit_vol_time.png, id=251, 845.1575pt x 599.23875pt>
-File: limit_vol_time.png Graphic file (type png)
-
-<use limit_vol_time.png>
-Package pdftex.def Info: limit_vol_time.png used on input line 331.
-(pdftex.def)             Requested size: 273.83469pt x 199.49583pt.
- [16
-
- <./limit_vol_time.png>]
-<market_vol_time.png, id=261, 837.1275pt x 593.21625pt>
-File: market_vol_time.png Graphic file (type png)
-
-<use market_vol_time.png>
-Package pdftex.def Info: market_vol_time.png used on input line 340.
-(pdftex.def)             Requested size: 273.82596pt x 199.50034pt.
- [17
-
- <./market_vol_time.png>]
-<placement.png, id=271, 832.10875pt x 614.295pt>
-File: placement.png Graphic file (type png)
- <use placement.png>
-Package pdftex.def Info: placement.png used on input line 348.
-(pdftex.def)             Requested size: 273.83492pt x 199.5029pt.
- [18
-
- <./placement.png>] <volume.png, id=281, 870.25125pt x 593.21625pt>
-File: volume.png Graphic file (type png)
- <use volume.png>
-Package pdftex.def Info: volume.png used on input line 356.
-(pdftex.def)             Requested size: 273.83846pt x 199.50034pt.
-
-[19
-
- <./volume.png>] (./2016_fall_JianWang.toc) [20
-
-] [21
+] [15
 
 ]
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 402--402
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 358--358
 [][]  
  []
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 402--402
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 358--358
 [][]  
  []
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 402--402
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 358--358
 [][]  
  []
 
-[22
+[16
 
 ]
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 434--434
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 390--390
 [][]  
  []
 
-<ridge.jpg, id=331, 365.11406pt x 255.95625pt>
+<ridge.jpg, id=252, 365.11406pt x 255.95625pt>
 File: ridge.jpg Graphic file (type jpg)
  <use ridge.jpg>
-Package pdftex.def Info: ridge.jpg used on input line 434.
+Package pdftex.def Info: ridge.jpg used on input line 390.
 (pdftex.def)             Requested size: 149.59744pt x 104.73573pt.
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 434--434
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 390--390
 [][]  
  []
 
-<lasso.jpg, id=332, 341.77687pt x 268.75406pt>
+<lasso.jpg, id=253, 341.77687pt x 268.75406pt>
 File: lasso.jpg Graphic file (type jpg)
  <use lasso.jpg>
-Package pdftex.def Info: lasso.jpg used on input line 434.
+Package pdftex.def Info: lasso.jpg used on input line 390.
 (pdftex.def)             Requested size: 149.60002pt x 104.73984pt.
- [23
+ [17
 
  <./ridge.jpg> <./lasso.jpg>]
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 466--466
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 422--422
 [][]  
  []
 
-<ridge_p.jpg, id=341, 561.59813pt x 420.06938pt>
+<ridge_p.jpg, id=262, 561.59813pt x 420.06938pt>
 File: ridge_p.jpg Graphic file (type jpg)
  <use ridge_p.jpg>
-Package pdftex.def Info: ridge_p.jpg used on input line 466.
+Package pdftex.def Info: ridge_p.jpg used on input line 422.
 (pdftex.def)             Requested size: 132.9696pt x 112.21521pt.
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 466--466
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 422--422
 [][]  
  []
 
-<lasso_p.jpg, id=342, 536.75531pt x 414.79968pt>
+<lasso_p.jpg, id=263, 536.75531pt x 414.79968pt>
 File: lasso_p.jpg Graphic file (type jpg)
  <use lasso_p.jpg>
-Package pdftex.def Info: lasso_p.jpg used on input line 466.
+Package pdftex.def Info: lasso_p.jpg used on input line 422.
 (pdftex.def)             Requested size: 132.97633pt x 112.21893pt.
 
-Overfull \vbox (3.33124pt too high) detected at line 466
+Overfull \vbox (3.33124pt too high) detected at line 422
+ []
+
+[18
+
+ <./ridge_p.jpg> <./lasso_p.jpg>]
+LaTeX Font Info:    Font shape `TS1/LinuxBiolinumT-TOsF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 454.
+
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 454--454
+[][]  
+ []
+
+<svm.png, id=272, 574.39594pt x 619.56468pt>
+File: svm.png Graphic file (type png)
+ <use svm.png>
+Package pdftex.def Info: svm.png used on input line 454.
+(pdftex.def)             Requested size: 109.53076pt x 99.74686pt.
+ [19
+
+ <./svm.png>]
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 474--474
+[][]  
+ []
+
+
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 474--474
+[][]  
+ []
+
+
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 474--474
+[][]  
+ []
+
+
+Overfull \vbox (10.41968pt too high) detected at line 474
+ []
+
+[20
+
+] <decision_tree1.png, id=292, 1125.20375pt x 652.4375pt>
+File: decision_tree1.png Graphic file (type png)
+
+<use decision_tree1.png>
+Package pdftex.def Info: decision_tree1.png used on input line 483.
+(pdftex.def)             Requested size: 342.28526pt x 174.56761pt.
+
+Overfull \vbox (9.31693pt too high) detected at line 483
+ []
+
+[21
+
+ <./decision_tree1.png>]
+<decision_tree2.png, id=301, 1125.20375pt x 652.4375pt>
+File: decision_tree2.png Graphic file (type png)
+
+<use decision_tree2.png>
+Package pdftex.def Info: decision_tree2.png used on input line 490.
+(pdftex.def)             Requested size: 342.28526pt x 174.56761pt.
+ [22
+
+ <./decision_tree2.png>]
+<decision_tree3.png, id=310, 1088.065pt x 682.55pt>
+File: decision_tree3.png Graphic file (type png)
+ <use decision_tree3.png>
+Package pdftex.def Info: decision_tree3.png used on input line 497.
+(pdftex.def)             Requested size: 342.29402pt x 174.56348pt.
+
+[23
+
+ <./decision_tree3.png>]
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 522--522
+[][]  
+ []
+
+
+Overfull \vbox (6.53897pt too high) detected at line 522
  []
 
 [24
 
- <./ridge_p.jpg> <./lasso_p.jpg>]
-LaTeX Font Info:    Font shape `TS1/LinuxBiolinumT-TOsF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 498.
-
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 498--498
+]
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 539--539
 [][]  
  []
 
-<svm.png, id=351, 574.39594pt x 619.56468pt>
-File: svm.png Graphic file (type png)
- <use svm.png>
-Package pdftex.def Info: svm.png used on input line 498.
-(pdftex.def)             Requested size: 109.53076pt x 99.74686pt.
- [25
+[25
 
- <./svm.png>]
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 518--518
-[][]  
- []
+] <decision_tree4.png, id=337, 1192.455pt x 682.55pt>
+File: decision_tree4.png Graphic file (type png)
 
+<use decision_tree4.png>
+Package pdftex.def Info: decision_tree4.png used on input line 546.
+(pdftex.def)             Requested size: 342.29138pt x 174.56348pt.
+ [26
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 518--518
-[][]  
- []
+ <./decision_tree4.png>]
+<decision_tree5.png, id=346, 1174.3875pt x 613.29124pt>
+File: decision_tree5.png Graphic file (type png)
 
+<use decision_tree5.png>
+Package pdftex.def Info: decision_tree5.png used on input line 553.
+(pdftex.def)             Requested size: 342.28395pt x 174.56522pt.
+ [27
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 518--518
-[][]  
- []
+ <./decision_tree5.png>]
+<decision_tree6.png, id=355, 1174.3875pt x 613.29124pt>
+File: decision_tree6.png Graphic file (type png)
 
-
-Overfull \vbox (10.41968pt too high) detected at line 518
- []
-
-[26
-
-] <decision_tree1.png, id=371, 1125.20375pt x 652.4375pt>
-File: decision_tree1.png Graphic file (type png)
-
-<use decision_tree1.png>
-Package pdftex.def Info: decision_tree1.png used on input line 527.
-(pdftex.def)             Requested size: 342.28526pt x 174.56761pt.
-
-Overfull \vbox (9.31693pt too high) detected at line 527
- []
-
-[27
-
- <./decision_tree1.png>]
-<decision_tree2.png, id=380, 1125.20375pt x 652.4375pt>
-File: decision_tree2.png Graphic file (type png)
-
-<use decision_tree2.png>
-Package pdftex.def Info: decision_tree2.png used on input line 534.
-(pdftex.def)             Requested size: 342.28526pt x 174.56761pt.
+<use decision_tree6.png>
+Package pdftex.def Info: decision_tree6.png used on input line 560.
+(pdftex.def)             Requested size: 342.28395pt x 174.56522pt.
  [28
 
- <./decision_tree2.png>]
-<decision_tree3.png, id=389, 1088.065pt x 682.55pt>
-File: decision_tree3.png Graphic file (type png)
- <use decision_tree3.png>
-Package pdftex.def Info: decision_tree3.png used on input line 541.
-(pdftex.def)             Requested size: 342.29402pt x 174.56348pt.
+ <./decision_tree6.png>]
+<decision_tree7.png, id=364, 1196.47pt x 660.4675pt>
+File: decision_tree7.png Graphic file (type png)
+ <use decision_tree7.png>
+Package pdftex.def Info: decision_tree7.png used on input line 568.
+(pdftex.def)             Requested size: 342.29372pt x 174.55946pt.
 
 [29
 
- <./decision_tree3.png>]
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 566--566
-[][]  
- []
+ <./decision_tree7.png>]
+<decision_tree8.png, id=373, 946.53625pt x 556.0775pt>
+File: decision_tree8.png Graphic file (type png)
 
+<use decision_tree8.png>
+Package pdftex.def Info: decision_tree8.png used on input line 575.
+(pdftex.def)             Requested size: 342.28375pt x 174.5629pt.
+ [30
 
-Overfull \vbox (6.53897pt too high) detected at line 566
- []
-
-[30
-
-]
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 583--583
+ <./decision_tree8.png>]
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 608--608
 [][]  
  []
 
 [31
 
-] <decision_tree4.png, id=415, 1192.455pt x 682.55pt>
-File: decision_tree4.png Graphic file (type png)
-
-<use decision_tree4.png>
-Package pdftex.def Info: decision_tree4.png used on input line 590.
-(pdftex.def)             Requested size: 342.29138pt x 174.56348pt.
- [32
-
- <./decision_tree4.png>]
-<decision_tree5.png, id=424, 1174.3875pt x 613.29124pt>
-File: decision_tree5.png Graphic file (type png)
-
-<use decision_tree5.png>
-Package pdftex.def Info: decision_tree5.png used on input line 597.
-(pdftex.def)             Requested size: 342.28395pt x 174.56522pt.
- [33
-
- <./decision_tree5.png>]
-<decision_tree6.png, id=433, 1174.3875pt x 613.29124pt>
-File: decision_tree6.png Graphic file (type png)
-
-<use decision_tree6.png>
-Package pdftex.def Info: decision_tree6.png used on input line 604.
-(pdftex.def)             Requested size: 342.28395pt x 174.56522pt.
- [34
-
- <./decision_tree6.png>]
-<decision_tree7.png, id=442, 1196.47pt x 660.4675pt>
-File: decision_tree7.png Graphic file (type png)
- <use decision_tree7.png>
-Package pdftex.def Info: decision_tree7.png used on input line 612.
-(pdftex.def)             Requested size: 342.29372pt x 174.55946pt.
-
-[35
-
- <./decision_tree7.png>]
-<decision_tree8.png, id=451, 946.53625pt x 556.0775pt>
-File: decision_tree8.png Graphic file (type png)
-
-<use decision_tree8.png>
-Package pdftex.def Info: decision_tree8.png used on input line 619.
-(pdftex.def)             Requested size: 342.28375pt x 174.5629pt.
- [36
-
- <./decision_tree8.png>]
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 652--652
-[][]  
- []
-
-[37
-
 ]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 681.
+(amsmath)                 on input line 637.
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 681--681
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 637--637
 [][]  
  []
 
-[38
+[32
 
 ]
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 696--696
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 652--652
 [][]  
  []
 
-[39
+[33
 
-] <boosting.png, id=486, 406.51875pt x 313.9228pt>
+] <boosting.png, id=407, 406.51875pt x 313.9228pt>
 File: boosting.png Graphic file (type png)
  <use boosting.png>
-Package pdftex.def Info: boosting.png used on input line 706.
+Package pdftex.def Info: boosting.png used on input line 662.
 (pdftex.def)             Requested size: 267.44719pt x 174.55972pt.
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 706--706
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 662--662
 [][]  
  []
 
-[40
+[34
 
- <./boosting.png>] <toy_example.png, id=495, 1093.08376pt x 405.515pt>
+ <./boosting.png>] <toy_example.png, id=416, 1093.08376pt x 405.515pt>
 File: toy_example.png Graphic file (type png)
 
 <use toy_example.png>
-Package pdftex.def Info: toy_example.png used on input line 714.
+Package pdftex.def Info: toy_example.png used on input line 670.
 (pdftex.def)             Requested size: 334.29907pt x 124.68738pt.
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 714--714
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 670--670
 [][]  
  []
 
-[41
+[35
 
  <./toy_example.png>]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/bx/n' in size <10> not a
 vailable
 (Font)              Font shape `T1/LinuxBiolinumT-TOsF/b/n' tried instead on in
-put line 725.
+put line 681.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 725.
- <round_1.png, id=504, 865.2325pt x 514.92375pt>
+(Font)              scaled to size 10.0pt on input line 681.
+ <round_1.png, id=425, 865.2325pt x 514.92375pt>
 File: round_1.png Graphic file (type png)
 
 <use round_1.png>
-Package pdftex.def Info: round_1.png used on input line 725.
+Package pdftex.def Info: round_1.png used on input line 681.
 (pdftex.def)             Requested size: 334.29715pt x 149.62262pt.
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 725--725
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 681--681
 [][]  
  []
 
-[42
+[36
 
- <./round_1.png>] <round_2.png, id=513, 1126.2075pt x 487.8225pt>
+ <./round_1.png>] <round_2.png, id=434, 1126.2075pt x 487.8225pt>
 File: round_2.png Graphic file (type png)
 
 <use round_2.png>
-Package pdftex.def Info: round_2.png used on input line 736.
+Package pdftex.def Info: round_2.png used on input line 692.
 (pdftex.def)             Requested size: 334.29048pt x 149.63048pt.
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 736--736
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 692--692
 [][]  
  []
 
-[43
+[37
 
- <./round_2.png>] <round_3.png, id=523, 1126.2075pt x 487.8225pt>
+ <./round_2.png>] <round_3.png, id=444, 1126.2075pt x 487.8225pt>
 File: round_3.png Graphic file (type png)
 
 <use round_3.png>
-Package pdftex.def Info: round_3.png used on input line 747.
+Package pdftex.def Info: round_3.png used on input line 703.
 (pdftex.def)             Requested size: 334.29048pt x 149.63048pt.
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 747--747
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 703--703
 [][]  
  []
 
-[44
+[38
 
- <./round_3.png>] <round_4.png, id=532, 1099.10625pt x 605.26125pt>
+ <./round_3.png>] <round_4.png, id=453, 1099.10625pt x 605.26125pt>
 File: round_4.png Graphic file (type png)
 
 <use round_4.png>
-Package pdftex.def Info: round_4.png used on input line 759.
+Package pdftex.def Info: round_4.png used on input line 715.
 (pdftex.def)             Requested size: 334.29613pt x 149.62483pt.
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 759--759
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 715--715
 [][]  
  []
 
-[45
+[39
 
  <./round_4.png>]
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 785--785
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 741--741
 [][]  
  []
 
-[46
+[40
 
 ]
 ! Undefined control sequence.
 \beamer@doifinframe ...hm}[H] \dontprintsemicolon 
                                                   \linesnumbered \nl Initial...
-l.843 \end{frame}
+l.799 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3950,7 +3906,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \beamer@doifinframe ...ntsemicolon \linesnumbered 
                                                   \nl Initialize the observa...
-l.843 \end{frame}
+l.799 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3961,23 +3917,23 @@ and I'll forget about whatever was undefined.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/bx/n' in size <8> not av
 ailable
 (Font)              Font shape `T1/LinuxBiolinumT-TOsF/b/n' tried instead on in
-put line 843.
+put line 799.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 843.
+(Font)              scaled to size 8.0pt on input line 799.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/bx/n' in size <6> not av
 ailable
 (Font)              Font shape `T1/LinuxBiolinumT-TOsF/b/n' tried instead on in
-put line 843.
+put line 799.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/b/n' will be
-(Font)              scaled to size 6.0pt on input line 843.
+(Font)              scaled to size 6.0pt on input line 799.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/bx/n' in size <5.55556> 
 not available
 (Font)              Font shape `T1/LinuxBiolinumT-TOsF/b/n' tried instead on in
-put line 843.
+put line 799.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/b/n' will be
-(Font)              scaled to size 5.55556pt on input line 843.
+(Font)              scaled to size 5.55556pt on input line 799.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 843.
+(Font)              scaled to size 8.0pt on input line 799.
 
 ! LaTeX Error: There's no line here to end.
 
@@ -3985,7 +3941,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.843 \end{frame}
+l.799 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3994,7 +3950,7 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 \beamer@doifinframe ...hm}[H] \dontprintsemicolon 
                                                   \linesnumbered \nl \For {b...
-l.843 \end{frame}
+l.799 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4005,7 +3961,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \beamer@doifinframe ...ntsemicolon \linesnumbered 
                                                   \nl \For {b=1 to B}{ {(a) ...
-l.843 \end{frame}
+l.799 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4020,28 +3976,28 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.843 \end{frame}
+l.799 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[47
+[41
 
-] (./2016_fall_JianWang.toc) [48
+] (./2016_fall_JianWang.toc) [42
 
 ]
-<orderbook_example.png, id=577, 578.16pt x 433.62pt>
+<orderbook_example.png, id=498, 578.16pt x 433.62pt>
 File: orderbook_example.png Graphic file (type png)
 
 <use orderbook_example.png>
-Package pdftex.def Info: orderbook_example.png used on input line 914.
+Package pdftex.def Info: orderbook_example.png used on input line 870.
 (pdftex.def)             Requested size: 171.14679pt x 149.62552pt.
 
 ! Undefined control sequence.
 <recently read> \subitem 
                          
-l.914 \end{frame}
+l.870 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4052,7 +4008,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \subitem 
                          
-l.914 \end{frame}
+l.870 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4063,7 +4019,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \subitem 
                          
-l.914 \end{frame}
+l.870 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4072,22 +4028,22 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 914--914
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 870--870
 [][] 
  []
 
-[49
+[43
 
  <./orderbook_example.png>]
 File: orderbook_example.png Graphic file (type png)
  <use orderbook_example.png>
-Package pdftex.def Info: orderbook_example.png used on input line 914.
+Package pdftex.def Info: orderbook_example.png used on input line 870.
 (pdftex.def)             Requested size: 171.14679pt x 149.62552pt.
 
 ! Undefined control sequence.
 <recently read> \subitem 
                          
-l.914 \end{frame}
+l.870 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4098,7 +4054,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \subitem 
                          
-l.914 \end{frame}
+l.870 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4109,7 +4065,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \subitem 
                          
-l.914 \end{frame}
+l.870 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4118,202 +4074,210 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 914--914
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 870--870
 [][] 
+ []
+
+[44
+
+] <./ask_low_example.png, id=518, 578.16pt x 433.62pt>
+File: ./ask_low_example.png Graphic file (type png)
+
+<use ./ask_low_example.png>
+Package pdftex.def Info: ./ask_low_example.png used on input line 883.
+(pdftex.def)             Requested size: 239.60567pt x 179.70413pt.
+
+Overfull \vbox (15.62985pt too high) detected at line 883
+ []
+
+[45
+
+ <./ask_low_example.png>]
+<./bid_high_example.png, id=529, 578.16pt x 433.62pt>
+File: ./bid_high_example.png Graphic file (type png)
+
+<use ./bid_high_example.png>
+Package pdftex.def Info: ./bid_high_example.png used on input line 895.
+(pdftex.def)             Requested size: 239.60567pt x 179.70413pt.
+ [46
+
+ <./bid_high_example.png>]
+<./no_arbi_example.png, id=540, 578.16pt x 433.62pt>
+File: ./no_arbi_example.png Graphic file (type png)
+
+<use ./no_arbi_example.png>
+Package pdftex.def Info: ./no_arbi_example.png used on input line 908.
+(pdftex.def)             Requested size: 239.60567pt x 179.70413pt.
+
+Overfull \vbox (15.67914pt too high) detected at line 908
+ []
+
+[47
+
+ <./no_arbi_example.png>] <AAPL_price.png, id=551, 433.62pt x 289.08pt>
+File: AAPL_price.png Graphic file (type png)
+
+<use AAPL_price.png>
+Package pdftex.def Info: AAPL_price.png used on input line 935.
+(pdftex.def)             Requested size: 171.149pt x 99.74593pt.
+ <AMZN_price.png, id=552, 433.62pt x 289.08pt>
+File: AMZN_price.png Graphic file (type png)
+
+<use AMZN_price.png>
+Package pdftex.def Info: AMZN_price.png used on input line 935.
+(pdftex.def)             Requested size: 171.149pt x 99.74593pt.
+ <GOOG_price.png, id=553, 433.62pt x 289.08pt>
+File: GOOG_price.png Graphic file (type png)
+
+<use GOOG_price.png>
+Package pdftex.def Info: GOOG_price.png used on input line 935.
+(pdftex.def)             Requested size: 171.149pt x 99.74593pt.
+ <INTC_price.png, id=554, 433.62pt x 289.08pt>
+File: INTC_price.png Graphic file (type png)
+
+<use INTC_price.png>
+Package pdftex.def Info: INTC_price.png used on input line 935.
+(pdftex.def)             Requested size: 171.149pt x 99.74593pt.
+
+Overfull \vbox (0.29198pt too high) detected at line 935
+ []
+
+[48
+
+ <./AAPL_price.png> <./AMZN_price.png> <./GOOG_price.png> <./INTC_price.png>] <
+AAPL_arbitrage_event.png, id=567, 505.89pt x 289.08pt>
+File: AAPL_arbitrage_event.png Graphic file (type png)
+
+<use AAPL_arbitrage_event.png>
+Package pdftex.def Info: AAPL_arbitrage_event.png used on input line 966.
+(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
+
+<AMZN_arbitrage_event.png, id=568, 505.89pt x 289.08pt>
+File: AMZN_arbitrage_event.png Graphic file (type png)
+
+<use AMZN_arbitrage_event.png>
+Package pdftex.def Info: AMZN_arbitrage_event.png used on input line 966.
+(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
+
+<GOOG_arbitrage_event.png, id=569, 505.89pt x 289.08pt>
+File: GOOG_arbitrage_event.png Graphic file (type png)
+
+<use GOOG_arbitrage_event.png>
+Package pdftex.def Info: GOOG_arbitrage_event.png used on input line 966.
+(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
+
+<INTC_arbitrage_event.png, id=570, 505.89pt x 289.08pt>
+File: INTC_arbitrage_event.png Graphic file (type png)
+
+<use INTC_arbitrage_event.png>
+Package pdftex.def Info: INTC_arbitrage_event.png used on input line 966.
+(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
+
+Overfull \vbox (16.50903pt too high) detected at line 966
+ []
+
+[49
+
+ <./AAPL_arbitrage_event.png> <./AMZN_arbitrage_event.png> <./GOOG_arbitrage_ev
+ent.png> <./INTC_arbitrage_event.png>]
+<AAPL_arbitrage_time.png, id=584, 505.89pt x 289.08pt>
+File: AAPL_arbitrage_time.png Graphic file (type png)
+
+<use AAPL_arbitrage_time.png>
+Package pdftex.def Info: AAPL_arbitrage_time.png used on input line 996.
+(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
+
+<AMZN_arbitrage_time.png, id=585, 505.89pt x 289.08pt>
+File: AMZN_arbitrage_time.png Graphic file (type png)
+
+<use AMZN_arbitrage_time.png>
+Package pdftex.def Info: AMZN_arbitrage_time.png used on input line 996.
+(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
+
+<GOOG_arbitrage_time.png, id=586, 505.89pt x 289.08pt>
+File: GOOG_arbitrage_time.png Graphic file (type png)
+
+<use GOOG_arbitrage_time.png>
+Package pdftex.def Info: GOOG_arbitrage_time.png used on input line 996.
+(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
+
+<INTC_arbitrage_time.png, id=587, 505.89pt x 289.08pt>
+File: INTC_arbitrage_time.png Graphic file (type png)
+
+<use INTC_arbitrage_time.png>
+Package pdftex.def Info: INTC_arbitrage_time.png used on input line 996.
+(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
+
+Overfull \vbox (16.50903pt too high) detected at line 996
  []
 
 [50
 
-] <./ask_low_example.png, id=596, 578.16pt x 433.62pt>
-File: ./ask_low_example.png Graphic file (type png)
-
-<use ./ask_low_example.png>
-Package pdftex.def Info: ./ask_low_example.png used on input line 927.
-(pdftex.def)             Requested size: 239.60567pt x 179.70413pt.
-
-Overfull \vbox (15.62985pt too high) detected at line 927
- []
+ <./AAPL_arbitrage_time.png> <./AMZN_arbitrage_time.png> <./GOOG_arbitrage_time
+.png> <./INTC_arbitrage_time.png>]
+<order_book_type.png, id=600, 578.16pt x 433.62pt>
+File: order_book_type.png Graphic file (type png)
+ <use order_book_type.png>
+Package pdftex.def Info: order_book_type.png used on input line 1008.
+(pdftex.def)             Requested size: 342.2936pt x 174.56311pt.
 
 [51
 
- <./ask_low_example.png>]
-<./bid_high_example.png, id=608, 578.16pt x 433.62pt>
-File: ./bid_high_example.png Graphic file (type png)
+ <./order_book_type.png>]
+<order_book_volume.png, id=610, 578.16pt x 433.62pt>
+File: order_book_volume.png Graphic file (type png)
 
-<use ./bid_high_example.png>
-Package pdftex.def Info: ./bid_high_example.png used on input line 939.
-(pdftex.def)             Requested size: 239.60567pt x 179.70413pt.
+<use order_book_volume.png>
+Package pdftex.def Info: order_book_volume.png used on input line 1019.
+(pdftex.def)             Requested size: 342.2936pt x 174.56311pt.
  [52
 
- <./bid_high_example.png>]
-<./no_arbi_example.png, id=619, 578.16pt x 433.62pt>
-File: ./no_arbi_example.png Graphic file (type png)
+ <./order_book_volume.png>]
+<features.png, id=620, 553.06625pt x 288.07625pt>
+File: features.png Graphic file (type png)
+ <use features.png>
+Package pdftex.def Info: features.png used on input line 1031.
+(pdftex.def)             Requested size: 342.28992pt x 149.63347pt.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 1031.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 1031.
+ [53
 
-<use ./no_arbi_example.png>
-Package pdftex.def Info: ./no_arbi_example.png used on input line 952.
-(pdftex.def)             Requested size: 239.60567pt x 179.70413pt.
-
-Overfull \vbox (15.67914pt too high) detected at line 952
+ <./features.png>]
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 1056--1056
+[][]  
  []
 
-[53
 
- <./no_arbi_example.png>] <AAPL_price.png, id=630, 433.62pt x 289.08pt>
-File: AAPL_price.png Graphic file (type png)
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 1056--1056
+[][]  
+ []
 
-<use AAPL_price.png>
-Package pdftex.def Info: AAPL_price.png used on input line 979.
-(pdftex.def)             Requested size: 171.149pt x 99.74593pt.
- <AMZN_price.png, id=631, 433.62pt x 289.08pt>
-File: AMZN_price.png Graphic file (type png)
 
-<use AMZN_price.png>
-Package pdftex.def Info: AMZN_price.png used on input line 979.
-(pdftex.def)             Requested size: 171.149pt x 99.74593pt.
- <GOOG_price.png, id=632, 433.62pt x 289.08pt>
-File: GOOG_price.png Graphic file (type png)
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 1056--1056
+[][]  
+ []
 
-<use GOOG_price.png>
-Package pdftex.def Info: GOOG_price.png used on input line 979.
-(pdftex.def)             Requested size: 171.149pt x 99.74593pt.
- <INTC_price.png, id=633, 433.62pt x 289.08pt>
-File: INTC_price.png Graphic file (type png)
 
-<use INTC_price.png>
-Package pdftex.def Info: INTC_price.png used on input line 979.
-(pdftex.def)             Requested size: 171.149pt x 99.74593pt.
-
-Overfull \vbox (0.29198pt too high) detected at line 979
+Overfull \vbox (29.51392pt too high) detected at line 1056
  []
 
 [54
 
- <./AAPL_price.png> <./AMZN_price.png> <./GOOG_price.png> <./INTC_price.png>] <
-AAPL_arbitrage_event.png, id=646, 505.89pt x 289.08pt>
-File: AAPL_arbitrage_event.png Graphic file (type png)
+] <data_stability.png, id=639, 1091.07625pt x 412.54124pt>
+File: data_stability.png Graphic file (type png)
 
-<use AAPL_arbitrage_event.png>
-Package pdftex.def Info: AAPL_arbitrage_event.png used on input line 1010.
-(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
+<use data_stability.png>
+Package pdftex.def Info: data_stability.png used on input line 1070.
+(pdftex.def)             Requested size: 342.29237pt x 112.21854pt.
+ [55
 
-<AMZN_arbitrage_event.png, id=647, 505.89pt x 289.08pt>
-File: AMZN_arbitrage_event.png Graphic file (type png)
-
-<use AMZN_arbitrage_event.png>
-Package pdftex.def Info: AMZN_arbitrage_event.png used on input line 1010.
-(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
-
-<GOOG_arbitrage_event.png, id=648, 505.89pt x 289.08pt>
-File: GOOG_arbitrage_event.png Graphic file (type png)
-
-<use GOOG_arbitrage_event.png>
-Package pdftex.def Info: GOOG_arbitrage_event.png used on input line 1010.
-(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
-
-<INTC_arbitrage_event.png, id=649, 505.89pt x 289.08pt>
-File: INTC_arbitrage_event.png Graphic file (type png)
-
-<use INTC_arbitrage_event.png>
-Package pdftex.def Info: INTC_arbitrage_event.png used on input line 1010.
-(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
-
-Overfull \vbox (16.50903pt too high) detected at line 1010
- []
-
-[55
-
- <./AAPL_arbitrage_event.png> <./AMZN_arbitrage_event.png> <./GOOG_arbitrage_ev
-ent.png> <./INTC_arbitrage_event.png>]
-<AAPL_arbitrage_time.png, id=663, 505.89pt x 289.08pt>
-File: AAPL_arbitrage_time.png Graphic file (type png)
-
-<use AAPL_arbitrage_time.png>
-Package pdftex.def Info: AAPL_arbitrage_time.png used on input line 1040.
-(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
-
-<AMZN_arbitrage_time.png, id=664, 505.89pt x 289.08pt>
-File: AMZN_arbitrage_time.png Graphic file (type png)
-
-<use AMZN_arbitrage_time.png>
-Package pdftex.def Info: AMZN_arbitrage_time.png used on input line 1040.
-(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
-
-<GOOG_arbitrage_time.png, id=665, 505.89pt x 289.08pt>
-File: GOOG_arbitrage_time.png Graphic file (type png)
-
-<use GOOG_arbitrage_time.png>
-Package pdftex.def Info: GOOG_arbitrage_time.png used on input line 1040.
-(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
-
-<INTC_arbitrage_time.png, id=666, 505.89pt x 289.08pt>
-File: INTC_arbitrage_time.png Graphic file (type png)
-
-<use INTC_arbitrage_time.png>
-Package pdftex.def Info: INTC_arbitrage_time.png used on input line 1040.
-(pdftex.def)             Requested size: 171.1512pt x 99.74593pt.
-
-Overfull \vbox (16.50903pt too high) detected at line 1040
- []
-
-[56
-
- <./AAPL_arbitrage_time.png> <./AMZN_arbitrage_time.png> <./GOOG_arbitrage_time
-.png> <./INTC_arbitrage_time.png>]
-<order_book_type.png, id=679, 578.16pt x 433.62pt>
-File: order_book_type.png Graphic file (type png)
- <use order_book_type.png>
-Package pdftex.def Info: order_book_type.png used on input line 1052.
-(pdftex.def)             Requested size: 342.2936pt x 174.56311pt.
-
-[57
-
- <./order_book_type.png>]
-<order_book_volume.png, id=689, 578.16pt x 433.62pt>
-File: order_book_volume.png Graphic file (type png)
-
-<use order_book_volume.png>
-Package pdftex.def Info: order_book_volume.png used on input line 1063.
-(pdftex.def)             Requested size: 342.2936pt x 174.56311pt.
- [58
-
- <./order_book_volume.png>]
-<features.png, id=699, 553.06625pt x 288.07625pt>
-File: features.png Graphic file (type png)
- <use features.png>
-Package pdftex.def Info: features.png used on input line 1075.
-(pdftex.def)             Requested size: 342.28992pt x 149.63347pt.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 1075.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 1075.
- [59
-
- <./features.png>]
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 1100--1100
-[][]  
- []
-
-
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 1100--1100
-[][]  
- []
-
-
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 1100--1100
-[][]  
- []
-
-
-Overfull \vbox (11.79692pt too high) detected at line 1100
- []
-
-[60
-
-]
+ <./data_stability.png>]
 ! Undefined control sequence.
 \beamer@doifinframe ...edict(5 seconds):} \textbk 
                                                   {train to test ratio is: 9...
-l.1131 \end{frame}
+l.1099 \end{frame}
                   ​
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4322,11 +4286,11 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 1131--1131
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 1099--1099
 [][]  
  []
 
-[61
+[56
 
 ]
 
@@ -4336,59 +4300,45 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1131 \end{frame}​
+l.1099 \end{frame}​
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-<recently read> \multirow 
-                          
-l.1156 \end{frame}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 1156--1156
-[][]  
- []
-
-[62
-
-] <one_vs_one.png, id=734, 433.62pt x 289.08pt>
+<one_vs_one.png, id=658, 433.62pt x 289.08pt>
 File: one_vs_one.png Graphic file (type png)
  <use one_vs_one.png>
-Package pdftex.def Info: one_vs_one.png used on input line 1195.
+Package pdftex.def Info: one_vs_one.png used on input line 1143.
 (pdftex.def)             Requested size: 158.22035pt x 112.21584pt.
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 1195--1195
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 1143--1143
 [][]  
  []
 
-<one_vs_rest.png, id=735, 433.62pt x 289.08pt>
+<one_vs_rest.png, id=659, 433.62pt x 289.08pt>
 File: one_vs_rest.png Graphic file (type png)
  <use one_vs_rest.png>
-Package pdftex.def Info: one_vs_rest.png used on input line 1195.
+Package pdftex.def Info: one_vs_rest.png used on input line 1143.
 (pdftex.def)             Requested size: 158.22035pt x 112.21584pt.
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 1195--1195
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 1143--1143
 [][]  
  []
 
-[63
 
- <./one_vs_one.png> <./one_vs_rest.png>] (./2016_fall_JianWang.toc) [64
+Overfull \vbox (14.64915pt too high) detected at line 1143
+ []
+
+[57
+
+ <./one_vs_one.png> <./one_vs_rest.png>] (./2016_fall_JianWang.toc) [58
 
 ]
 ! Misplaced alignment tab character &.
 \beamer@doifinframe ...ou, Wen Cheng, Yichen Qin &
                                                    Zongcheng Yin(2015) in qu...
-l.1216 \end{frame}
+l.1164 \end{frame}
                   
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4397,13 +4347,13 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[65
+[59
 
 ]
 ! Undefined control sequence.
 \beamer@doifinframe ...hm}[H] \dontprintsemicolon 
                                                   \linesnumbered \nl initial...
-l.1245 \end{frame}
+l.1193 \end{frame}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4414,7 +4364,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \beamer@doifinframe ...ntsemicolon \linesnumbered 
                                                   \nl initialize: PnL=0\\ \n...
-l.1245 \end{frame}
+l.1193 \end{frame}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4423,7 +4373,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 1245.
+(Font)              scaled to size 10.95pt on input line 1193.
 
 ! LaTeX Error: There's no line here to end.
 
@@ -4431,7 +4381,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1245 \end{frame}
+l.1193 \end{frame}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4444,7 +4394,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1245 \end{frame}
+l.1193 \end{frame}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4457,73 +4407,66 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1245 \end{frame}
+l.1193 \end{frame}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \vbox (8.13554pt too high) detected at line 1245
+Overfull \vbox (8.13554pt too high) detected at line 1193
+ []
+
+[60
+
+] <strategy_algorithm.png, id=701, 387.69844pt x 448.67625pt>
+File: strategy_algorithm.png Graphic file (type png)
+
+<use strategy_algorithm.png>
+Package pdftex.def Info: strategy_algorithm.png used on input line 1200.
+(pdftex.def)             Requested size: 273.8421pt x 224.44026pt.
+
+Overfull \vbox (0.27864pt too high) detected at line 1200
+ []
+
+[61
+
+ <./strategy_algorithm.png>]
+<arbitrage_plot.png, id=711, 433.62pt x 289.08pt>
+File: arbitrage_plot.png Graphic file (type png)
+ <use arbitrage_plot.png>
+Package pdftex.def Info: arbitrage_plot.png used on input line 1210.
+(pdftex.def)             Requested size: 205.38277pt x 149.62552pt.
+
+[62
+
+ <./arbitrage_plot.png>] <AAPL_pnl.png, id=721, 433.62pt x 289.08pt>
+File: AAPL_pnl.png Graphic file (type png)
+
+<use AAPL_pnl.png>
+Package pdftex.def Info: AAPL_pnl.png used on input line 1221.
+(pdftex.def)             Requested size: 205.38277pt x 149.62552pt.
+ [63
+
+ <./AAPL_pnl.png>] (./2016_fall_JianWang.toc) [64
+
+]
+[65
+
+]
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 1257--1257
+[][]  
  []
 
 [66
 
-] <strategy_algorithm.png, id=779, 387.69844pt x 448.67625pt>
-File: strategy_algorithm.png Graphic file (type png)
-
-<use strategy_algorithm.png>
-Package pdftex.def Info: strategy_algorithm.png used on input line 1252.
-(pdftex.def)             Requested size: 273.8421pt x 224.44026pt.
-
-Overfull \vbox (0.27864pt too high) detected at line 1252
- []
-
-[67
-
- <./strategy_algorithm.png>]
-<arbitrage_plot.png, id=789, 433.62pt x 289.08pt>
-File: arbitrage_plot.png Graphic file (type png)
- <use arbitrage_plot.png>
-Package pdftex.def Info: arbitrage_plot.png used on input line 1262.
-(pdftex.def)             Requested size: 205.38277pt x 149.62552pt.
-
-[68
-
- <./arbitrage_plot.png>] <pnl_total.png, id=799, 870.25125pt x 613.29124pt>
-File: pnl_total.png Graphic file (type png)
-
-<use pnl_total.png>
-Package pdftex.def Info: pnl_total.png used on input line 1273.
-(pdftex.def)             Requested size: 205.37221pt x 149.62599pt.
- [69
-
- <./pnl_total.png>]
-<cum_total.png, id=809, 870.25125pt x 593.21625pt>
-File: cum_total.png Graphic file (type png)
- <use cum_total.png>
-Package pdftex.def Info: cum_total.png used on input line 1283.
-(pdftex.def)             Requested size: 205.37221pt x 149.62524pt.
- [70
-
- <./cum_total.png>] (./2016_fall_JianWang.toc) [71
-
-] [72
-
-]
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 1320--1320
-[][]  
- []
-
-[73
-
  </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>]
-(./2016_fall_JianWang.toc) [74
+(./2016_fall_JianWang.toc) [67
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TOsF/m/n' will be
-(Font)              scaled to size 20.74pt on input line 1329.
- [75
+(Font)              scaled to size 20.74pt on input line 1266.
+ [68
 
 ]
 \tf@nav=\write10
@@ -4547,52 +4490,55 @@ Package pst-pdf Warning: File `2016_fall_JianWang-pics.pdf' not found.
 (pst-pdf)                ---------------------------------------------------- .
 
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1331.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1331.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1268.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1268.
 (./2016_fall_JianWang.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1331.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1331.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1268.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1268.
 
 Package rerunfilecheck Info: File `2016_fall_JianWang.out' has not changed.
-(rerunfilecheck)             Checksum: C917650A112FC70F78B0AC7D3E0BBD8B;451.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1331.
+(rerunfilecheck)             Checksum: B385DD6551E0AE0A7D27982141BDE90C;394.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1268.
  ) 
 Here is how much of TeX's memory you used:
- 61843 strings out of 493304
- 1294121 string characters out of 6139871
- 1783722 words of memory out of 5000000
- 63597 multiletter control sequences out of 15000+600000
- 204028 words of font info for 190 fonts, out of 8000000 for 9000
+ 61788 strings out of 493304
+ 1293406 string characters out of 6139871
+ 1784423 words of memory out of 5000000
+ 63560 multiletter control sequences out of 15000+600000
+ 204303 words of font info for 192 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  59i,18n,122p,10382b,1249s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_mx3chd.enc}{/us
-r/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/shar
-e/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_afusau.enc}{/usr/share/texl
-ive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts
-/enc/dvips/libertine/lbtn_ew6fhv.enc}{/usr/share/texlive/texmf-dist/fonts/enc/d
-vips/libertine/lbtn_76gpa5.enc}</usr/share/texlive/texmf-dist/fonts/type1/publi
-c/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-libertine/LinBiolinumTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/l
-ibertine/LinBiolinumTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/li
-bertine/LinLibertineT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lib
-ertine/LinLibertineTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8
-a.pfb>
-Output written on 2016_fall_JianWang.pdf (75 pages, 2520525 bytes).
+pdfTeX warning (dest): name{Navigation69} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_mx3chd.enc}{/usr/
+share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/share/
+texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_afusau.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/e
+nc/dvips/libertine/lbtn_ew6fhv.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvi
+ps/libertine/lbtn_76gpa5.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/
+libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/li
+bertine/LinBiolinumTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lib
+ertine/LinBiolinumTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libe
+rtine/LinLibertineT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/liber
+tine/LinLibertineTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+extra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.
+pfb>
+Output written on 2016_fall_JianWang.pdf (68 pages, 2095765 bytes).
 PDF statistics:
- 994 PDF objects out of 1000 (max. 8388607)
- 716 compressed objects within 8 object streams
- 166 named destinations out of 1000 (max. 500000)
- 62360 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 902 PDF objects out of 1000 (max. 8388607)
+ 649 compressed objects within 7 object streams
+ 152 named destinations out of 1000 (max. 500000)
+ 62327 words of extra memory for PDF output out of 74296 (max. 10000000)
 

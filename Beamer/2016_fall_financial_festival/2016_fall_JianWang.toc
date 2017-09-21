@@ -3,9 +3,8 @@
 \beamer@sectionintoc {1}{Brief summary}{3}{0}{1}
 \beamer@sectionintoc {2}{High frequency trading}{5}{0}{2}
 \beamer@sectionintoc {3}{DataSet}{9}{0}{3}
-\beamer@sectionintoc {4}{Statistical properties}{14}{0}{4}
-\beamer@sectionintoc {5}{Methodology}{20}{0}{5}
-\beamer@sectionintoc {6}{Model fit}{48}{0}{6}
-\beamer@sectionintoc {7}{Trading strategy and PnL results}{64}{0}{7}
-\beamer@sectionintoc {8}{Future work}{71}{0}{8}
-\beamer@sectionintoc {9}{Questions}{74}{0}{9}
+\beamer@sectionintoc {4}{Methodology}{14}{0}{4}
+\beamer@sectionintoc {5}{Model fit}{42}{0}{5}
+\beamer@sectionintoc {6}{Trading strategy and PnL results}{58}{0}{6}
+\beamer@sectionintoc {7}{Future work}{64}{0}{7}
+\beamer@sectionintoc {8}{Questions}{67}{0}{8}
