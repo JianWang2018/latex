@@ -1,0 +1,24 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Limit order book statistics}}{17}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Message book example, a sample on 2012-06-21}}{18}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Message book event type, a sample on 2012-06-21}}{18}{table.3.3}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Message book direction, a sample on 2012-06-21}}{18}{table.3.4}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Limit book example of stock AMZN, a sample on 2012-06-21}}{19}{table.3.5}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Features summary, nine datasets including basic set, time insensitive set, and time sensitive set, totally 156 features}}{65}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces AMZN ask-low arbitrage opportunities prediction(5 seconds)}}{66}{table.6.2}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Feature importance based on random forest model}}{71}{table.6.3}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Ratio of features on bid and ask side }}{72}{table.6.4}
+\contentsline {table}{\numberline {6.5}{\ignorespaces The most frequent occurrence features among four stocks}}{79}{table.6.5}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces AAPL ask-low arbitrage opportunity prediction(5 seconds)}}{82}{table.A.1}
+\contentsline {table}{\numberline {A.2}{\ignorespaces GOOG ask-low arbitrage opportunity prediction(5 seconds)}}{82}{table.A.2}
+\contentsline {table}{\numberline {A.3}{\ignorespaces INTC ask-low arbitrage opportunity prediction(5 seconds)}}{83}{table.A.3}
+\contentsline {table}{\numberline {A.4}{\ignorespaces MSFT ask-low arbitrage opportunity prediction(5 seconds)}}{83}{table.A.4}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

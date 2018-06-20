@@ -1,0 +1,50 @@
+\contentsline {frontmatter}{List of Tables}{vii}{chapter*.3}
+\contentsline {frontmatter}{List of Figures}{viii}{chapter*.4}
+\contentsline {frontmatter}{List of Algorithms}{xii}{chapter*.5}
+\contentsline {frontmatter}{Abstract}{xiii}{chapter*.6}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}High-frequency trading system}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Evolution of high-frequency trading}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}High-frequency trading strategies}{3}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}LOB dynamics}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Ensemble method for classifiers}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}Purpose of the dissertation}{6}{section.1.4}
+\contentsline {chapter}{\numberline {2}Literature Review}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Limit order books dynamics and modeling}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}Machine learning methods for capturing limit order book dynamics}{11}{section.2.2}
+\contentsline {chapter}{\numberline {3}Description of LOBs }{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Mathematical descriptions of LOBs}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Data description}{16}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Limit order and message order}{17}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Order Price, order book volume, order book type, and relative depth}{19}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Properties of LOBs}{30}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Time of arrivals of orders}{30}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Volume of orders}{30}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Placement of orders}{33}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Intraday seasonality}{33}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Average shape of the order book}{37}{subsection.3.3.5}
+\contentsline {chapter}{\numberline {4}Basic Machine Learning Schemes}{38}{chapter.4}
+\contentsline {section}{\numberline {4.1}Logistic regression}{38}{section.4.1}
+\contentsline {section}{\numberline {4.2}Lasso regression and ridge regression}{40}{section.4.2}
+\contentsline {section}{\numberline {4.3}Support vector machine}{42}{section.4.3}
+\contentsline {section}{\numberline {4.4}Decision tree}{48}{section.4.4}
+\contentsline {chapter}{\numberline {5}Ensemble Methods for Prediction}{51}{chapter.5}
+\contentsline {section}{\numberline {5.1}An introduction to ensemble methods}{51}{section.5.1}
+\contentsline {section}{\numberline {5.2}Bagging}{52}{section.5.2}
+\contentsline {section}{\numberline {5.3}Bootstrap}{52}{section.5.3}
+\contentsline {section}{\numberline {5.4}AdaBoost learning scheme}{53}{section.5.4}
+\contentsline {section}{\numberline {5.5}Random forest}{56}{section.5.5}
+\contentsline {chapter}{\numberline {6}Model Framework and Results}{58}{chapter.6}
+\contentsline {section}{\numberline {6.1}Review of LOBs}{58}{section.6.1}
+\contentsline {section}{\numberline {6.2}Model framework}{58}{section.6.2}
+\contentsline {section}{\numberline {6.3}Features}{64}{section.6.3}
+\contentsline {section}{\numberline {6.4}Model measurement and numerical results}{65}{section.6.4}
+\contentsline {section}{\numberline {6.5}Multiclass prediction problem}{66}{section.6.5}
+\contentsline {section}{\numberline {6.6}Feature importance}{69}{section.6.6}
+\contentsline {section}{\numberline {6.7}Trading strategy}{70}{section.6.7}
+\contentsline {chapter}{\numberline {7}Conclusion and Future Works}{80}{chapter.7}
+\contentsline {appendix}{Appendix}{81}{appendix.A}
+\contentsline {chapter}{\numberline {A}Two Classes Arbitrage Prediction Results}{82}{appendix.A}
+\contentsline {chapter}{\numberline {B}PnL and Cumulative PnL}{84}{appendix.B}
+\contentsline {chapter}{\numberline {C}Main Part of Code}{86}{appendix.C}
+\contentsline {backmatter}{Bibliography}{87}{appendix*.7}

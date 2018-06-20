@@ -1,0 +1,46 @@
+\chapter{Literature Review}
+In this chapter, we review the past research in finding the laws of limit order books and applying machine learning tools to financial markets. In the first part, we summarize the papers which describe the models and rules of limit order book. The research work of using machine learning methods to capture the dynamics of limit order book is generalized in the second part. 
+
+\section{Limit order books dynamics and modeling}
+There are a lot of study on capturing limit order book dynamics, including theoretical and experimental results. Through simulating the effect of different order book depth,\cite{bollerslev1993trading} discover that when the order book depth increases, the autocorrelation of spreads will also rise.
+
+\cite{hamao1995securities} studied the patterns of intra-day trades and quotes for part of stocks on the Tokyo Stock Exchange.  They claim that an order that is waiting to be executed has a greater impact on the price movement than the one that is executed immediately. Therefore, after the market orders are executed, the market price is likely to move in the same direction. Additionally, they find that there is always some delay in execution when the market orders become the limit orders.  After that, they also investigate the limit orders in the NYSESuperDOT market and find that the market orders often have worse performance than the limit orders that are placed at or above the best quote.   
+
+\cite{maslov2001price} investigate the order book data from NASDAQ and discover that the number of limit orders placed on the bid sides and the number of limit orders placed on the ask sides are often largely unequal; the disequilibrium will cause the price change in the short term.  
+
+\cite{bouchaud2002statistical} studied three stocks in the Paris Bourse and find that the price of order books obeys a power law near the price at present time and the mean of the distribution is diverging.  
+
+\cite{zovko2002power} study around two million orders from the London Stock Exchange. They found that a power law distribution can be applied to the difference between the limit price and the best price. Besides, the volatility of the price is positively correlated with the relative limit price levels. 
+
+\cite{potters2003more} investigate the order book data in NASDAQ and discover that the tail of the price of the incoming order shows a very slow recession. Besides, they also find that rather than the power-law, the link between price response and volume follows a logarithmic distribution in the British and French financial market.
+
+In Australian stock market, \cite{hall2004continuous} find that the order book depth and the market activity will significantly influence the buy-side pressure as well as the sell-side pressure. Therefore, traders tend to utilize the information inside the order book to infer other market participants' trading strategies. 
+
+\cite{weber2005order} studied the order books on the Island financial market. They find that the price impact function, which is used to describe the phenomenon that the stock trading will cause price changes, is convex. They discover that price changes and order flow are strongly anti-correlated, which will reduce the price impact of market orders. 
+
+\cite{boehmer2007public} use sample stock trading data in different markets to verify if past execution quality will affect order routing decisions. Their results show that routing decisions are related to the execution quality. The market will receive more orders if their execution costs are low and can fill orders immediately. 
+
+\cite{ganchev2010censored} and \cite{laruelle2011optimal} introduce a numerical algorithm to optimally split orders across liquidity dark pools. They also give the experimental validation of the algorithm by using execution data in a dark pool from a brokerage.
+
+A continuous time stochastic model was proposed by \cite{cont2010stochastic} to capture the dynamics of a limit order book. Matrix computation and Laplace transform methods are used to calculate the probability of different events. Numerical results with real-time high-frequency data are also provided to show the efficiency of their model to capture the short-term dynamics of a limit order book. 
+
+\cite{guo2013optimal} provides a solution to an optimal placement problem in a limit order book. Two models, with or without price impact, are proposed in their paper. Besides, they give the solutions of both single-period and multi-period situations.   
+
+\cite{cont2013optimal} also study the optimal order placement problem; they transform this problem to a convex optimization problem. They consider the fee structure, the state of order books, the order flow properties and the preference of a trader. Besides, they provide an explicit solution in the single exchange situation and propose a stochastic method in the multiple exchange situation. 
+
+
+\section{Machine learning methods for capturing limit order book dynamics}
+There is not much past research in applying the machine learning tools to limit order books or financial applications in general. To my best knowledge, the earliest research in this area can be traced back to \cite{hutchinson1994nonparametric}. They propose a nonparametric method, learning network, to price and hedge options. Besides, real-time data sample(S\&P 500 futures options from 1987 to 1991) was used to test the efficiency of their network pricing method. 
+
+\cite{nevmyvaka2006reinforcement} study the millisecond limit order data from NASDAQ and propose a reinforcement learning model to conduct an optimized trade execution. Their results show that reinforcement learning can significantly improve the performance compared with some simpler methods of optimization.
+
+\cite{kercheval2015modelling} propose a support vector machine scheme to predict the movement of price for limit order books. Nanosecond time scale data from NASDAQ was used to build their model and feature selection process was conducted to show the importance of each feature. They also design a single buy-low and sell-high trading strategy to verify the practical value fo the model. The result of profit and loss(PnL) through this strategy is promising.
+
+\cite{park2015adaptive} demonstrate a confidence triggered regularized adaptive certainty equivalent (CTRACE) policy for execution and learning on the same time and propose a reinforcement learning algorithm for improving the efficiency in linear-quadratic control problems. Monte Carlo simulation is utilized to show the CTRACE method is better than the certainty equivalent policy. 
+
+\cite{sirignano2016deep} builds a deep neural network algorithm in $\mathbb{R}^d$ space. Around 500 U.S. stocks are trained and tested and a cluster with 50 GPUs is used to accelerate the speed of computing. The experimental results show that their model outperforms the logistic regression model  with non-linear features, empirical model,  and a standard neural network model.
+
+Some other related literature include: using hidden Markov chain models into financial market, for example,\cite{idvall2008algorithmic},  \cite{hassan2007fusion},\cite{hassan2005stock},\cite{landen2000bond},\cite{mamon2007hidden},\cite{zhang2004prediction},\cite{bulla2006application},\cite{rossi2006volatility},\cite{ryden1998stylized}; using artificial neural networks to make prediction in financial markets,e.g.,\cite{trippi1992neural},\cite{kuan1995forecasting},\cite{walczak2001empirical}, \cite{shadbolt2002neural}
+;using support vector machine combined with different kernels to predict the financial time series changes. Those works can be found in \cite{cortes1995support},\cite{tay2001application},\cite{tay2002modified},\cite{cao2003support},\cite{kim2003financial},
+\cite{perez2003estimating},\cite{huang2005forecasting},\cite{van2001financial},\cite{hazarika2002predicting},\cite{tino2005volatility},\cite{huang2006wavelet},\cite{huang2008combining},\cite{fletcher2009machine},\cite{chalup2008kernel}; predicting price change in financial market by use of Kalman Filtering. Related work can be found in \cite{fletcher2007hybrid}, \cite{julier1997new},\cite{evensen2003ensemble},\cite{bolland1996robust},\cite{bolland1997constrained}
+

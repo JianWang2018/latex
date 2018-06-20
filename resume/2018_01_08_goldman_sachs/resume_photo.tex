@@ -1,0 +1,96 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+\usepackage{graphicx}
+\usepackage{tabu}
+\usepackage{multirow}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper, 
+ total={170mm, 257mm}, 
+ left=2mm, 
+ right=2mm, 
+ top=1mm, 
+ bottom=0.5mm
+ }
+
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+\newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}      
+\large{
+  \begin{tabu}{l r }
+    \scshape{\huge{Jian Wang}} & \pbar{C++}{0.95} \\
+     \email {jw2018jobs@gmail.com} & \pbar{Java}{0.9} \\
+     \phone{(+1) 850-443-5826} & \pbar{Python}{0.9} \\
+     \faUser \ \changeurlcolor{blue}\href{https://wangjian790.github.io/jianwang.github.io/}{https://wangjian790.github.io/jianwang.github.io/} & \pbar{Linux}{0.8} \\
+     \faGithub\ \changeurlcolor{blue}\href{https://github.com/wangjian790/}{https://github.com/wangjian790/} & \pbar{Latex}{0.8}
+  \end{tabu}
+}
+
+
+\section{\faThumbsOUp\ Strength and objective:}\large 
+ Past quantitative working experience in insurance companies. Strong C++, Java, Python skills. Proficient in programming, machine learning, financial math and big data.  Financial math Ph.D. and currently seeking full stack coding jobs.
+\section{\faGraduationCap\ Education}\large 
+\datedsubsection{\textbf{FLORIDA STATE UNIVERSITY},  Tallahassee,  FL,  USA}{2011 -- 2017}
+\textit{Ph.D.} in financial mathematics\\
+Thesis: \textit{Ensemble methods for capturing dynamics of limit order books}\\
+Advisor: \textit{Dr.Jinfeng Zhang (Statistics) and Dr. Giray $\ddot{O}$kten(Financial mathematics)} 
+\datedsubsection{\textbf{FLORIDA STATE UNIVERSITY},  Tallahassee,  FL,  USA}{2009 -- 2011}
+\textit{Master} of financial mathematics,  GPA : 3.6/4.0
+\datedsubsection{\textbf{Shanghai University}, joint training master with Fudan-AIA actuarial center, Shanghai,  China}{1998 -- 2005}
+\textit{Bachelor and Master} in mathematics,  GPA : 3.4/4.0
+\section{\faGears\ Experience}
+\datedsubsection{\textbf{EVERBRIGHT SECURITIES CO.,  LTD.}
+	Shanghai,  China}{06/2013 -- 09/2013}
+\large \role{Fixed Income Summer Intern, }{Manager: Yan Wei Gao}
+\begin{itemize}\large
+	\item Position analysis for US treasury futures via the data from CFTC website,  analyze the trading strategy for PIMCO. Calculated theoretical US treasury futures prices and compare them with the real prices to find the arbitrage opportunities.
+\end{itemize}
+\datedsubsection{\textbf{REWARD HEALTH INSURANCE CO., LTD., }
+ Shanghai,  China}{07/2008 -- 05/2009}
+\large \role{Quantitative associate, }{Manager: Wei Wei}
+\begin{itemize}\large
+  \item Developed the premiums for disability income product,  long-term care product and universal life product by EXCEL and VBA. Conducted sensitivity test and scenario test of the profit of insurance products. Defined the commission rate and expense rate. 
+  
+  
+\end{itemize}
+
+\datedsubsection{\textbf{SINO-LIFE INSURANCE CO., LTD., }
+ Shanghai,  China}{07/2005 -- 07/2008}
+\large \role{Quantitative analyst, }{Manager: Xiuwen Wang}
+\begin{itemize}\large
+  \item Defined the commission rates and appropriate budgets for insurance products based on the ROI,  ROC and profit margin. Conducted profit test,  sensitivity test and scenario test to ensure the product feasibility in the market. Calculated the premium,  reserve and cash value for insurance products based on benefit-contribution-parity principle.
+\end{itemize}
+\section{\faBook\ Research}
+
+\begin{itemize}[parsep=0.5ex]\large
+  \item Albert Steppi, Jinchan Qu, Jie Hao, \textbf{Jian Wang}. Mining protein interactions affected by mutations using a NLP based machine learning approach. \textit{The six Biocreative text mining workshop}, 2017(accepted).
+  \item \textbf{Jian Wang}, Jinfeng Zhang and Giray $\ddot{O}$kten. Ensemble methods for capturing dynamics of limit order books. \textit{Florida University Ph.D. dissertation thesis(accepted) and Journal of High Frequency(submitted)} 2017.
+  \item Yuchu Lu, Qian Wang, \textbf{Jian Wang}. A risk analysis model in medical insurance. \textit{The 8th Annual Conference paper} 2004 
+  
+\end{itemize}
+    
+\section{\faWrench
+\ Skills}
+\begin{itemize}[parsep=0.5ex]\large
+  \item \textbf{Computer:} More than 4 years C++(Class,  Inheritance,  Polymorphism,  Template,  STL,  etc) and python( Numpy,  Pandas, 
+  Sklearn,  Tensorflow,  etc) programming experience in research,   excellent in Java,  Latex,  familiar with Bloomberg system, proficient in R, algorithm analysis, and data structures. Projects experience with Linear regression, Logistic regression, Boosting methods and Deep neural networks.  Projects experience with Big Data/Hadoop MapReduce and Spark system. 
+  
+  \item \textbf{Mathematics:}
+   Linear regression, Generalized linear model, Measure and Integrity,  Probability and Statistics,  Stochastic calculus, Ordinary differential equation,
+  Partial differential equation,  Linear algebra and matrix computations,  complex analysis.
+  
+\end{itemize}
+
+\section{\faShirtsinbulk \ Certificates}\large 
+ Deep learning.ai certificate(three courses); Machine learning certificate(four courses); Lynda C++ Essential Training certificate; Lynda Become a C++ Developer certificate.
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}

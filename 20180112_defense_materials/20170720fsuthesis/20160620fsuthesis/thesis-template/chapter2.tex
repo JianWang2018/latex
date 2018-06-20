@@ -1,0 +1,91 @@
+\chapter{Introduction}
+\section{High-frequency trading system}
+\subsection{Evolution of high-frequency trading}
+Over the last few decades,  information technology,  including computing speed and memory volume,  has developed a lot. According to this trend,  a new class of trading system,  which is called high-frequency trading  (HFT) has appeared in today's financial markets. Generally speaking,   HFT represents a program trading platform that uses powerful computers to transact a great number of orders at very fast speeds. It becomes more and more attractive  because of some key factors: \\
+1)High-frequency trading can help to narrow Spreads. In 2001,  the unit of quoting prices in U.S. Stock exchanges changed from fractions to decimals. So the minimum spread between the bid and ask prices decreased from 1/6th of a dollar  (6.25 cents) to one cent. The change of price unit provides traders better alternatives to seeking spread arbitrages,  which results in a strong boost in an algorithmic trading system.\\ 
+2) Regulations have changed to a favorable direction.   In 2005,  the Securities and Exchange Commission (SEC) passed the Regulation National Market System  (Reg.NMS),  which improved transparency and competition among different financial markets. In addition,  this regulation also required trade orders to be posted nationally instead of at individual exchanges. So traders can benefit from profit os small price difference of one security among different exchanges. \\
+\end{itemize}
+
+High-frequency trading is an extension case of algorithmic trading,  which turns over small positions of security very frequently. The U.S. Securities and Exchanges Commission conclude specific characteristics of HFT:\\
+
+\begin{itemize}
+\item Submit some orders and cancel them soon after the submission.
+\item Maintain very few or no overnight positions. 
+\item Maintain a very high turnover rate of very small positions of a specific security or even a pool of securities. Meanwhile, the holding period for each position is also very short.
+\item Utilize complicated and high-performance computing program to generate,  execute or cancel orders.
+\item Utilize individual data from exchanges and servers that belong to co-location providers that minimize network or other types of latencies. 
+\end{itemize}
+
+According to a recent survey  (\cite{hft_future}),  high-frequency trading has taken a great number of shares in the U.S. and European equity trading volume. As shown in figure \ref{fig.1},  in U.S.,  the percentage of HFT in equity turnover by volume maintained growth trend overall from the year 2005 to 2010. For example,  in 2010,  HFT occupied 56\% by volume of the entire equity turnover,  increased from 21 \% in 2005. 
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=6.5in, height=3.5in]{figures/hft_percentage.jpg}
+  \end{center}
+\caption{High-frequency trading as a percentage of equity turnover. In U.S. market the turn over rate is by volume and by value in European market from 2005 to 2010} \label{fig.1}
+\end{figure}
+
+A similar situation happened in Europe. HFT only accounted for 1\% of equity turnover by value in 2005. The percentage surged to 38 \% in 2010,  increased from 29 \% in the previous year.
+\subsection{High-frequency trading strategies}
+Generally speaking,  there are two main high-frequency trading strategies: passive and aggressive trading strategies. Passive strategies use limit orders which allow the brokerage to buy or sell the stocks at a specified level price,  while aggressive strategies utilize market orders to buy or sell the stocks immediately. In the following,  we give the description of main types of these two trading strategies. 
+
+For passive high-frequency trading strategies,  the first widely used method is market making. This method allows the market maker to purchase a company's securities and,  at the same time,  the market maker also acts as an underwriter of the 
+securities in a secondary public offering. Since the market maker can place bids on a security before its publication,  the real buyers would have to place their buy orders higher than the market maker's bid price. Therefore the market maker can  benefit from this higher opening. The second method for passive strategies is arbitrage trading. As described by its name,  this method makes a profit by the price difference of the same or related securities. A simple example is as follows: the stock of one company that we called X is trading at \$10 on the New York Stock Exchange (NYSE),  while at the same moment it is trading at the price of \$10.05 on the London Stock Exchange (LSE).  Given that a trader can trade the stock on both markets with no time lag,  he can buy one specific security on the NYSE and sell the same shares on the LSE just after buying. Obviously,  a profit of 5 cents without risk can be earned by him. Those arbitrage opportunities will persist until the specialists on the NYSE or LSE adjust their price to eliminate the price difference.
+
+The main type of aggressive high-frequency trading strategies consists of the following two types:
+Momentum ignition and order anticipate. The former one is a strategy that a proprietary trading firm buy or sell volumes of orders that will cause the price of the underlying security to significantly go up or down shortly. Such quick submission and cancellation of many orders of a stock will trigger other traders' algorithms to buy or sell the same stock more aggressively. After the trend of price movement is made in the market,  the momentum maker will benefit from selling the stock at a higher price or buying the stock at a lower price. However,  it is very difficult to distinguish between momentum ignition and $\textit{spoof}$,  which was defined as illegal according to the Dodd-Frank Act.  For the order anticipate method,  it can be described as a liquidity detection trading which confirms the existence of large institutional buyers or sellers in the marketplace and then trades ahead of these buyers or sellers in anticipation that their large orders will move market prices  (See Securities and Exchange Commission, 2014, p.8). The line between this method and another illegal action called \textit{front-running} can be nuanced. \textit{Front-running} is the unethical practice that a stockbroker trades securities in his private account based on the knowledge of advance knowledge of pending orders from its customers. 
+
+\section{LOB dynamics}
+According to the above section,  we know that under the aggressive strategies situation,  it is very likely that the strategy will be deemed as illegal. Therefore choosing passive strategies in high-frequency trading is a good idea. Since most transactions in the passive trading strategies are buying and selling the securities at a particular price,  LOBs play an indispensable role in this strategy.  
+Actually,  in today's financial market,  more than half of stock exchanges now use a LOB mechanism to facilitate trade  (\cite{rosu2009dynamic}).  Some exchanges,  such as Shenzhen, Hong Kong,  Tokyo,  Swiss,  Helsinki,   Vancouver  and Toronto
+ Stock Exchanges,  now use pure LOBs  (\cite{luckock2001statistical}). Some exchanges use hybrid of LOBs,  which include  NASDAQ, the New York Stock Ex-change (NYSE),   and the London Stock Exchange
+ (LSE) \citep{cont2010stochastic}. 
+
+As described above,  we can see that LOBs play a major role in financial trading architectures,  it is beneficial for both scholars and practitioners to understand the dynamics of LOB. The advantages of capturing dynamics of LOBs include: finding an optimal opportunity to execute orders\citep{obizhaeva2013optimal}, improving the performance of electronic trading algorithms\citep{engle2006measuring}, Obtaining a better understanding of micro-market structure for Practitioners\citep{harris2003trading}, and finally getting a clearer insight into market volatility\citep{kirilenko2015flash}.
+
+In this thesis,  we first introduce basic definitions of LOBs,  including math definition of the bid-ask spread,  mid price,  bid and ask side depth,  spread crossing opportunities and so on. Then we use statistical and data driven methods,  especially in the area of machine learning architectures,  to model the future arbitrage opportunities of LOBs. We focus on ensemble machine learning algorithms to build our prediction models. As far as we know,  there is no evidence shows that these methods were used to study LOBs' research. The introduction of ensemble machine learning algorithms will be given in the following section of this chapter and details can be found in chapter \ref{ch:ensemble}.  
+
+
+\section{Ensemble method for classifiers}
+
+In spite of a great amount of research on LOBs,  there is only a limited amount of literature which utilizes machine learning methods for capturing the LOBs. Furthermore,  based on our knowledge,  there is little evidence that ensemble methods were allied to this topic. In our research,  we  use AdaBoost (Adaptive Boosting) method,  which was deemed as the best classifier off the shelf \citep{kegl2013return},  and random forest method to predict spread crossing over opportunities of LOBs. 
+
+Generally speaking,  an ensemble classifier contains a number of relatively independent trained classifiers (such as neural networks or decision trees) to get a better predictive performance by combining the predicting results of each classifier. Some past research shows that ensemble classifier is more accurate than any of the individual classifiers which constitute the ensemble. For example,  \cite{hansen1990neural} and \cite{hashem1997optimal} have conducted both theoretical and empirical research which demonstrated that a good ensemble of neural networks is more accurate than its primary classifier. \\
+
+Like other machine learning classifiers,  ensemble methods have both advantages and disadvantages. The main advantage of ensembles is that there is little probability that all classifiers will make the same mistake. Actually,  if each error is made by a minority of the classifiers,  you can obtain an optimal classification. Additionally,  ensembles are very likely to reduce the variance of classifiers. Therefore,  if the classification algorithms are sensitive to small changes in the training data,  ensemble methods tend to be very helpful.
+The disadvantages of ensemble methods are also notable,  among them the biggest might be the lack of interpretation \citep{buhlmann2012bagging}.  A linear combination of an individual classifier is much harder to interpret than a single classifier. 
+
+In our research,  we utilize two typical ensemble algorithms,  AdaBoost and random forest,  to train and predict the labeled spread crossing over in a fixed time interval of LOBs. The price spread crossing opportunities can be labeled as ask price lower,  bid spread higher and no crossing over in a fixed time horizon. Therefore our problem is a multi-class classification case,  the one against one and one against all methods will be introduced to solve the multi-class classification problem. The real time data is divided into two parts with the percentage of 9:1,  to make a training dataset and testing data set respectively. In addition,  features with price,  volume and order book arrival intensity of each price level are created, so every data sample in training and the testing dataset is represented as a vector of features. Moreover,  Precision,  recall and F1 score are used to measure the performance of the models,  since the existence of arbitrage in a relatively long time interval is rare and our dataset can be treated as an imbalanced data.  
+
+Experiments with real-time data from NASDAQ show that the ensemble models built in our paper can not only predict the arbitrage opportunities with high accuracy,  but also can improve the prediction performance compared to basic classifiers,  such as logistic regression,  support vector machine and decision trees. We also design a naive trading strategy in the testing time interval and demonstrate the Profit and Loss  (PnL) of our models. The cumulative Pnl curve shows that the traders can obtain positive return with zero investment,  which indicates that the statistical arbitrages can be found in our models.
+
+\section{Purpose of the dissertation}
+The aim of this dissertation is to construct ensemble machine learning tools which predict the price changes of LOBs in a fixed time interval by extracting non-linear features from the real time data.  Statistical properties of LOBs are also studied in our paper to find the hidden pattern behind data. We also try to develop a model framework that is operational and automated to reduce the possibility of human intervention. To deal with the unbalanced data problem,  like the arbitrage opportunities in all the transactions in our paper,  we propose new measures such as precision,  recall and f1 score to test the performance of our models. Moreover,  two multi-class schemes,  one vs. one and one vs. rest,  are compared to choose the better one for the practical problem. Finally,  we design a naive trading system based on our ensemble models to show their practical applications. The results of Profit and Loss (PnL) are demonstrated to test the performance of the models. Our ultimate objective is to design a completed trading framework,  including data extracting,  data cleaning,  features extracting,  model constructing,  model validation,  and out-of-sample trading,  that can be used to help the investors design trading strategies during the real-time transactions. Our research in this dissertation is a specific example that uses the machine learning tools to solve the real financial problems,  the similar framework,  process and idea in this paper can be extended to other classification and prediction research areas. The main contributions of our work are summarized in the following:
+
+1) The model structure developed in this dissertation is highly reproducible and scalable which means other machine learning tools,  such as neural networks,  deep learning, and reinforcement learning methods can be easily integrated with our framework. Besides,  our models can be transplanted on different platforms without spending too much effort.
+
+2) Instead of predicting price change in fixed future events, such as predicting the price of the next 5th coming order,  we focus on predicting the price change in future fixed time interval. In practice,  the coming time of the future event is hard to control,  therefore it is very difficult to conduct a trading strategy based on future events. So forecasting the price change based on future time interval is of practical significance.
+
+3) We use real-time stock data in a very low latency; the minimum time change can be a nano-second. In addition,  the data volume that we used is also very high; each stock will have millions number of data samples. Therefore,  the results of our experiment are more credible and convincing.  
+
+4) AdaBoost and random forest technique are used to improve the prediction performance. The experimental results show that ensemble methods will improve the model efficiency in a significant way compared to the basic machine learning tools.
+
+5) Feature importance based on random forest tools of different stocks are compared in this research. We also give our explanation of why those features are important.
+
+6) A trading strategy with our model is designed based on the real-time dataset. A back-testing process shows a good profit gain and loss result based on the strategy which will be beneficial for traders to make decisions in daily work.
+
+To better present the aforementioned contributions,  the structure of this dissertation is summarized as follows.
+
+Chapter 1: Introduction: reviews the background and history of high-frequency trading, trading strategies of high-frequency trading, and the evolution of LOBs.
+
+Chapter 2: Literature Review: Briefly reviews the past research work including statistical properties of LOBs,  mathematical definition of LOBs and machine learning application in LOBs, etc.
+
+Chapter 3: Mathematical description and statistical properties of LOBs: List the main mathematics definition of LOBs,  such as bid price,  ask price,  and bid-ask spread. 
+In addition, some statistical properties are also mentioned in this chapter.
+
+Chapter 4: Basic machine learning tools: Introducing some classic machine learning tools that we use as benchmarks to the ensemble methods. Those tools include logistic regression,  lasso regression,  ridge regression,  support vector machine and decision tree. 
+
+Chapter 5: Ensemble methods for prediction:  Introducing properties of ensemble methods, especially for AdaBoost and random forest. 
+
+Chapter 6: Model framework and results:In this chapter, we describe the data set that we use to train and test the model,  the way to construct the features,  and the framework of our models. Besides,  the measurement for model performance such as precision,  recall,  and F1 score are also introduced here. Finally,  we show the profit and loss of a simple trading strategy by using our model to predict the future arbitrage opportunities.
+

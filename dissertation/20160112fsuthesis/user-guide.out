@@ -1,0 +1,41 @@
+\BOOKMARK [1][-]{section.1}{Introduction to LaTeX}{}% 1
+\BOOKMARK [1][-]{section.2}{Installation}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{The Basic LaTeX System}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Editors and IDEs}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Installing the fsuthesis Class File}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Helpful LaTeX References}{}% 6
+\BOOKMARK [1][-]{section.4}{Working with LaTeX}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Paragraphs and Space}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Special Characters}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.3}{Dashes and Quotes}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.4}{Macros, Comments, and Ties}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.5}{Document Divisions}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{The fsuthesis Class}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Files in the Package}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{The Document Preamble}{section.5}% 15
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Document Options}{subsection.5.2}% 16
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Thesis/Dissertation Description Macros}{subsection.5.2}% 17
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Committee Macros}{subsection.5.2}% 18
+\BOOKMARK [2][-]{subsection.5.3}{The Document Body}{section.5}% 19
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Front Matter}{subsection.5.3}% 20
+\BOOKMARK [2][-]{subsection.5.4}{The Main Text}{section.5}% 21
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Chapter and Section Headings}{subsection.5.4}% 22
+\BOOKMARK [2][-]{subsection.5.5}{Back Matter}{section.5}% 23
+\BOOKMARK [3][-]{subsubsection.5.5.1}{References/Bibliography}{subsection.5.5}% 24
+\BOOKMARK [3][-]{subsubsection.5.5.2}{Biographical Sketch}{subsection.5.5}% 25
+\BOOKMARK [1][-]{section.6}{More LaTeX Features}{}% 26
+\BOOKMARK [2][-]{subsection.6.1}{List Environments}{section.6}% 27
+\BOOKMARK [2][-]{subsection.6.2}{Quotation Environments}{section.6}% 28
+\BOOKMARK [2][-]{subsection.6.3}{Single-Spacing Environment}{section.6}% 29
+\BOOKMARK [2][-]{subsection.6.4}{Insertions: Figures, Tables, Musical Examples}{section.6}% 30
+\BOOKMARK [2][-]{subsection.6.5}{Cross References}{section.6}% 31
+\BOOKMARK [2][-]{subsection.6.6}{A Note on Mathematics}{section.6}% 32
+\BOOKMARK [1][-]{section.7}{Changing Default Settings}{}% 33
+\BOOKMARK [2][-]{subsection.7.1}{Changing Table of Contents Detail}{section.7}% 34
+\BOOKMARK [2][-]{subsection.7.2}{Changing the Level of Heading Numbering}{section.7}% 35
+\BOOKMARK [2][-]{subsection.7.3}{Avoiding Club and Widow Lines}{section.7}% 36
+\BOOKMARK [2][-]{subsection.7.4}{Adjustments to Titles}{section.7}% 37
+\BOOKMARK [2][-]{subsection.7.5}{Extra Packages}{section.7}% 38
+\BOOKMARK [1][-]{section.8}{Keeping Things in Order}{}% 39
+\BOOKMARK [1][-]{section.9}{More Examples}{}% 40
+\BOOKMARK [1][-]{section.10}{Bugs, Corrections, Improvements}{}% 41

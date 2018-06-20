@@ -1,0 +1,52 @@
+\BOOKMARK [0][-]{MainTitlePage.0}{Title Page}{}% 1
+\BOOKMARK [0][-]{contents.0}{Table of Contents}{}% 2
+\BOOKMARK [1][-]{chapter*.3}{List of Tables}{contents.0}% 3
+\BOOKMARK [1][-]{chapter*.4}{List of Figures}{contents.0}% 4
+\BOOKMARK [1][-]{chapter*.5}{List of Algorithms}{contents.0}% 5
+\BOOKMARK [1][-]{chapter*.6}{Abstract}{contents.0}% 6
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 7
+\BOOKMARK [1][-]{section.1.1}{1.1 High-frequency trading system}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Evolution of high-frequency trading}{section.1.1}% 9
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 High-frequency trading strategies}{section.1.1}% 10
+\BOOKMARK [1][-]{section.1.2}{1.2 LOB dynamics}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.3}{1.3 Ensemble method for classifiers}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.4}{1.4 Purpose of the dissertation}{chapter.1}% 13
+\BOOKMARK [0][-]{chapter.2}{2 Literature Review}{}% 14
+\BOOKMARK [1][-]{section.2.1}{2.1 Limit order books dynamics and modeling}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.2}{2.2 Machine learning methods for capturing limit order book dynamics}{chapter.2}% 16
+\BOOKMARK [0][-]{chapter.3}{3 Description of LOBs }{}% 17
+\BOOKMARK [1][-]{section.3.1}{3.1 Mathematical descriptions of LOBs}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{3.2 Data description}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Limit order and message order}{section.3.2}% 20
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Order Price, order book volume, order book type, and relative depth}{section.3.2}% 21
+\BOOKMARK [1][-]{section.3.3}{3.3 Properties of LOBs}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Time of arrivals of orders}{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Volume of orders}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Placement of orders}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.4}{3.3.4 Intraday seasonality}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.5}{3.3.5 Average shape of the order book}{section.3.3}% 27
+\BOOKMARK [0][-]{chapter.4}{4 Basic Machine Learning Schemes}{}% 28
+\BOOKMARK [1][-]{section.4.1}{4.1 Logistic regression}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{4.2 Lasso regression and ridge regression}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.3}{4.3 Support vector machine}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.4}{4.4 Decision tree}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{5 Ensemble Methods for Prediction}{}% 33
+\BOOKMARK [1][-]{section.5.1}{5.1 An introduction to ensemble methods}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.2}{5.2 Bagging}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.3}{5.3 Bootstrap}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.4}{5.4 AdaBoost learning scheme}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.5}{5.5 Random forest}{chapter.5}% 38
+\BOOKMARK [0][-]{chapter.6}{6 Model Framework and Results}{}% 39
+\BOOKMARK [1][-]{section.6.1}{6.1 Review of LOBs}{chapter.6}% 40
+\BOOKMARK [1][-]{section.6.2}{6.2 Model framework}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.3}{6.3 Features}{chapter.6}% 42
+\BOOKMARK [1][-]{section.6.4}{6.4 Model measurement and numerical results}{chapter.6}% 43
+\BOOKMARK [1][-]{section.6.5}{6.5 Multiclass prediction problem}{chapter.6}% 44
+\BOOKMARK [1][-]{section.6.6}{6.6 Feature importance}{chapter.6}% 45
+\BOOKMARK [1][-]{section.6.7}{6.7 Trading strategy}{chapter.6}% 46
+\BOOKMARK [0][-]{chapter.7}{7 Conclusion and Future Works}{}% 47
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 48
+\BOOKMARK [0][-]{appendix.A}{A Two Classes Arbitrage Prediction Results}{}% 49
+\BOOKMARK [0][-]{appendix.B}{B PnL and Cumulative PnL}{}% 50
+\BOOKMARK [0][-]{appendix.C}{C Main Part of Code}{}% 51
+\BOOKMARK [0][-]{appendix*.7}{Bibliography}{}% 52

@@ -1,0 +1,18 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {algocf}{\numberline {5.1}{\ignorespaces Bagging algorithm, \cite {breiman1996bagging}}}{52}{algocf.5.1}
+\contentsline {algocf}{\numberline {5.2}{\ignorespaces Bootstrap algorithm, \cite {breiman1996bagging}}}{53}{algocf.5.2}
+\contentsline {algocf}{\numberline {5.3}{\ignorespaces AdaBoost algorithm, \cite {friedman2001elements}}}{54}{algocf.5.3}
+\contentsline {algocf}{\numberline {5.4}{\ignorespaces Forward Stag-wise Additive Modeling, \cite {friedman2001elements}}}{54}{algocf.5.4}
+\contentsline {algocf}{\numberline {5.5}{\ignorespaces Random forest, \cite {breiman2001random}}}{56}{algocf.5.5}
+\addvspace {10\p@ }
+\contentsline {algocf}{\numberline {6.1}{\ignorespaces One vs. rest algorithm, }}{67}{algocf.6.1}
+\contentsline {algocf}{\numberline {6.2}{\ignorespaces One vs. one method}}{68}{algocf.6.2}
+\contentsline {algocf}{\numberline {6.3}{\ignorespaces Naive trading algorithm, }}{73}{algocf.6.3}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
